@@ -1,0 +1,40 @@
+name: Build and Push to Pages Branch
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Flutter Web Build
+    runs-on: ubuntu-latest
+
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: subosito/flutter-action@v1
+      with:
+        channel: 'beta'
+    - name: Build Web Version of Flutter App
+      run: |
+        flutter config --enable-web
+        flutter build web
+    - name: Clean Up
+      run: |
+        mv ./build/web .
+        rm -rf build
+        rm -rf android
+        rm -rf ios
+        rm -rf lib
+        rm -rf web
+    - name: Git Login
+      run: |
+        git config --global user.email "nobody@matthewgleich"
+        git config --global user.name "AUTO BUILD"
+        git config core.autocrlf true
+    - name: Git Push to Pages Branch
+      run: |
+        git checkout gh-pages
+        git add .
+        git commit -m "Build Latest"
+        git push "https://${{ secrets.ghToken }}@github.com/Matt-Gleich/Matt-Gleich.github.io"
