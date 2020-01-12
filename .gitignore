@@ -1,3 +1,9 @@
 # Miscellaneous
 .DS_Store
 build/web
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+lib/generated_plugin_registrant.dart
+.idea
