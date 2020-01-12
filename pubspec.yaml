@@ -36,26 +36,3 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
   uses-material-design: true
-  fonts:
-    - family: Public Sans
-      fonts:
-        - asset: fonts/Public-Sans/Public-Sans-100.ttf
-        - asset: fonts/Public-Sans/Public-Sans-100italic.tff
-        - asset: fonts/Public-Sans/Public-Sans-200.tff
-        - asset: fonts/Public-Sans/Public-Sans-200italic.tff
-        - asset: fonts/Public-Sans/Public-Sans-300.tff
-        - asset: fonts/Public-Sans/Public-Sans-300italic.tff
-        - asset: fonts/Public-Sans/Public-Sans-400.tff
-        - asset: fonts/Public-Sans/Public-Sans-400italic.tff
-        - asset: fonts/Public-Sans/Public-Sans-500.tff
-        - asset: fonts/Public-Sans/Public-Sans-500italic.tff
-        - asset: fonts/Public-Sans/Public-Sans-600.tff
-        - asset: fonts/Public-Sans/Public-Sans-600italic.tff
-        - asset: fonts/Public-Sans/Public-Sans-700.tff
-        - asset: fonts/Public-Sans/Public-Sans-700italic.tff
-        - asset: fonts/Public-Sans/Public-Sans-800.tff
-        - asset: fonts/Public-Sans/Public-Sans-800italic.tff
-        - asset: fonts/Public-Sans/Public-Sans-900.tff
-        - asset: fonts/Public-Sans/Public-Sans-900italic.tff
-        - asset: fonts/Public-Sans/Public-Sans-italic.tff
-        - asset: fonts/Public-Sans/Public-Sans-regular.tff
