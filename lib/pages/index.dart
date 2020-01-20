@@ -6,36 +6,43 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Container(
-            child: Text(
-              "Hello! This site is currently under construction.",
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 27, color: Colors.white),
+          Padding(
+            padding: const EdgeInsets.only(left: 250),
+            child: Image(
+              image: AssetImage("assets/images/logo.png"),
+              width: 530,
+              height: 530,
             ),
           ),
-          Container(
-            margin: EdgeInsets.all(10),
-            child: Text(
-              "In the meantime you can check out my GitHub page:",
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 25, color: Colors.white),
+          Padding(
+            padding: const EdgeInsets.only(
+              left: 150,
+              top: 440,
             ),
-          ),
-          Container(
-            margin: EdgeInsets.all(10),
-            child: Linkify(
-              onOpen: (link) async {
-                if (await canLaunch(link.url)) {
-                  await launch(link.url);
-                } else {
-                  throw "Could not open $link.url";
-                }
-              },
-              text: "https://github.com/Matt-Gleich",
-              style: TextStyle(fontSize: 25),
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "Matthew Gleich",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 40,
+                  ),
+                ),
+                Linkify(
+                  onOpen: (link) async {
+                    if (await canLaunch(link.url)) {
+                      await launch(link.url);
+                    } else {
+                      throw "Could not open $link.url";
+                    }
+                  },
+                  text: "https://github.com/Matt-Gleich",
+                  style: TextStyle(fontSize: 37),
+                )
+              ],
             ),
           )
         ],
