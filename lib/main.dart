@@ -19,13 +19,6 @@ class MyApp extends StatelessWidget {
 class MySite extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Matthew Gleich"),
-        backgroundColor: Colors.black,
-      ),
-      body: HomePage(),
-      backgroundColor: Color.fromRGBO(63, 63, 63, 1.0),
-    );
+    return HomePage();
   }
 }
