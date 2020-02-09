@@ -9,7 +9,9 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Matthew Gleich"),
+        titleSpacing: 50,
         backgroundColor: Colors.black,
+        elevation: 10.0,
         actions: <Widget>[
           SocialMediaIcon(
               MdiIcons.twitter, "https://twitter.com/GleichMatthew"),
@@ -86,6 +88,7 @@ class SocialMediaIcon extends StatelessWidget {
         icon,
         color: Colors.white,
       ),
+      hoverColor: Colors.red,
       onPressed: () async {
         if (await canLaunch(linkURL)) {
           await launch(linkURL);
