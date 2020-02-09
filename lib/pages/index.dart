@@ -11,7 +11,18 @@ class HomePage extends StatelessWidget {
         title: Text("Matthew Gleich"),
         backgroundColor: Colors.black,
         actions: <Widget>[
-          SocialMediaIcon(MdiIcons.twitter, "https://twitter.com/GleichMatthew")
+          SocialMediaIcon(
+              MdiIcons.twitter, "https://twitter.com/GleichMatthew"),
+          SocialMediaIcon(MdiIcons.instagram,
+              "https://www.instagram.com/gleichphotography/"),
+          SocialMediaIcon(MdiIcons.linkedinBox,
+              "https://www.linkedin.com/in/matthew-gleich-636618178/"),
+          SocialMediaIcon(
+              MdiIcons.githubCircle, "https://github.com/Matt-Gleich"),
+          SocialMediaIcon(
+              MdiIcons.docker, "https://hub.docker.com/u/mattgleich"),
+          SocialMediaIcon(
+              MdiIcons.strava, "https://www.strava.com/athletes/30124266"),
         ],
       ),
       body: Center(
