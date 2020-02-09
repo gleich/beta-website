@@ -88,6 +88,7 @@ class SocialMediaIcon extends StatelessWidget {
         icon,
         color: Colors.white,
       ),
+      splashColor: Colors.black,
       hoverColor: Colors.red,
       onPressed: () async {
         if (await canLaunch(linkURL)) {
