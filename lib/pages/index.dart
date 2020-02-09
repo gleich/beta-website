@@ -29,9 +29,9 @@ class HomePage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(
                 left: 150,
-                top: 440,
               ),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
                     "Matthew Gleich",
