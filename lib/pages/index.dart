@@ -58,7 +58,6 @@ class HomePage extends StatelessWidget {
                 ],
               ),
       ),
-      backgroundColor: Color.fromRGBO(63, 63, 63, 1.0),
     );
   }
 }
