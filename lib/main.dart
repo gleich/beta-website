@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import './pages/index/index.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(_MyApp());
 
-class MyApp extends StatelessWidget {
+class _MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -12,12 +12,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Matthew Gleich",
       theme: ThemeData.dark(),
-      home: MySite(),
+      home: _MySite(),
     );
   }
 }
 
-class MySite extends StatelessWidget {
+class _MySite extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return HomePage();
