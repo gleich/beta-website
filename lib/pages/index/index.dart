@@ -5,9 +5,34 @@ import 'package:google_fonts/google_fonts.dart';
 import './widgets/socialMedia.dart';
 import './widgets/logo.dart';
 import './widgets/pageButton.dart';
+
 import './../languages/languages.dart';
+import './../projects/projects.dart';
+import './../aboutMe/aboutMe.dart';
 
 class HomePage extends StatelessWidget {
+  final Widget baseMobileWidget = Center(
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: <Widget>[
+        Padding(
+          padding: const EdgeInsets.only(
+            top: 75,
+            bottom: 75,
+          ),
+          child: Logo(),
+        ),
+        PageButton(
+          route: Languages(),
+          pageName: "Languages",
+          leftPadding: 0,
+          topPadding: 0,
+        )
+      ],
+    ),
+  );
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,37 +62,42 @@ class HomePage extends StatelessWidget {
               MdiIcons.strava, "https://www.strava.com/athletes/30124266"),
         ],
       ),
-      body: Center(
-        child: MediaQuery.of(context).size.width < 1313
-            ? Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      top: 75,
-                      bottom: 75,
+      body: MediaQuery.of(context).size.width < 1212
+          ? MediaQuery.of(context).size.height < 842
+              ? SingleChildScrollView(
+                  child: baseMobileWidget,
+                )
+              : baseMobileWidget
+          : Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Logo(),
+                SizedBox(width: 100),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    PageButton(
+                        route: AboutMe(),
+                        pageName: "About Me",
+                        leftPadding: 0,
+                        topPadding: 0),
+                    PageButton(
+                      route: Projects(),
+                      pageName: "Projects",
+                      leftPadding: 100,
+                      topPadding: 30,
                     ),
-                    child: Logo(),
-                  ),
-                ],
-              )
-            : Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.only(left: 250),
-                    child: Logo(),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 200),
-                    child: PageButton(
+                    PageButton(
                       route: Languages(),
                       pageName: "Languages",
+                      leftPadding: 0,
+                      topPadding: 30,
                     ),
-                  )
-                ],
-              ),
-      ),
+                  ],
+                )
+              ],
+            ),
     );
   }
 }
