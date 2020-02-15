@@ -1,16 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import './widgets/socialMedia.dart';
-import './widgets/nameAndLink.dart';
 import './widgets/logo.dart';
+import './widgets/pageButton.dart';
+import './../languages/languages.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Matthew Gleich"),
+        title: Text(
+          "Matthew / Gleich",
+          style: GoogleFonts.abel(
+            fontSize: 25,
+            letterSpacing: 5,
+          ),
+        ),
         titleSpacing: 50,
         backgroundColor: Colors.black,
         elevation: 10.0,
@@ -41,7 +49,6 @@ class HomePage extends StatelessWidget {
                     ),
                     child: Logo(),
                   ),
-                  NameAndLink(),
                 ],
               )
             : Row(
@@ -52,8 +59,11 @@ class HomePage extends StatelessWidget {
                     child: Logo(),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 150),
-                    child: NameAndLink(),
+                    padding: const EdgeInsets.only(left: 200),
+                    child: PageButton(
+                      route: Languages(),
+                      pageName: "Languages",
+                    ),
                   )
                 ],
               ),
