@@ -2,13 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+// Page only widgets
 import './widgets/socialMedia.dart';
 import './widgets/logo.dart';
 import './widgets/pageButton.dart';
 
+// Global App widgets
 import './../languages/languages.dart';
 import './../projects/projects.dart';
 import './../aboutMe/aboutMe.dart';
+import './../../utils/animations.dart';
 
 class HomePage extends StatelessWidget {
   final Widget baseMobileWidget = Center(
@@ -37,11 +40,17 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "Matthew / Gleich",
-          style: GoogleFonts.abel(
-            fontSize: 25,
-            letterSpacing: 5,
+        title: FadeIn(
+          duration: Duration(milliseconds: 700),
+          stop: 0,
+          start: -130,
+          delay: 3,
+          child: Text(
+            "Matthew / Gleich",
+            style: GoogleFonts.abel(
+              fontSize: 25,
+              letterSpacing: 5,
+            ),
           ),
         ),
         titleSpacing: 50,
@@ -77,22 +86,40 @@ class HomePage extends StatelessWidget {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    PageButton(
-                        route: AboutMe(),
-                        pageName: "About Me",
-                        leftPadding: 0,
-                        topPadding: 0),
-                    PageButton(
-                      route: Projects(),
-                      pageName: "Projects",
-                      leftPadding: 100,
-                      topPadding: 30,
+                    FadeIn(
+                      delay: 3,
+                      start: 130,
+                      stop: 0,
+                      duration: Duration(milliseconds: 700),
+                      child: PageButton(
+                          route: AboutMe(),
+                          pageName: "About Me",
+                          leftPadding: 0,
+                          topPadding: 0),
                     ),
-                    PageButton(
-                      route: Languages(),
-                      pageName: "Languages",
-                      leftPadding: 0,
-                      topPadding: 30,
+                    FadeIn(
+                      delay: 3.3,
+                      start: 130,
+                      stop: 0,
+                      duration: Duration(milliseconds: 700),
+                      child: PageButton(
+                        route: Projects(),
+                        pageName: "Projects",
+                        leftPadding: 100,
+                        topPadding: 30,
+                      ),
+                    ),
+                    FadeIn(
+                      delay: 3.6,
+                      start: 130,
+                      stop: 0,
+                      duration: Duration(milliseconds: 700),
+                      child: PageButton(
+                        route: Languages(),
+                        pageName: "Languages",
+                        leftPadding: 0,
+                        topPadding: 30,
+                      ),
                     ),
                   ],
                 )
