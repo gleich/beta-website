@@ -1,3 +1,3 @@
 # Personal-Site
 
-My website built using flutter hummingbird.
+🌎 My personal website written in Flutter
