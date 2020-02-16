@@ -8,7 +8,7 @@ import './../pages/index/index.dart';
 
 class PageTemplate extends StatelessWidget {
   final String endText;
-  final IconButton leadingButton;
+  final Widget leadingButton;
   final Widget body;
 
   PageTemplate({

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Projects extends StatelessWidget {
-  const Projects({Key key}) : super(key: key);
+import './../../widgets/pageTemplate.dart';
+import './../../widgets/secondaryPageLeadingButton.dart';
 
+class Projects extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Matthew Gleich - Projects"),
-        centerTitle: true,
-      ),
+    return PageTemplate(
+      endText: " - Projects",
+      leadingButton: SecondaryPageLeadingButton(),
+      body: Text(""),
     );
   }
 }

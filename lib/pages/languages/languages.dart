@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Languages extends StatelessWidget {
-  const Languages({Key key}) : super(key: key);
+import './../../widgets/pageTemplate.dart';
+import './../../widgets/secondaryPageLeadingButton.dart';
 
+class Languages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Matthew Gleich - Languages"),
-        centerTitle: true,
-      ),
+    return PageTemplate(
+      endText: " - Languages",
+      leadingButton: SecondaryPageLeadingButton(),
+      body: Text(""),
     );
   }
 }
