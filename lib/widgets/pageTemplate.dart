@@ -83,6 +83,14 @@ class PageTemplate extends StatelessWidget {
                       letterSpacing: 5,
                     ),
                   ),
+                ),
+                Text(
+                  " - © ${DateTime.now().year}",
+                  style: GoogleFonts.abel(
+                    fontSize: 25,
+                    letterSpacing: 5,
+                    color: Color.fromRGBO(70, 70, 70, 1),
+                  ),
                 )
               ],
             ),
