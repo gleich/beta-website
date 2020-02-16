@@ -9,6 +9,9 @@ import './widgets/pageButton.dart';
 import './../languages/languages.dart';
 import './../projects/projects.dart';
 import './../aboutMe/aboutMe.dart';
+import './../photography/photography.dart';
+import './../openSource/openSource.dart';
+import './../cycling/cycling.dart';
 import './../../widgets/animations.dart';
 import './../../widgets/pageTemplate.dart';
 
@@ -35,6 +38,7 @@ class HomePage extends StatelessWidget {
             pageName: "About Me",
             leftPadding: 0,
             topPadding: 0,
+            rightPadding: 0,
           ),
         ),
         FadeIn(
@@ -47,6 +51,7 @@ class HomePage extends StatelessWidget {
             pageName: "Projects",
             leftPadding: 0,
             topPadding: 10,
+            rightPadding: 0,
           ),
         ),
         FadeIn(
@@ -59,6 +64,7 @@ class HomePage extends StatelessWidget {
             pageName: "Languages",
             leftPadding: 0,
             topPadding: 10,
+            rightPadding: 0,
           ),
         )
       ],
@@ -86,6 +92,50 @@ class HomePage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    FadeIn(
+                      delay: 3,
+                      child: PageButton(
+                        route: OpenSource(),
+                        pageName: "Open Source",
+                        leftPadding: 0,
+                        topPadding: 0,
+                        rightPadding: 0,
+                      ),
+                      start: -130,
+                      stop: 0,
+                      duration: Duration(milliseconds: 700),
+                    ),
+                    FadeIn(
+                      delay: 3.3,
+                      child: PageButton(
+                        route: Photography(),
+                        pageName: "Photography",
+                        leftPadding: 0,
+                        topPadding: 30,
+                        rightPadding: 100,
+                      ),
+                      start: -130,
+                      stop: 0,
+                      duration: Duration(milliseconds: 700),
+                    ),
+                    FadeIn(
+                      delay: 3.6,
+                      child: PageButton(
+                        route: Cycling(),
+                        pageName: "Cycling",
+                        leftPadding: 0,
+                        topPadding: 30,
+                        rightPadding: 0,
+                      ),
+                      start: -130,
+                      stop: 0,
+                      duration: Duration(milliseconds: 700),
+                    )
+                  ],
+                ),
                 Logo(),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -96,10 +146,12 @@ class HomePage extends StatelessWidget {
                       stop: 0,
                       duration: Duration(milliseconds: 700),
                       child: PageButton(
-                          route: AboutMe(),
-                          pageName: "About Me",
-                          leftPadding: 0,
-                          topPadding: 0),
+                        route: AboutMe(),
+                        pageName: "About Me",
+                        leftPadding: 0,
+                        topPadding: 0,
+                        rightPadding: 0,
+                      ),
                     ),
                     FadeIn(
                       delay: 3.3,
@@ -111,6 +163,7 @@ class HomePage extends StatelessWidget {
                         pageName: "Projects",
                         leftPadding: 100,
                         topPadding: 30,
+                        rightPadding: 0,
                       ),
                     ),
                     FadeIn(
@@ -123,6 +176,7 @@ class HomePage extends StatelessWidget {
                         pageName: "Languages",
                         leftPadding: 0,
                         topPadding: 30,
+                        rightPadding: 0,
                       ),
                     ),
                   ],
