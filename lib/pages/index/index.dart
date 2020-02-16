@@ -22,15 +22,45 @@ class HomePage extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(
             top: 75,
-            bottom: 75,
+            bottom: 50,
           ),
           child: Logo(),
         ),
-        PageButton(
-          route: Languages(),
-          pageName: "Languages",
-          leftPadding: 0,
-          topPadding: 0,
+        FadeIn(
+          delay: 3,
+          start: 130,
+          stop: 0,
+          duration: Duration(milliseconds: 700),
+          child: PageButton(
+            route: AboutMe(),
+            pageName: "About Me",
+            leftPadding: 0,
+            topPadding: 0,
+          ),
+        ),
+        FadeIn(
+          delay: 3,
+          start: -130,
+          stop: 0,
+          duration: Duration(milliseconds: 700),
+          child: PageButton(
+            route: Projects(),
+            pageName: "Projects",
+            leftPadding: 0,
+            topPadding: 10,
+          ),
+        ),
+        FadeIn(
+          delay: 3,
+          start: 130,
+          stop: 0,
+          duration: Duration(milliseconds: 700),
+          child: PageButton(
+            route: Languages(),
+            pageName: "Languages",
+            leftPadding: 0,
+            topPadding: 10,
+          ),
         )
       ],
     ),
@@ -72,7 +102,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: MediaQuery.of(context).size.width < 1212
-          ? MediaQuery.of(context).size.height < 842
+          ? MediaQuery.of(context).size.height < 1058
               ? SingleChildScrollView(
                   child: baseMobileWidget,
                 )
