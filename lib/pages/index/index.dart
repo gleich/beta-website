@@ -3,7 +3,6 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:google_fonts/google_fonts.dart';
 
 // Page only widgets
-import './widgets/socialMedia.dart';
 import './widgets/logo.dart';
 import './widgets/pageButton.dart';
 
@@ -11,7 +10,9 @@ import './widgets/pageButton.dart';
 import './../languages/languages.dart';
 import './../projects/projects.dart';
 import './../aboutMe/aboutMe.dart';
-import './../../utils/animations.dart';
+import './../../widgets/animations.dart';
+import './../../widgets/socialMedia.dart';
+import './../../widgets/appbarTitle.dart';
 
 class HomePage extends StatelessWidget {
   final Widget baseMobileWidget = Center(
@@ -75,13 +76,7 @@ class HomePage extends StatelessWidget {
           stop: 0,
           start: -130,
           delay: 3,
-          child: Text(
-            "Matthew / Gleich",
-            style: GoogleFonts.abel(
-              fontSize: 25,
-              letterSpacing: 5,
-            ),
-          ),
+          child: AppBarTitle(),
         ),
         titleSpacing: 50,
         backgroundColor: Colors.black,
@@ -112,7 +107,6 @@ class HomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Logo(),
-                SizedBox(width: 100),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
