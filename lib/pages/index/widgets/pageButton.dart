@@ -6,18 +6,21 @@ class PageButton extends StatelessWidget {
   final String pageName;
   final double leftPadding;
   final double topPadding;
+  final double rightPadding;
 
   PageButton({
     @required this.route,
     @required this.pageName,
     @required this.leftPadding,
     @required this.topPadding,
+    @required this.rightPadding,
   });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(
+        right: rightPadding,
         left: leftPadding,
         top: topPadding,
       ),
@@ -38,9 +41,9 @@ class PageButton extends StatelessWidget {
               color: Color.fromRGBO(144, 36, 27, 1),
             ),
           ),
-          color: Colors.white,
+          color: Colors.black,
           hoverElevation: 10,
-          hoverColor: Colors.black,
+          hoverColor: Colors.white,
           splashColor: Color.fromRGBO(144, 36, 27, 1),
         ),
       ),
