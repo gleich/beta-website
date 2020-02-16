@@ -41,6 +41,7 @@ class PageButton extends StatelessWidget {
           color: Colors.white,
           hoverElevation: 10,
           hoverColor: Colors.black,
+          splashColor: Color.fromRGBO(144, 36, 27, 1),
         ),
       ),
     );

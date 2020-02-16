@@ -10,8 +10,7 @@ import './../languages/languages.dart';
 import './../projects/projects.dart';
 import './../aboutMe/aboutMe.dart';
 import './../../widgets/animations.dart';
-import './../../widgets/socialMedia.dart';
-import './../../widgets/appbarTitle.dart';
+import './../../widgets/pageTemplate.dart';
 
 class HomePage extends StatelessWidget {
   final Widget baseMobileWidget = Center(
@@ -68,41 +67,14 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        // Leading Icon to prevent automatic one, not visible
-        leading: IconButton(
-          icon: Icon(
-            Icons.account_box,
-            color: Colors.black,
-          ),
-          onPressed: null,
+    return PageTemplate(
+      endText: "",
+      leadingButton: IconButton(
+        icon: Icon(
+          Icons.camera,
+          color: Colors.black,
         ),
-        title: FadeIn(
-          duration: Duration(milliseconds: 700),
-          stop: 0,
-          start: -130,
-          delay: 3,
-          child: AppBarTitle(
-            endText: "",
-          ),
-        ),
-        backgroundColor: Colors.black,
-        elevation: 10.0,
-        actions: <Widget>[
-          SocialMediaIcon(
-              MdiIcons.twitter, "https://twitter.com/GleichMatthew"),
-          SocialMediaIcon(MdiIcons.instagram,
-              "https://www.instagram.com/gleichphotography/"),
-          SocialMediaIcon(MdiIcons.linkedinBox,
-              "https://www.linkedin.com/in/matthew-gleich-636618178/"),
-          SocialMediaIcon(
-              MdiIcons.githubCircle, "https://github.com/Matt-Gleich"),
-          SocialMediaIcon(
-              MdiIcons.docker, "https://hub.docker.com/u/mattgleich"),
-          SocialMediaIcon(
-              MdiIcons.strava, "https://www.strava.com/athletes/30124266"),
-        ],
+        onPressed: null,
       ),
       body: MediaQuery.of(context).size.width < 1212
           ? MediaQuery.of(context).size.height < 1058
