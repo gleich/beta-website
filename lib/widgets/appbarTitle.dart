@@ -8,21 +8,27 @@ class AppBarTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FadeIn(
-      duration: Duration(milliseconds: 700),
-      stop: 0,
-      start: -130,
-      delay: 3,
-      child: Row(
-        children: <Widget>[
-          Text(
+    return Row(
+      children: <Widget>[
+        FadeIn(
+          duration: Duration(milliseconds: 700),
+          start: -130,
+          stop: 0,
+          delay: 4.5,
+          child: Text(
             "Matthew",
             style: GoogleFonts.abel(
               fontSize: 25,
               letterSpacing: 5,
             ),
           ),
-          Text(
+        ),
+        FadeIn(
+          duration: Duration(milliseconds: 700),
+          start: -100,
+          stop: 0,
+          delay: 4.0,
+          child: Text(
             " / ",
             style: GoogleFonts.abel(
               fontSize: 25,
@@ -30,15 +36,21 @@ class AppBarTitle extends StatelessWidget {
               color: Colors.red,
             ),
           ),
-          Text(
+        ),
+        FadeIn(
+          duration: Duration(milliseconds: 700),
+          start: -100,
+          stop: 0,
+          delay: 3.5,
+          child: Text(
             "Gleich",
             style: GoogleFonts.abel(
               fontSize: 25,
               letterSpacing: 5,
             ),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
