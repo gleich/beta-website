@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 // Page only widgets
 import './widgets/logo.dart';
@@ -71,14 +70,23 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        // Leading Icon to prevent automatic one, not visible
+        leading: IconButton(
+          icon: Icon(
+            Icons.account_box,
+            color: Colors.black,
+          ),
+          onPressed: null,
+        ),
         title: FadeIn(
           duration: Duration(milliseconds: 700),
           stop: 0,
           start: -130,
           delay: 3,
-          child: AppBarTitle(),
+          child: AppBarTitle(
+            endText: "",
+          ),
         ),
-        titleSpacing: 50,
         backgroundColor: Colors.black,
         elevation: 10.0,
         actions: <Widget>[

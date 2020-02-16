@@ -12,10 +12,10 @@ class SocialMediaIcon extends StatelessWidget {
     return IconButton(
       icon: Icon(
         icon,
-        color: Colors.white,
+        color: Colors.red,
       ),
       splashColor: Colors.black,
-      hoverColor: Colors.red,
+      hoverColor: Colors.white,
       onPressed: () async {
         if (await canLaunch(linkURL)) {
           await launch(linkURL);

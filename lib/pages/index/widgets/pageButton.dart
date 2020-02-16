@@ -35,12 +35,12 @@ class PageButton extends StatelessWidget {
             pageName,
             style: GoogleFonts.abel(
               fontSize: 40,
-              color: Colors.black,
+              color: Color.fromRGBO(144, 36, 27, 1),
             ),
           ),
           color: Colors.white,
           hoverElevation: 10,
-          hoverColor: Color.fromRGBO(220, 220, 220, 1),
+          hoverColor: Colors.black,
         ),
       ),
     );
