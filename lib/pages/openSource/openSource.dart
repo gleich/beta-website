@@ -7,7 +7,7 @@ class OpenSource extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageTemplate(
-      endText: "- Open Source",
+      endText: " - Open Source",
       leadingButton: SecondaryPageLeadingButton(),
       body: Text(""),
     );
