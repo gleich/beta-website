@@ -16,6 +16,8 @@ class PageButton extends StatelessWidget {
     @required this.rightPadding,
   });
 
+  final Color textColor = Color.fromRGBO(144, 36, 27, 1);
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -38,13 +40,13 @@ class PageButton extends StatelessWidget {
             pageName,
             style: GoogleFonts.abel(
               fontSize: 40,
-              color: Color.fromRGBO(144, 36, 27, 1),
+              color: textColor,
             ),
           ),
           color: Colors.black,
           hoverElevation: 10,
-          hoverColor: Colors.white,
-          splashColor: Color.fromRGBO(144, 36, 27, 1),
+          hoverColor: Color.fromRGBO(55, 55, 55, 1),
+          splashColor: textColor,
         ),
       ),
     );
