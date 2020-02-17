@@ -84,14 +84,6 @@ class PageTemplate extends StatelessWidget {
                     ),
                   ),
                 ),
-                Text(
-                  " - © ${DateTime.now().year}",
-                  style: GoogleFonts.abel(
-                    fontSize: 25,
-                    letterSpacing: 5,
-                    color: Color.fromRGBO(70, 70, 70, 1),
-                  ),
-                )
               ],
             ),
           ),
@@ -115,6 +107,25 @@ class PageTemplate extends StatelessWidget {
         leading: leadingButton,
       ),
       body: body,
+      bottomSheet: Padding(
+        padding: const EdgeInsets.only(bottom: 10),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              "© ",
+              style: GoogleFonts.abel(
+                color: Colors.red,
+                fontSize: 20,
+              ),
+            ),
+            Text(
+              "Matthew Gleich ${DateTime.now().year}",
+              style: GoogleFonts.abel(fontSize: 20),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
