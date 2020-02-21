@@ -14,15 +14,17 @@ jobs:
       - run: flutter config --enable-web
       - run: flutter pub get
       - run: flutter build web
-      - name: Publish
+      - name: Commit changes
         run: |
-          git config --global user.email "${{ secrets.email }}"
-          git config --global user.name "Matt-Gleich"
-          git config --global user.password "${{ secrets.ghToken }}"
-          git remote -v
-          git checkout .
+          git config --global user.email "action@github.com"
+          git config --global user.name "Publishing Bot"
+          git checkout pubspec.lock
           git checkout gh-pages
           sh replace.sh
           git add .
           git commit -m "⬆️ Publish Latest Changes"
-          git push
+      - name: Push Changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: "gh-pages"
