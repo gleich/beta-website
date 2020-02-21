@@ -108,7 +108,10 @@ class PageTemplate extends StatelessWidget {
       ),
       body: body,
       bottomSheet: Padding(
-        padding: const EdgeInsets.only(bottom: 10),
+        padding: const EdgeInsets.only(
+          bottom: 10,
+          top: 3,
+        ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
