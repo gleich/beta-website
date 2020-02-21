@@ -2,6 +2,8 @@
 
 flutter build web
 
+git checkout pubspec.lock
+
 git checkout gh-pages
 
 sh replace.sh
