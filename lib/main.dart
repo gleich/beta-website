@@ -10,7 +10,7 @@ class _MySite extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Matthew Gleich",
+      title: "👨🏻‍💻 Matthew Gleich",
       theme: ThemeData.dark(),
       home: HomePage(),
     );
