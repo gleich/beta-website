@@ -17,6 +17,12 @@ jobs:
       - name: Publish
         run: |
           git config --global user.email "${{ secrets.email }}"
-          git config --global user.name "Publishing Bot"
-          git remote add origin https://Matt-Gleich:${{ secrets.ghToken }}@github.com/Matt-Gleich/Personal-Site.git
-          sh publish.sh
+          git config --global user.name "Matt-Gleich"
+          git config --global user.password "${{ secrets.ghToken }}"
+          git remote -v
+          git checkout .
+          git checkout gh-pages
+          sh replace.sh
+          git add .
+          git commit -m "⬆️ Publish Latest Changes"
+          git push
