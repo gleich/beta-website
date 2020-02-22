@@ -5,7 +5,6 @@ import './pages/index/index.dart';
 void main() => runApp(_MySite());
 
 class _MySite extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
