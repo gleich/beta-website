@@ -25,7 +25,7 @@ jobs:
           sh replace.sh
           rm -rf lastUpdate.txt
           touch lastUpdate.txt
-          echo "$date" >> lastUpdate.txt
+          date >> lastUpdate.txt
           git add .
           git commit -m "⬆️ Publish Latest Changes"
       - name: Push Changes
