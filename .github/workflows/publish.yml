@@ -23,9 +23,9 @@ jobs:
           git checkout pubspec.lock
           git checkout gh-pages
           sh replace.sh
-          rm -rf lastUpdate.txt
-          touch lastUpdate.txt
-          date >> lastUpdate.txt
+          rm -rf README.md
+          touch README.md
+          date >> README.md
           git add .
           git commit -m "⬆️ Publish Latest Changes"
       - name: Push Changes
