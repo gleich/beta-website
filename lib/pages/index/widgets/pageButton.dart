@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class PageButton extends StatelessWidget {
   final Widget route;
@@ -38,7 +37,7 @@ class PageButton extends StatelessWidget {
           },
           child: Text(
             pageName,
-            style: GoogleFonts.abel(
+            style: TextStyle(
               fontSize: 40,
               color: textColor,
             ),
