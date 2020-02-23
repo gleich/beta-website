@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
@@ -38,7 +37,7 @@ class PageTemplate extends StatelessWidget {
                   delay: 4.5,
                   child: Text(
                     "Matthew",
-                    style: GoogleFonts.abel(
+                    style: TextStyle(
                       fontSize: 25,
                       letterSpacing: 5,
                     ),
@@ -65,7 +64,7 @@ class PageTemplate extends StatelessWidget {
                   delay: 3.5,
                   child: Text(
                     "Gleich",
-                    style: GoogleFonts.abel(
+                    style: TextStyle(
                       fontSize: 25,
                       letterSpacing: 5,
                     ),
@@ -78,7 +77,7 @@ class PageTemplate extends StatelessWidget {
                   delay: 3,
                   child: Text(
                     endText,
-                    style: GoogleFonts.abel(
+                    style: TextStyle(
                       fontSize: 25,
                       letterSpacing: 5,
                     ),
@@ -117,14 +116,14 @@ class PageTemplate extends StatelessWidget {
           children: <Widget>[
             Text(
               "© ",
-              style: GoogleFonts.abel(
+              style: TextStyle(
                 color: Colors.red,
                 fontSize: 20,
               ),
             ),
             Text(
               "Matthew Gleich ${DateTime.now().year}",
-              style: GoogleFonts.abel(fontSize: 20),
+              style: TextStyle(fontSize: 20),
             ),
           ],
         ),
