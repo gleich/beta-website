@@ -2,7 +2,7 @@ name: Flutter Build
 on: [push, pull_request, release]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
