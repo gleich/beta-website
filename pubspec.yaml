@@ -39,3 +39,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/logo.png
+  fonts:
+    - family: Abel
+      fonts:
+        - asset: assets/fonts/Abel-Regular.ttf

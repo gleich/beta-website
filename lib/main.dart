@@ -10,7 +10,10 @@ class _MySite extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "👨🏻‍💻 Matthew Gleich",
-      theme: ThemeData.dark(),
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        fontFamily: "Abel",
+      ),
       home: HomePage(),
     );
   }
