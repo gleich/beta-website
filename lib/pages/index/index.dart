@@ -16,17 +16,11 @@ import './../../widgets/pageTemplate.dart';
 
 class HomePage extends StatelessWidget {
   final Widget baseMobileWidget = Center(
-    child: Column(
+    child: Row(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
-        Padding(
-          padding: const EdgeInsets.only(
-            top: 75,
-            bottom: 50,
-          ),
-          child: Logo(),
-        ),
+        Logo(),
         FadeIn(
           delay: 3,
           start: -130,
