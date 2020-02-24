@@ -20,12 +20,12 @@ class HomePage extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
-        Logo(),
+        const Logo(),
         FadeIn(
           delay: 3,
           start: -130,
           stop: 0,
-          duration: Duration(milliseconds: 700),
+          duration: const Duration(milliseconds: 700),
           child: PageButton(
             route: OpenSource(),
             pageName: "Open Source",
@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
           delay: 3,
           start: 130,
           stop: 0,
-          duration: Duration(milliseconds: 700),
+          duration: const Duration(milliseconds: 700),
           child: PageButton(
             route: Photography(),
             pageName: "Photography",
@@ -51,7 +51,7 @@ class HomePage extends StatelessWidget {
           delay: 3,
           start: -130,
           stop: 0,
-          duration: Duration(milliseconds: 700),
+          duration: const Duration(milliseconds: 700),
           child: PageButton(
             route: Cycling(),
             pageName: "Cycling",
@@ -64,7 +64,7 @@ class HomePage extends StatelessWidget {
           delay: 3,
           start: 130,
           stop: 0,
-          duration: Duration(milliseconds: 700),
+          duration: const Duration(milliseconds: 700),
           child: PageButton(
             route: AboutMe(),
             pageName: "About Me",
@@ -77,7 +77,7 @@ class HomePage extends StatelessWidget {
           delay: 3,
           start: -130,
           stop: 0,
-          duration: Duration(milliseconds: 700),
+          duration: const Duration(milliseconds: 700),
           child: PageButton(
             route: Projects(),
             pageName: "Projects",
@@ -90,7 +90,7 @@ class HomePage extends StatelessWidget {
           delay: 3,
           start: 130,
           stop: 0,
-          duration: Duration(milliseconds: 700),
+          duration: const Duration(milliseconds: 700),
           child: PageButton(
             route: Languages(),
             pageName: "Languages",
@@ -107,7 +107,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return PageTemplate(
       endText: "",
-      leadingButton: IconButton(
+      leadingButton: const IconButton(
         icon: Icon(
           Icons.camera,
           color: Colors.black,
@@ -138,7 +138,7 @@ class HomePage extends StatelessWidget {
                       ),
                       start: -130,
                       stop: 0,
-                      duration: Duration(milliseconds: 700),
+                      duration: const Duration(milliseconds: 700),
                     ),
                     FadeIn(
                       delay: 3.3,
@@ -151,7 +151,7 @@ class HomePage extends StatelessWidget {
                       ),
                       start: -130,
                       stop: 0,
-                      duration: Duration(milliseconds: 700),
+                      duration: const Duration(milliseconds: 700),
                     ),
                     FadeIn(
                       delay: 3.6,
@@ -164,11 +164,11 @@ class HomePage extends StatelessWidget {
                       ),
                       start: -130,
                       stop: 0,
-                      duration: Duration(milliseconds: 700),
+                      duration: const Duration(milliseconds: 700),
                     )
                   ],
                 ),
-                Logo(),
+                const Logo(),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
@@ -176,7 +176,7 @@ class HomePage extends StatelessWidget {
                       delay: 3,
                       start: 130,
                       stop: 0,
-                      duration: Duration(milliseconds: 700),
+                      duration: const Duration(milliseconds: 700),
                       child: PageButton(
                         route: AboutMe(),
                         pageName: "About Me",
@@ -189,7 +189,7 @@ class HomePage extends StatelessWidget {
                       delay: 3.3,
                       start: 130,
                       stop: 0,
-                      duration: Duration(milliseconds: 700),
+                      duration: const Duration(milliseconds: 700),
                       child: PageButton(
                         route: Projects(),
                         pageName: "Projects",
@@ -202,7 +202,7 @@ class HomePage extends StatelessWidget {
                       delay: 3.6,
                       start: 130,
                       stop: 0,
-                      duration: Duration(milliseconds: 700),
+                      duration: const Duration(milliseconds: 700),
                       child: PageButton(
                         route: Languages(),
                         pageName: "Languages",

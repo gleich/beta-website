@@ -6,7 +6,7 @@ class SecondaryPageLeadingButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      icon: Icon(Icons.home),
+      icon: const Icon(Icons.home),
       onPressed: () => Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => HomePage()),
