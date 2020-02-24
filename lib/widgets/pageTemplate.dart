@@ -31,11 +31,11 @@ class PageTemplate extends StatelessWidget {
             child: Row(
               children: <Widget>[
                 FadeIn(
-                  duration: Duration(milliseconds: 700),
+                  duration: const Duration(milliseconds: 700),
                   start: -130,
                   stop: 0,
                   delay: 4.5,
-                  child: Text(
+                  child: const Text(
                     "Matthew",
                     style: TextStyle(
                       fontSize: 25,
@@ -44,11 +44,11 @@ class PageTemplate extends StatelessWidget {
                   ),
                 ),
                 FadeIn(
-                  duration: Duration(milliseconds: 700),
+                  duration: const Duration(milliseconds: 700),
                   start: -100,
                   stop: 0,
                   delay: 4.0,
-                  child: Text(
+                  child: const Text(
                     " / ",
                     style: TextStyle(
                       fontSize: 25,
@@ -58,11 +58,11 @@ class PageTemplate extends StatelessWidget {
                   ),
                 ),
                 FadeIn(
-                  duration: Duration(milliseconds: 700),
+                  duration: const Duration(milliseconds: 700),
                   start: -100,
                   stop: 0,
                   delay: 3.5,
-                  child: Text(
+                  child: const Text(
                     "Gleich",
                     style: TextStyle(
                       fontSize: 25,
@@ -71,7 +71,7 @@ class PageTemplate extends StatelessWidget {
                   ),
                 ),
                 FadeIn(
-                  duration: Duration(milliseconds: 700),
+                  duration: const Duration(milliseconds: 700),
                   start: -100,
                   stop: 0,
                   delay: 3,
@@ -114,7 +114,7 @@ class PageTemplate extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
+            const Text(
               "© ",
               style: TextStyle(
                 color: Colors.red,
