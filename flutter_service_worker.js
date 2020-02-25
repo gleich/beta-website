@@ -11,7 +11,7 @@ const RESOURCES = {
 "/assets/AssetManifest.json": "5e63fdfed0d14c11c5fff28a2e851a46",
 "/index.html": "3908125d49c1dbe247e9954db5491ed0",
 "/favicon.png": "e94e2a82fde16d2ac04c1ac95f42ce9c",
-"/main.dart.js": "2c2fcea1fe8af3f1b8df6ef290d204ac"
+"/main.dart.js": "29f34e0d287e5080839a955f637450b0"
 };
 
 self.addEventListener('activate', function (event) {
