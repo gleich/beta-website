@@ -24,7 +24,11 @@ class PageTemplate extends StatelessWidget {
           child: FlatButton(
             onPressed: () {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => HomePage()));
+                context,
+                MaterialPageRoute(
+                  builder: (context) => HomePage(),
+                ),
+              );
             },
             color: Color.fromRGBO(70, 70, 70, 1),
             hoverColor: Colors.red,

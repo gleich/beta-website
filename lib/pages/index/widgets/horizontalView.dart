@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 
-// Page only widgets
 import './../widgets/logo.dart';
 import './../widgets/pageButton.dart';
-
-// Global App widgets
 import './../../languages/languages.dart';
 import './../../projects/projects.dart';
 import './../../aboutMe/aboutMe.dart';

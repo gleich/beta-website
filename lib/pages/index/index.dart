@@ -1,7 +1,5 @@
-// Packages
 import 'package:flutter/material.dart';
 
-// Custom Widgets
 import './../../widgets/pageTemplate.dart';
 import './widgets/horizontalView.dart';
 import './widgets/verticalView.dart';
