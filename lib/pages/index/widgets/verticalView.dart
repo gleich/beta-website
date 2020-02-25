@@ -17,7 +17,7 @@ class VerticalView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Row(
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -31,7 +31,7 @@ class VerticalView extends StatelessWidget {
               route: OpenSource(),
               pageName: "Open Source",
               leftPadding: 0,
-              topPadding: 0,
+              topPadding: 10,
               rightPadding: 0,
             ),
           ),
