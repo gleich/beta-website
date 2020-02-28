@@ -9,11 +9,13 @@ class PageTemplate extends StatelessWidget {
   final String endText;
   final Widget leadingButton;
   final Widget body;
+  final bool copyright;
 
   PageTemplate({
     @required this.endText,
     @required this.leadingButton,
     @required this.body,
+    this.copyright = false,
   });
 
   @override
@@ -35,9 +37,7 @@ class PageTemplate extends StatelessWidget {
             child: Row(
               children: <Widget>[
                 FadeIn(
-                  duration: const Duration(milliseconds: 700),
                   start: -130,
-                  stop: 0,
                   delay: 4.5,
                   child: const Text(
                     "Matthew",
@@ -48,9 +48,7 @@ class PageTemplate extends StatelessWidget {
                   ),
                 ),
                 FadeIn(
-                  duration: const Duration(milliseconds: 700),
                   start: -100,
-                  stop: 0,
                   delay: 4.0,
                   child: Text(
                     " / ",
@@ -62,9 +60,7 @@ class PageTemplate extends StatelessWidget {
                   ),
                 ),
                 FadeIn(
-                  duration: const Duration(milliseconds: 700),
                   start: -100,
-                  stop: 0,
                   delay: 3.5,
                   child: const Text(
                     "Gleich",
@@ -75,9 +71,7 @@ class PageTemplate extends StatelessWidget {
                   ),
                 ),
                 FadeIn(
-                  duration: const Duration(milliseconds: 700),
                   start: -100,
-                  stop: 0,
                   delay: 3,
                   child: Text(
                     endText,
@@ -110,30 +104,32 @@ class PageTemplate extends StatelessWidget {
         leading: leadingButton,
       ),
       body: body,
-      bottomSheet: Padding(
-        padding: const EdgeInsets.only(
-          bottom: 10,
-          top: 3,
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              "© ",
-              style: TextStyle(
-                color: Theme.of(context).accentColor,
-                fontSize: 20,
+      bottomSheet: copyright
+          ? Padding(
+              padding: const EdgeInsets.only(
+                bottom: 10,
+                top: 3,
               ),
-            ),
-            Text(
-              "Matthew Gleich ${DateTime.now().year}",
-              style: TextStyle(
-                fontSize: 20,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text(
+                    "© ",
+                    style: TextStyle(
+                      color: Theme.of(context).accentColor,
+                      fontSize: 20,
+                    ),
+                  ),
+                  Text(
+                    "Matthew Gleich ${DateTime.now().year}",
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
+                ],
               ),
-            ),
-          ],
-        ),
-      ),
+            )
+          : null,
     );
   }
 }
