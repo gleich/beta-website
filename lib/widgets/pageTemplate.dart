@@ -9,11 +9,13 @@ class PageTemplate extends StatelessWidget {
   final String endText;
   final Widget leadingButton;
   final Widget body;
+  final bool copyright;
 
   PageTemplate({
     @required this.endText,
     @required this.leadingButton,
     @required this.body,
+    this.copyright = false,
   });
 
   @override
@@ -102,30 +104,32 @@ class PageTemplate extends StatelessWidget {
         leading: leadingButton,
       ),
       body: body,
-      bottomSheet: Padding(
-        padding: const EdgeInsets.only(
-          bottom: 10,
-          top: 3,
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              "© ",
-              style: TextStyle(
-                color: Theme.of(context).accentColor,
-                fontSize: 20,
+      bottomSheet: copyright
+          ? Padding(
+              padding: const EdgeInsets.only(
+                bottom: 10,
+                top: 3,
               ),
-            ),
-            Text(
-              "Matthew Gleich ${DateTime.now().year}",
-              style: TextStyle(
-                fontSize: 20,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text(
+                    "© ",
+                    style: TextStyle(
+                      color: Theme.of(context).accentColor,
+                      fontSize: 20,
+                    ),
+                  ),
+                  Text(
+                    "Matthew Gleich ${DateTime.now().year}",
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
+                ],
               ),
-            ),
-          ],
-        ),
-      ),
+            )
+          : null,
     );
   }
 }

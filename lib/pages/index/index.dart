@@ -8,6 +8,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageTemplate(
+      copyright: true,
       endText: "",
       leadingButton: const IconButton(
         icon: Icon(
