@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
       leadingButton: const IconButton(
         icon: Icon(
           Icons.camera,
-          color: Colors.black,
+          color: Colors.transparent,
         ),
         onPressed: null,
       ),
