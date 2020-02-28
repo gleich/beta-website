@@ -13,6 +13,7 @@ class _MySite extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
         fontFamily: "Abel",
+        accentColor: Colors.red,
       ),
       home: HomePage(),
     );

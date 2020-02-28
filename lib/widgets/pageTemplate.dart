@@ -31,7 +31,7 @@ class PageTemplate extends StatelessWidget {
               );
             },
             color: Color.fromRGBO(70, 70, 70, 1),
-            hoverColor: Colors.red,
+            hoverColor: Theme.of(context).accentColor,
             child: Row(
               children: <Widget>[
                 FadeIn(
@@ -52,12 +52,12 @@ class PageTemplate extends StatelessWidget {
                   start: -100,
                   stop: 0,
                   delay: 4.0,
-                  child: const Text(
+                  child: Text(
                     " / ",
                     style: TextStyle(
                       fontSize: 25,
                       letterSpacing: 5,
-                      color: Colors.red,
+                      color: Theme.of(context).accentColor,
                     ),
                   ),
                 ),
@@ -118,16 +118,18 @@ class PageTemplate extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
+            Text(
               "© ",
               style: TextStyle(
-                color: Colors.red,
+                color: Theme.of(context).accentColor,
                 fontSize: 20,
               ),
             ),
             Text(
               "Matthew Gleich ${DateTime.now().year}",
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(
+                fontSize: 20,
+              ),
             ),
           ],
         ),
@@ -147,7 +149,7 @@ class SocialMediaIcon extends StatelessWidget {
     return IconButton(
       icon: Icon(
         icon,
-        color: Colors.red,
+        color: Theme.of(context).accentColor,
       ),
       splashColor: Colors.black,
       hoverColor: Color.fromRGBO(55, 55, 55, 1),
