@@ -8,12 +8,13 @@ class FadeIn extends StatelessWidget {
   final double stop;
   final Duration duration;
 
-  FadeIn(
-      {@required this.delay,
-      @required this.child,
-      @required this.start,
-      @required this.stop,
-      @required this.duration});
+  FadeIn({
+    @required this.delay,
+    @required this.child,
+    @required this.start,
+    this.stop = 0,
+    this.duration = const Duration(milliseconds: 700),
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -35,9 +35,7 @@ class PageTemplate extends StatelessWidget {
             child: Row(
               children: <Widget>[
                 FadeIn(
-                  duration: const Duration(milliseconds: 700),
                   start: -130,
-                  stop: 0,
                   delay: 4.5,
                   child: const Text(
                     "Matthew",
@@ -48,9 +46,7 @@ class PageTemplate extends StatelessWidget {
                   ),
                 ),
                 FadeIn(
-                  duration: const Duration(milliseconds: 700),
                   start: -100,
-                  stop: 0,
                   delay: 4.0,
                   child: Text(
                     " / ",
@@ -62,9 +58,7 @@ class PageTemplate extends StatelessWidget {
                   ),
                 ),
                 FadeIn(
-                  duration: const Duration(milliseconds: 700),
                   start: -100,
-                  stop: 0,
                   delay: 3.5,
                   child: const Text(
                     "Gleich",
@@ -75,9 +69,7 @@ class PageTemplate extends StatelessWidget {
                   ),
                 ),
                 FadeIn(
-                  duration: const Duration(milliseconds: 700),
                   start: -100,
-                  stop: 0,
                   delay: 3,
                   child: Text(
                     endText,
