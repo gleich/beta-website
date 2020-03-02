@@ -1,6 +1,6 @@
 # Personal-Site
 
-🌎 My personal website written in Flutter
+🌎 My personal website written in Flutter. Visit it at [mattglei.ch](https://mattglei.ch)
 
 ## Github Actions
 
