@@ -13,3 +13,11 @@ jobs:
       - run: flutter config --enable-web
       - run: flutter pub get
       - run: flutter build web
+      - name: Create docker shield
+        uses: RubbaBoy/BYOB@v1.1.0
+        with:
+          NAME: build
+          LABEL: docker
+          STATUS: "${{ steps.get_branch.outputs.branch }}-${{ steps.get_hash.outputs.hash }}"
+          COLOR: 0576B7
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
