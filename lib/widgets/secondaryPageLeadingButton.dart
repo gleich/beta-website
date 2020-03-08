@@ -9,7 +9,7 @@ class SecondaryPageLeadingButton extends StatelessWidget {
       icon: const Icon(Icons.home),
       onPressed: () => Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => HomePage()),
+        MaterialPageRoute(builder: (_) => HomePage()),
       ),
     );
   }
