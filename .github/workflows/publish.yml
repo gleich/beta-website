@@ -25,6 +25,7 @@ jobs:
           sh replace.sh
           rm -rf README.md
           touch README.md
+          TZ=America/New_York date
           date >> README.md
           git add .
           git commit -m "⬆️ Publish Latest Changes"
@@ -33,3 +34,13 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: "gh-pages"
+      - id: date
+        run: echo "##[set-output name=data;]$(date)"
+      - name: Create publish shield
+        uses: RubbaBoy/BYOB@v1.1.0
+        with:
+          NAME: build
+          LABEL: Published
+          STATUS: ${{ steps.date.outputs.data }}
+          COLOR: 0576B7
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
