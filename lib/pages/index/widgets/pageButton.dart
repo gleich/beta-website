@@ -10,9 +10,9 @@ class PageButton extends StatelessWidget {
   PageButton({
     @required this.route,
     @required this.pageName,
-    @required this.leftPadding,
-    @required this.topPadding,
-    @required this.rightPadding,
+    this.leftPadding = 0,
+    this.topPadding = 0,
+    this.rightPadding = 0,
   });
 
   final Color textColor = Color.fromRGBO(144, 36, 27, 1);

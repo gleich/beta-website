@@ -22,23 +22,17 @@ class HorizontalView extends StatelessWidget {
             PageButton(
               route: OpenSource(),
               pageName: "Open Source",
-              leftPadding: 0,
-              topPadding: 0,
-              rightPadding: 0,
             ),
             PageButton(
               route: Photography(),
               pageName: "Photography",
-              leftPadding: 0,
               topPadding: 30,
               rightPadding: 100,
             ),
             PageButton(
               route: Cycling(),
               pageName: "Cycling",
-              leftPadding: 0,
               topPadding: 30,
-              rightPadding: 0,
             )
           ],
         ),
@@ -49,23 +43,17 @@ class HorizontalView extends StatelessWidget {
             PageButton(
               route: AboutMe(),
               pageName: "About Me",
-              leftPadding: 0,
-              topPadding: 0,
-              rightPadding: 0,
             ),
             PageButton(
               route: Projects(),
               pageName: "Projects",
               leftPadding: 100,
               topPadding: 30,
-              rightPadding: 0,
             ),
             PageButton(
               route: Languages(),
               pageName: "Languages",
-              leftPadding: 0,
               topPadding: 30,
-              rightPadding: 0,
             ),
           ],
         )
