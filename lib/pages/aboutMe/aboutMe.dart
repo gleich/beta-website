@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import './../../widgets/pageTemplate.dart';
 import './../../widgets/secondaryPageLeadingButton.dart';
 
-class AboutMe extends StatelessWidget {
+class AboutMePage extends StatelessWidget {
+  static const pageName = "/aboutMe";
+
   @override
   Widget build(BuildContext context) {
     return PageTemplate(

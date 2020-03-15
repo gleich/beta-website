@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import './../../widgets/pageTemplate.dart';
 import './../../widgets/secondaryPageLeadingButton.dart';
 
-class Projects extends StatelessWidget {
+class ProjectsPage extends StatelessWidget {
+  static const pageName = "/projects";
+
   @override
   Widget build(BuildContext context) {
     return PageTemplate(

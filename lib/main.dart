@@ -21,15 +21,14 @@ class _MySite extends StatelessWidget {
         fontFamily: "Abel",
         accentColor: Colors.red,
       ),
-      initialRoute: "/",
       routes: {
-        "/": (ctx) => Index(),
-        "/aboutMe": (ctx) => AboutMe(),
-        "/cycling": (ctx) => Cycling(),
-        "/languages": (ctx) => Languages(),
-        "/openSource": (ctx) => OpenSource(),
-        "/photography": (ctx) => Photography(),
-        "/projects": (ctx) => Projects(),
+        IndexPage.pageName: (ctx) => IndexPage(),
+        AboutMePage.pageName: (ctx) => AboutMePage(),
+        CyclingPage.pageName: (ctx) => CyclingPage(),
+        LanguagesPage.pageName: (ctx) => LanguagesPage(),
+        OpenSourcePage.pageName: (ctx) => OpenSourcePage(),
+        PhotographyPage.pageName: (ctx) => PhotographyPage(),
+        ProjectsPage.pageName: (ctx) => ProjectsPage(),
       },
     );
   }
