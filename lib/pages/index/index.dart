@@ -4,7 +4,7 @@ import './../../widgets/pageTemplate.dart';
 import './widgets/horizontalView.dart';
 import './widgets/verticalView.dart';
 
-class HomePage extends StatelessWidget {
+class Index extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageTemplate(

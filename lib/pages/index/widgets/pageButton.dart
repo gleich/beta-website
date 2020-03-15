@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 class PageButton extends StatelessWidget {
-  final Widget route;
+  final String routeName;
   final String pageName;
   final double leftPadding;
   final double topPadding;
   final double rightPadding;
 
   PageButton({
-    @required this.route,
+    @required this.routeName,
     @required this.pageName,
     this.leftPadding = 0,
     this.topPadding = 0,
@@ -29,12 +29,7 @@ class PageButton extends StatelessWidget {
         height: 100,
         minWidth: 200,
         child: RaisedButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_) => route),
-            );
-          },
+          onPressed: () => Navigator.pushNamed(context, routeName),
           child: Text(
             pageName,
             style: TextStyle(

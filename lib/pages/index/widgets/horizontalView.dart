@@ -2,12 +2,6 @@ import 'package:flutter/material.dart';
 
 import './../widgets/logo.dart';
 import './../widgets/pageButton.dart';
-import './../../languages/languages.dart';
-import './../../projects/projects.dart';
-import './../../aboutMe/aboutMe.dart';
-import './../../photography/photography.dart';
-import './../../openSource/openSource.dart';
-import './../../cycling/cycling.dart';
 
 class HorizontalView extends StatelessWidget {
   @override
@@ -20,17 +14,17 @@ class HorizontalView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             PageButton(
-              route: OpenSource(),
+              routeName: "/openSource",
               pageName: "Open Source",
             ),
             PageButton(
-              route: Photography(),
+              routeName: "/photography",
               pageName: "Photography",
               topPadding: 30,
               rightPadding: 100,
             ),
             PageButton(
-              route: Cycling(),
+              routeName: "/cycling",
               pageName: "Cycling",
               topPadding: 30,
             )
@@ -41,17 +35,17 @@ class HorizontalView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             PageButton(
-              route: AboutMe(),
+              routeName: "/aboutMe",
               pageName: "About Me",
             ),
             PageButton(
-              route: Projects(),
+              routeName: "/projects",
               pageName: "Projects",
               leftPadding: 100,
               topPadding: 30,
             ),
             PageButton(
-              route: Languages(),
+              routeName: "/languages",
               pageName: "Languages",
               topPadding: 30,
             ),

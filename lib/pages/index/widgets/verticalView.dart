@@ -2,12 +2,6 @@ import 'package:flutter/material.dart';
 
 import './../widgets/logo.dart';
 import './../widgets/pageButton.dart';
-import './../../languages/languages.dart';
-import './../../projects/projects.dart';
-import './../../aboutMe/aboutMe.dart';
-import './../../photography/photography.dart';
-import './../../openSource/openSource.dart';
-import './../../cycling/cycling.dart';
 
 class VerticalView extends StatelessWidget {
   @override
@@ -19,32 +13,32 @@ class VerticalView extends StatelessWidget {
         children: <Widget>[
           const Logo(),
           PageButton(
-            route: OpenSource(),
+            routeName: "/openSource",
             pageName: "Open Source",
             topPadding: 10,
           ),
           PageButton(
-            route: Photography(),
+            routeName: "/photography",
             pageName: "Photography",
             topPadding: 10,
           ),
           PageButton(
-            route: Cycling(),
+            routeName: "/cycling",
             pageName: "Cycling",
             topPadding: 10,
           ),
           PageButton(
-            route: AboutMe(),
+            routeName: "/aboutMe",
             pageName: "About Me",
             topPadding: 10,
           ),
           PageButton(
-            route: Projects(),
+            routeName: "/projects",
             pageName: "Projects",
             topPadding: 10,
           ),
           PageButton(
-            route: Languages(),
+            routeName: "/languages",
             pageName: "Languages",
             topPadding: 10,
           )

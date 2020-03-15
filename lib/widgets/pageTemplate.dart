@@ -4,7 +4,6 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 import './animations.dart';
-import './../pages/index/index.dart';
 
 class PageTemplate extends StatelessWidget {
   final String endText;
@@ -25,14 +24,7 @@ class PageTemplate extends StatelessWidget {
       appBar: AppBar(
         title: Container(
           child: FlatButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => HomePage(),
-                ),
-              );
-            },
+            onPressed: () => Navigator.pushNamed(context, "/"),
             color: Color.fromRGBO(70, 70, 70, 1),
             hoverColor: Theme.of(context).accentColor,
             child: Row(
