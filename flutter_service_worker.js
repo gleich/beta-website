@@ -4,7 +4,7 @@ const RESOURCES = {
   "/favicon.png": "e94e2a82fde16d2ac04c1ac95f42ce9c",
 "/icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "/icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"/main.dart.js": "4ed4c8679b53eab9acc2cb602e4fc380",
+"/main.dart.js": "4f56e5830f367055a241026131d15c3e",
 "/manifest.json": "0869184627e2c20e35064ef8deb13bc8",
 "/index.html": "3908125d49c1dbe247e9954db5491ed0",
 "/assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
