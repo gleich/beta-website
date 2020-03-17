@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import './../../widgets/pageTemplate.dart';
-import './widgets/horizontalView.dart';
-import './widgets/verticalView.dart';
+import 'package:matt_gleich_github_io/widgets/pageTemplate.dart';
+import 'package:matt_gleich_github_io/pages/index/widgets/horizontalView.dart';
+import 'package:matt_gleich_github_io/pages/index/widgets/verticalView.dart';
 
 class IndexPage extends StatelessWidget {
   static const pageName = "/";

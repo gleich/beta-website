@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import './pages/index/index.dart';
-import './pages/aboutMe/aboutMe.dart';
-import './pages/cycling/cycling.dart';
-import './pages/languages/languages.dart';
-import './pages/openSource/openSource.dart';
-import './pages/photography/photography.dart';
-import './pages/projects/projects.dart';
+import 'package:matt_gleich_github_io/pages/index/index.dart';
+import 'package:matt_gleich_github_io/pages/aboutMe/aboutMe.dart';
+import 'package:matt_gleich_github_io/pages/cycling/cycling.dart';
+import 'package:matt_gleich_github_io/pages/languages/languages.dart';
+import 'package:matt_gleich_github_io/pages/openSource/openSource.dart';
+import 'package:matt_gleich_github_io/pages/photography/photography.dart';
+import 'package:matt_gleich_github_io/pages/projects/projects.dart';
 
 void main() => runApp(_MySite());
 

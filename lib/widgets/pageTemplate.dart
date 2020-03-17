@@ -3,7 +3,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
-import './animations.dart';
+import 'package:matt_gleich_github_io/widgets/animations.dart';
 
 class PageTemplate extends StatelessWidget {
   final String endText;

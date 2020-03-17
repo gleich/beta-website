@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import './../widgets/logo.dart';
-import './../widgets/pageButton.dart';
+import 'package:matt_gleich_github_io/pages/index/widgets/logo.dart';
+import 'package:matt_gleich_github_io/pages/index/widgets/pageButton.dart';
 
 class HorizontalView extends StatelessWidget {
   @override

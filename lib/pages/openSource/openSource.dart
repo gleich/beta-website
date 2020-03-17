@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import './../../widgets/pageTemplate.dart';
-import './../../widgets/secondaryPageLeadingButton.dart';
+import 'package:matt_gleich_github_io/widgets/pageTemplate.dart';
+import 'package:matt_gleich_github_io/widgets/secondaryPageLeadingButton.dart';
+import 'package:matt_gleich_github_io/widgets/underConstruction.dart';
 
 class OpenSourcePage extends StatelessWidget {
   static const pageName = "/openSource";
@@ -11,7 +12,7 @@ class OpenSourcePage extends StatelessWidget {
     return PageTemplate(
       endText: " - Open Source",
       leadingButton: SecondaryPageLeadingButton(),
-      body: Text(""),
+      body: UnderConstruction(),
     );
   }
 }
