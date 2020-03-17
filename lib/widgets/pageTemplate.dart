@@ -24,7 +24,7 @@ class PageTemplate extends StatelessWidget {
       appBar: AppBar(
         title: Container(
           child: FlatButton(
-            onPressed: () => Navigator.pushNamed(context, "/"),
+            onPressed: () => Navigator.pushReplacementNamed(context, "/"),
             color: Color.fromRGBO(70, 70, 70, 1),
             hoverColor: Theme.of(context).accentColor,
             child: Row(

@@ -29,7 +29,7 @@ class PageButton extends StatelessWidget {
         height: 100,
         minWidth: 200,
         child: RaisedButton(
-          onPressed: () => Navigator.pushNamed(context, routeName),
+          onPressed: () => Navigator.pushReplacementNamed(context, routeName),
           child: Text(
             pageName,
             style: TextStyle(
