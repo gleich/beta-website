@@ -7,6 +7,7 @@ import 'package:matt_gleich_github_io/pages/languages/languages.dart';
 import 'package:matt_gleich_github_io/pages/openSource/openSource.dart';
 import 'package:matt_gleich_github_io/pages/photography/photography.dart';
 import 'package:matt_gleich_github_io/pages/projects/projects.dart';
+import 'package:matt_gleich_github_io/pages/404/404.dart';
 
 void main() => runApp(_MySite());
 
@@ -30,6 +31,7 @@ class _MySite extends StatelessWidget {
         PhotographyPage.pageName: (ctx) => PhotographyPage(),
         ProjectsPage.pageName: (ctx) => ProjectsPage(),
       },
+      onUnknownRoute: (_) => MaterialPageRoute(builder: (ctx) => Page404()),
     );
   }
 }
