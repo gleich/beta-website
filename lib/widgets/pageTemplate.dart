@@ -90,17 +90,35 @@ class PageTemplate extends StatelessWidget {
           ),
           children: <Widget>[
             SocialMediaIcon(
-                MdiIcons.twitter, "https://twitter.com/GleichMatthew"),
-            SocialMediaIcon(MdiIcons.instagram,
-                "https://www.instagram.com/gleichphotography/"),
-            SocialMediaIcon(MdiIcons.linkedinBox,
-                "https://www.linkedin.com/in/matthew-gleich-636618178/"),
+              MdiIcons.twitter,
+              "https://twitter.com/GleichMatthew",
+              "Twitter",
+            ),
             SocialMediaIcon(
-                MdiIcons.githubCircle, "https://github.com/Matt-Gleich"),
+              MdiIcons.instagram,
+              "https://www.instagram.com/gleichphotography/",
+              "Instagram",
+            ),
             SocialMediaIcon(
-                MdiIcons.docker, "https://hub.docker.com/u/mattgleich"),
+              MdiIcons.linkedinBox,
+              "https://www.linkedin.com/in/matthew-gleich-636618178/",
+              "Linkedin",
+            ),
             SocialMediaIcon(
-                MdiIcons.strava, "https://www.strava.com/athletes/30124266"),
+              MdiIcons.githubCircle,
+              "https://github.com/Matt-Gleich",
+              "GitHub",
+            ),
+            SocialMediaIcon(
+              MdiIcons.docker,
+              "https://hub.docker.com/u/mattgleich",
+              "Docker",
+            ),
+            SocialMediaIcon(
+              MdiIcons.strava,
+              "https://www.strava.com/athletes/30124266",
+              "Strava",
+            ),
           ],
         ),
         leading: leadingButton,
@@ -139,12 +157,14 @@ class PageTemplate extends StatelessWidget {
 class SocialMediaIcon extends StatelessWidget {
   final String linkURL;
   final icon;
+  final String siteName;
 
-  SocialMediaIcon(this.icon, this.linkURL);
+  SocialMediaIcon(this.icon, this.linkURL, this.siteName);
 
   @override
   Widget build(BuildContext context) {
     return IconButton(
+      tooltip: siteName,
       icon: Icon(
         icon,
         color: Theme.of(context).accentColor,
