@@ -8868,9 +8868,11 @@ _.f=d
 _.a=e},
 Iu:function Iu(a){this.a=a},
 Iv:function Iv(){},
-fx:function fx(a,b,c){this.c=a
-this.d=b
-this.a=c},
+fx:function fx(a,b,c,d){var _=this
+_.c=a
+_.d=b
+_.e=c
+_.a=d},
 KS:function KS(a){this.a=a},
 RO:function(a){var t=a.a
 if(t[0]===1&&t[1]===0&&t[2]===0&&t[3]===0&&t[4]===0&&t[5]===1&&t[6]===0&&t[7]===0&&t[8]===0&&t[9]===0&&t[10]===1&&t[11]===0&&t[14]===0&&t[15]===1)return new P.x(t[12],t[13])
@@ -38458,7 +38460,7 @@ S.F9.prototype={
 $3:function(a,b,c){var t=J.an(c),s=t.i(c,"opacity")
 return T.RT(T.Vf(b,new P.x(t.i(c,"translateX"),0)),s)}}
 T.eD.prototype={
-D:function(a){var t=this,s=null,r=u.p,q=M.DB(s,new N.er(new T.Iu(a),s,s,s,s,s,P.cH(70,70,70,1),s,s,s,K.aC(a).x,s,s,s,s,s,s,s,T.JL(H.b([S.F8(C.yS,4.5,-130),S.F8(L.j8(" / ",A.du(s,s,K.aC(a).x,s,s,s,s,s,s,s,s,25,s,s,s,s,!0,5,s,s,s,s,s)),4,-100),S.F8(C.yT,3.5,-100),S.F8(L.j8(t.c,A.du(s,s,s,s,s,s,s,s,s,s,s,25,s,s,s,s,!0,5,s,s,s,s,s)),3,-100)],r),C.b6,C.kV,C.dH),s,s,s,C.ag,s,!1,s,s,s),s,s,s,s,s,s),p=M.YP(new T.Iv(),H.b([new T.fx("https://twitter.com/GleichMatthew",C.zH,s),new T.fx("https://www.instagram.com/gleichphotography/",C.zG,s),new T.fx("https://www.linkedin.com/in/matthew-gleich-636618178/",C.zJ,s),new T.fx("https://github.com/Matt-Gleich",C.zI,s),new T.fx("https://hub.docker.com/u/mattgleich",C.zL,s),new T.fx("https://www.strava.com/athletes/30124266",C.zK,s)],r),C.jK)
+D:function(a){var t=this,s=null,r=u.p,q=M.DB(s,new N.er(new T.Iu(a),s,s,s,s,s,P.cH(70,70,70,1),s,s,s,K.aC(a).x,s,s,s,s,s,s,s,T.JL(H.b([S.F8(C.yS,4.5,-130),S.F8(L.j8(" / ",A.du(s,s,K.aC(a).x,s,s,s,s,s,s,s,s,25,s,s,s,s,!0,5,s,s,s,s,s)),4,-100),S.F8(C.yT,3.5,-100),S.F8(L.j8(t.c,A.du(s,s,s,s,s,s,s,s,s,s,s,25,s,s,s,s,!0,5,s,s,s,s,s)),3,-100)],r),C.b6,C.kV,C.dH),s,s,s,C.ag,s,!1,s,s,s),s,s,s,s,s,s),p=M.YP(new T.Iv(),H.b([new T.fx("https://twitter.com/GleichMatthew",C.zH,"Twitter",s),new T.fx("https://www.instagram.com/gleichphotography/",C.zG,"Instagram",s),new T.fx("https://www.linkedin.com/in/matthew-gleich-636618178/",C.zJ,"Linkedin",s),new T.fx("https://github.com/Matt-Gleich",C.zI,"GitHub",s),new T.fx("https://hub.docker.com/u/mattgleich",C.zL,"Docker",s),new T.fx("https://www.strava.com/athletes/30124266",C.zK,"Strava",s)],r),C.jK)
 r=t.f?new T.fj(C.tg,T.JL(H.b([L.j8("\xa9 ",A.du(s,s,K.aC(a).x,s,s,s,s,s,s,s,s,20,s,s,s,s,!0,s,s,s,s,s,s)),L.j8("Matthew Gleich "+H.UQ(new P.cp(Date.now(),!1)),A.du(s,s,s,s,s,s,s,s,s,s,s,20,s,s,s,s,!0,s,s,s,s,s,s))],r),C.b6,C.bD,C.dH),s):s
 return M.V4(new E.mI(t.d,q,p,10,C.l,new P.W(1/0,56),s),t.e,r)}}
 T.Iu.prototype={
@@ -38469,7 +38471,7 @@ T.Iv.prototype={
 $1:function(a){return new V.pp(-50,new V.ns(a,null),null)}}
 T.fx.prototype={
 D:function(a){var t=L.ZJ(this.d,K.aC(a).x)
-return B.Rz(null,P.cH(55,55,55,1),t,new T.KS(this),C.l,null)}}
+return B.Rz(null,P.cH(55,55,55,1),t,new T.KS(this),C.l,this.e)}}
 T.KS.prototype={
 $0:function(){var t=0,s=P.a7(u.P),r=this,q
 var $async$$0=P.a2(function(a,b){if(a===1)return P.a4(b,s)
