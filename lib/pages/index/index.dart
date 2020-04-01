@@ -86,6 +86,13 @@ class IndexPage extends StatelessWidget {
                 child: Icon(MdiIcons.githubCircle),
               ),
             ),
+            const SizedBox(width: 20),
+            Text(
+              "© Matthew Gleich ${DateTime.now().year}",
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            )
           ],
         ),
       ),
