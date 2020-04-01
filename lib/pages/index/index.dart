@@ -61,7 +61,7 @@ class IndexPage extends StatelessWidget {
               ),
               PageButton(
                 pageName: "👨🏻‍💻 About Me",
-                pageRoutePath: "",
+                pageRoutePath: "/aboutMe",
               ),
               PageButton(
                 pageName: "📷 Photography",
