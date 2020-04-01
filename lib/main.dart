@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:matt_gleich_github_io/pages/projects/projects.dart';
 import 'package:provider/provider.dart';
 
 import 'package:matt_gleich_github_io/pages/index/index.dart';
@@ -33,6 +34,7 @@ class _MySiteWithTheme extends StatelessWidget {
       routes: {
         IndexPage.pageName: (ctx) => IndexPage(),
         BlogPage.pageName: (ctx) => BlogPage(),
+        ProjectsPage.pageName: (ctx) => ProjectsPage(),
       },
       onUnknownRoute: (_) => MaterialPageRoute(builder: (ctx) => Page404()),
     );
