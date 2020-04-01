@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import 'package:matt_gleich_github_io/pages/index/index.dart';
 import 'package:matt_gleich_github_io/pages/404/404.dart';
+import 'package:matt_gleich_github_io/pages/blog/blog.dart';
 import 'package:matt_gleich_github_io/themes.dart';
 import 'package:matt_gleich_github_io/provider/theme.dart';
 
@@ -31,6 +32,7 @@ class _MySiteWithTheme extends StatelessWidget {
       themeMode: themeMode.activeTheme,
       routes: {
         IndexPage.pageName: (ctx) => IndexPage(),
+        BlogPage.pageName: (ctx) => BlogPage(),
       },
       onUnknownRoute: (_) => MaterialPageRoute(builder: (ctx) => Page404()),
     );

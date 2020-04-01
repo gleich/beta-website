@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
-import 'package:matt_gleich_github_io/pages/index/widgets/actionBar.dart';
+import 'package:matt_gleich_github_io/widgets/actionBar.dart';
 import 'package:matt_gleich_github_io/widgets/copyright.dart';
 
 class IndexPage extends StatelessWidget {
@@ -53,7 +53,7 @@ class IndexPage extends StatelessWidget {
             children: <Widget>[
               PageButton(
                 pageName: "🖊️ Blog",
-                pageRoutePath: "",
+                pageRoutePath: "/blog",
               ),
               PageButton(
                 pageName: "🛠️ Projects",

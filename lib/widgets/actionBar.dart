@@ -7,12 +7,22 @@ import 'package:matt_gleich_github_io/provider/theme.dart';
 import 'package:matt_gleich_github_io/services/url.dart' as url;
 
 class ActionBar extends StatelessWidget {
+  final MainAxisAlignment mainAxisAlignment;
+  final CrossAxisAlignment crossAxisAlignment;
+
+  ActionBar({
+    this.mainAxisAlignment = MainAxisAlignment.start,
+    this.crossAxisAlignment = CrossAxisAlignment.start,
+  });
+
   @override
   Widget build(BuildContext context) {
     ThemeChanger _themeChanger = Provider.of<ThemeChanger>(context);
 
     return AnimationLimiter(
       child: Row(
+        crossAxisAlignment: crossAxisAlignment,
+        mainAxisAlignment: mainAxisAlignment,
         children: AnimationConfiguration.toStaggeredList(
           children: <Widget>[
             _ActionBarIcon(

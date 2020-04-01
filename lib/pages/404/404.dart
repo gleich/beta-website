@@ -27,7 +27,7 @@ class Page404 extends StatelessWidget {
                   Navigator.popAndPushNamed(context, IndexPage.pageName),
               fontSize: 50,
               text: "Return Home 🏠",
-            )
+            ),
           ],
         ),
       ),
