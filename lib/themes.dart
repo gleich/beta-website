@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class Themes {
   // Shared Values
   final _fontFamily = "Abel";
-  final _hoverColor = Colors.red;
 
   ThemeData get darkTheme => ThemeData(
         brightness: Brightness.dark,
@@ -11,7 +10,6 @@ class Themes {
         backgroundColor: Colors.black,
         primaryColor: Colors.black,
         accentColor: Colors.white,
-        hoverColor: _hoverColor,
       );
 
   ThemeData get lightTheme => ThemeData(
@@ -20,6 +18,5 @@ class Themes {
         backgroundColor: Colors.white,
         primaryColor: Colors.white,
         accentColor: Colors.black,
-        hoverColor: _hoverColor,
       );
 }

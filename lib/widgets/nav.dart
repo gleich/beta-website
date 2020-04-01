@@ -61,13 +61,13 @@ class NavBar extends StatelessWidget {
   }
 }
 
-class _NavBarIcon extends StatelessWidget {
+class _NavBarIcon extends StatefulWidget {
   final IconData icon;
   final void Function() onTap;
   final String toolTipMessage;
   final int index;
 
-  const _NavBarIcon({
+  _NavBarIcon({
     @required this.icon,
     @required this.onTap,
     @required this.toolTipMessage,
@@ -75,15 +75,26 @@ class _NavBarIcon extends StatelessWidget {
   });
 
   @override
+  __NavBarIconState createState() => __NavBarIconState();
+}
+
+class __NavBarIconState extends State<_NavBarIcon> {
+  bool hovering = false;
+  @override
   Widget build(BuildContext context) {
     const verticalOffset = 70.0;
-    var backgroundColor = Theme.of(context).accentColor;
+    Color backgroundColor = hovering
+        ? Theme.of(context).primaryColor
+        : Theme.of(context).accentColor;
+    Color iconColor = hovering
+        ? Theme.of(context).accentColor
+        : Theme.of(context).primaryColor;
     return Padding(
-      padding: index != 0
-          ? (index % 2) == 0
+      padding: widget.index != 0
+          ? (widget.index % 2) == 0
               ? const EdgeInsets.only(top: 30)
               : const EdgeInsets.only(top: 30, right: verticalOffset)
-          : (index % 2) == 0
+          : (widget.index % 2) == 0
               ? const EdgeInsets.only()
               : const EdgeInsets.only(right: verticalOffset),
       child: Tooltip(
@@ -93,19 +104,31 @@ class _NavBarIcon extends StatelessWidget {
           fontStyle: FontStyle.italic,
           color: Theme.of(context).primaryColor,
         ),
-        message: toolTipMessage,
+        message: widget.toolTipMessage,
         child: GestureDetector(
-          onTap: onTap,
-          child: Container(
-            height: 45,
-            width: 45,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12),
-              color: backgroundColor,
-            ),
-            child: Icon(
-              icon,
-              color: Theme.of(context).primaryColor,
+          onTap: widget.onTap,
+          child: MouseRegion(
+            onEnter: (details) {
+              setState(() {
+                hovering = true;
+              });
+            },
+            onExit: (_) {
+              setState(() {
+                hovering = false;
+              });
+            },
+            child: Container(
+              height: 45,
+              width: 45,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(12),
+                color: backgroundColor,
+              ),
+              child: Icon(
+                widget.icon,
+                color: iconColor,
+              ),
             ),
           ),
         ),
