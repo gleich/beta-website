@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:matt_gleich_github_io/widgets/actionBar.dart';
 import 'package:matt_gleich_github_io/widgets/buttons.dart';
 import 'package:matt_gleich_github_io/pages/index/index.dart';
+import 'package:matt_gleich_github_io/widgets/copyright.dart';
 
 class WorkingOn extends StatelessWidget {
   @override
@@ -33,6 +34,7 @@ class WorkingOn extends StatelessWidget {
           )
         ],
       ),
+      bottomSheet: Copyright(),
     );
   }
 }
