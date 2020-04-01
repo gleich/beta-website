@@ -31,12 +31,6 @@ class _MySiteWithTheme extends StatelessWidget {
       themeMode: themeMode.activeTheme,
       routes: {
         IndexPage.pageName: (ctx) => IndexPage(),
-        // AboutMePage.pageName: (ctx) => AboutMePage(),
-        // CyclingPage.pageName: (ctx) => CyclingPage(),
-        // LanguagesPage.pageName: (ctx) => LanguagesPage(),
-        // OpenSourcePage.pageName: (ctx) => OpenSourcePage(),
-        // PhotographyPage.pageName: (ctx) => PhotographyPage(),
-        // ProjectsPage.pageName: (ctx) => ProjectsPage(),
       },
       onUnknownRoute: (_) => MaterialPageRoute(builder: (ctx) => Page404()),
     );
