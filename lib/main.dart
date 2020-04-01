@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:matt_gleich_github_io/pages/photography/photography.dart';
 import 'package:provider/provider.dart';
 
 import 'package:matt_gleich_github_io/pages/index/index.dart';
@@ -37,6 +38,7 @@ class _MySiteWithTheme extends StatelessWidget {
         BlogPage.pageName: (ctx) => BlogPage(),
         ProjectsPage.pageName: (ctx) => ProjectsPage(),
         AboutMePage.pageName: (ctx) => AboutMePage(),
+        PhotographyPage.pageName: (ctx) => PhotographyPage(),
       },
       onUnknownRoute: (_) => MaterialPageRoute(builder: (ctx) => Page404()),
     );
