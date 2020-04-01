@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 import 'package:matt_gleich_github_io/pages/index/widgets/actionBar.dart';
+import 'package:matt_gleich_github_io/services/url.dart' as url;
 
 class IndexPage extends StatelessWidget {
   static const pageName = "/";
@@ -69,6 +71,23 @@ class IndexPage extends StatelessWidget {
             ],
           )
         ],
+      ),
+      bottomSheet: Container(
+        padding: EdgeInsets.only(bottom: 30),
+        color: Theme.of(context).backgroundColor,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Tooltip(
+              message: "View Source Code",
+              child: GestureDetector(
+                onTap: () => url
+                    .launchURL("https://github.com/Matt-Gleich/Personal-Site"),
+                child: Icon(MdiIcons.githubCircle),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

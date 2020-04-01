@@ -3,6 +3,14 @@ import 'package:flutter/material.dart';
 class Themes {
   // Shared Values
   final _fontFamily = "Abel";
+  TooltipThemeData _toolTipThemeData(Color primaryColor) => TooltipThemeData(
+        waitDuration: const Duration(seconds: 1),
+        height: double.minPositive + 5,
+        textStyle: TextStyle(
+          fontStyle: FontStyle.italic,
+          color: primaryColor,
+        ),
+      );
 
   ThemeData get darkTheme => ThemeData(
         brightness: Brightness.dark,
@@ -10,6 +18,7 @@ class Themes {
         backgroundColor: Colors.black,
         primaryColor: Colors.black,
         accentColor: Colors.white,
+        tooltipTheme: _toolTipThemeData(Colors.black),
       );
 
   ThemeData get lightTheme => ThemeData(
@@ -18,5 +27,6 @@ class Themes {
         backgroundColor: Colors.white,
         primaryColor: Colors.white,
         accentColor: Colors.black,
+        tooltipTheme: _toolTipThemeData(Colors.white),
       );
 }

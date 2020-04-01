@@ -107,12 +107,6 @@ class _ActionBarIconState extends State<_ActionBarIcon> {
               ? const EdgeInsets.only()
               : EdgeInsets.only(top: horizontalOffset),
       child: Tooltip(
-        waitDuration: const Duration(seconds: 1),
-        height: double.minPositive + 5,
-        textStyle: TextStyle(
-          fontStyle: FontStyle.italic,
-          color: Theme.of(context).primaryColor,
-        ),
         message: widget.toolTipMessage,
         child: GestureDetector(
           onTap: widget.onTap,
