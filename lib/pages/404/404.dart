@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:matt_gleich_github_io/pages/index/index.dart';
+import 'package:matt_gleich_github_io/widgets/buttons.dart';
 
 class Page404 extends StatelessWidget {
   @override
@@ -21,19 +22,12 @@ class Page404 extends StatelessWidget {
               style: TextStyle(fontSize: 70),
             ),
             SizedBox(height: 100),
-            RaisedButton(
+            ReflectingRaisedButton(
               onPressed: () =>
                   Navigator.popAndPushNamed(context, IndexPage.pageName),
-              color: Theme.of(context).accentColor,
-              hoverElevation: 10,
-              child: Text(
-                "Back To Home",
-                style: TextStyle(
-                  fontSize: 50,
-                  color: Theme.of(context).primaryColor,
-                ),
-              ),
-            ),
+              fontSize: 50,
+              text: "Return Home 🏠",
+            )
           ],
         ),
       ),
