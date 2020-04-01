@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
-import 'package:matt_gleich_github_io/widgets/actionBar.dart';
+import 'package:matt_gleich_github_io/pages/index/widgets/actionBar.dart';
 
 class IndexPage extends StatelessWidget {
   static const pageName = "/";
@@ -33,25 +33,140 @@ class IndexPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Text(
+                const Text(
                   "Matthew Gleich",
                   style: TextStyle(
                     fontSize: 150,
                     decoration: TextDecoration.underline,
                   ),
                 ),
-                Text(
-                  "${DateTime.now().year - 2004} year old maker of things",
-                  style: TextStyle(
-                    fontSize: 50,
-                    fontStyle: FontStyle.italic,
-                  ),
-                ),
+                SubTitle(),
                 ActionBar(),
               ],
             ),
           ),
+          const SizedBox(width: 100),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              PageButton(
+                pageName: "🖊️ Blog",
+                pageRoutePath: "",
+              ),
+              PageButton(
+                pageName: "Projects",
+                pageRoutePath: "",
+              ),
+              PageButton(pageName: "About Me", pageRoutePath: "")
+            ],
+          )
         ],
+      ),
+    );
+  }
+}
+
+class SubTitle extends StatefulWidget {
+  @override
+  _SubTitleState createState() => _SubTitleState();
+}
+
+class _SubTitleState extends State<SubTitle> {
+  bool _hovering = false;
+  @override
+  Widget build(BuildContext context) {
+    final age = (DateTime.now()
+                .difference(DateTime.utc(2004, DateTime.april, 8))
+                .inDays /
+            365)
+        .toStringAsFixed(2);
+    final daysTillBDay = (DateTime.utc(DateTime.now().year, DateTime.april, 8)
+            .difference(DateTime.now()))
+        .inDays;
+    String hoverMessage;
+    final String normalMessage = "$age year old maker of things";
+
+    if (daysTillBDay == 0) {
+      hoverMessage = "🎉🎉 Today is my birthday! 🎉🎉";
+    } else if (daysTillBDay <= 30 && daysTillBDay > 0) {
+      hoverMessage = "🎉🎉 $daysTillBDay days till my bday! 🎉🎉";
+    } else {
+      hoverMessage = normalMessage;
+    }
+
+    String text = _hovering ? hoverMessage : normalMessage;
+    return MouseRegion(
+      onEnter: (_) {
+        setState(() {
+          _hovering = true;
+        });
+      },
+      onExit: (_) {
+        setState(() {
+          _hovering = false;
+        });
+      },
+      child: Text(
+        text,
+        style: TextStyle(
+          fontSize: 50,
+          fontStyle: FontStyle.italic,
+        ),
+      ),
+    );
+  }
+}
+
+class PageButton extends StatefulWidget {
+  final String pageName;
+  final String pageRoutePath;
+
+  PageButton({
+    @required this.pageName,
+    @required this.pageRoutePath,
+  });
+
+  @override
+  _PageButtonState createState() => _PageButtonState();
+}
+
+class _PageButtonState extends State<PageButton> {
+  bool _hovering = false;
+  @override
+  Widget build(BuildContext context) {
+    Color backgroundColor = _hovering
+        ? Theme.of(context).primaryColor
+        : Theme.of(context).accentColor;
+    Color textColor = _hovering
+        ? Theme.of(context).accentColor
+        : Theme.of(context).primaryColor;
+    return MouseRegion(
+      onEnter: (_) {
+        setState(() {
+          _hovering = true;
+        });
+      },
+      onExit: (_) {
+        setState(() {
+          _hovering = false;
+        });
+      },
+      child: RaisedButton(
+        color: backgroundColor,
+        elevation: 3,
+        hoverElevation: 10,
+        onPressed: () {},
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+        ),
+        child: Text(
+          widget.pageName,
+          style: TextStyle(
+            color: textColor,
+            fontSize: 30,
+          ),
+        ),
       ),
     );
   }
