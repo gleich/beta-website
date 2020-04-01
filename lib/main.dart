@@ -28,11 +28,12 @@ class _MySiteWithTheme extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final themeMode = Provider.of<ThemeChanger>(context);
+    final themes = Themes();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "👨🏻‍💻 Matthew Gleich",
-      theme: Themes.lightTheme,
-      darkTheme: Themes.darkTheme,
+      theme: themes.lightTheme,
+      darkTheme: themes.darkTheme,
       themeMode: themeMode.activeTheme,
       routes: {
         IndexPage.pageName: (ctx) => IndexPage(),
