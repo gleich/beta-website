@@ -87,15 +87,15 @@ class _ActionBarIcon extends StatefulWidget {
 }
 
 class _ActionBarIconState extends State<_ActionBarIcon> {
-  bool hovering = false;
+  bool _hovering = false;
   @override
   Widget build(BuildContext context) {
     double horizontalOffset = 40;
     double verticalOffset = MediaQuery.of(context).size.height * 0.035;
-    Color backgroundColor = hovering
+    Color backgroundColor = _hovering
         ? Theme.of(context).primaryColor
         : Theme.of(context).accentColor;
-    Color iconColor = hovering
+    Color iconColor = _hovering
         ? Theme.of(context).accentColor
         : Theme.of(context).primaryColor;
     return Padding(
@@ -117,14 +117,14 @@ class _ActionBarIconState extends State<_ActionBarIcon> {
         child: GestureDetector(
           onTap: widget.onTap,
           child: MouseRegion(
-            onEnter: (details) {
+            onEnter: (_) {
               setState(() {
-                hovering = true;
+                _hovering = true;
               });
             },
             onExit: (_) {
               setState(() {
-                hovering = false;
+                _hovering = false;
               });
             },
             child: Container(
