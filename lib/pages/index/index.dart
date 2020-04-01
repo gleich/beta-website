@@ -9,9 +9,11 @@ class IndexPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).backgroundColor,
-      body: Column(
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
           NavBar(),
+          SizedBox(width: 40),
         ],
       ),
     );
