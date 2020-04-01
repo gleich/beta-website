@@ -45,7 +45,7 @@ class IndexPage extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(width: 100),
+          SizedBox(width: MediaQuery.of(context).size.width * 0.03),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -55,10 +55,17 @@ class IndexPage extends StatelessWidget {
                 pageRoutePath: "",
               ),
               PageButton(
-                pageName: "Projects",
+                pageName: "🛠️ Projects",
                 pageRoutePath: "",
               ),
-              PageButton(pageName: "About Me", pageRoutePath: "")
+              PageButton(
+                pageName: "👨🏻‍💻 About Me",
+                pageRoutePath: "",
+              ),
+              PageButton(
+                pageName: "📷 Photography",
+                pageRoutePath: "",
+              )
             ],
           )
         ],
@@ -156,7 +163,7 @@ class _PageButtonState extends State<PageButton> {
         color: backgroundColor,
         elevation: 3,
         hoverElevation: 10,
-        onPressed: () {},
+        onPressed: () => Navigator.pushNamed(context, widget.pageRoutePath),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
