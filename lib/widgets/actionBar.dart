@@ -5,7 +5,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:matt_gleich_github_io/provider/theme.dart';
 import 'package:matt_gleich_github_io/services/url.dart' as url;
 
-class NavBar extends StatelessWidget {
+class ActionBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     ThemeChanger _themeChanger = Provider.of<ThemeChanger>(context);
@@ -15,7 +15,7 @@ class NavBar extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          _NavBarIcon(
+          _ActionBarIcon(
             icon: _themeChanger.activeTheme == ThemeMode.light
                 ? MdiIcons.moonWaxingCrescent
                 : MdiIcons.whiteBalanceSunny,
@@ -29,26 +29,26 @@ class NavBar extends StatelessWidget {
                 : "Light Mode",
             index: 0,
           ),
-          _NavBarIcon(
+          _ActionBarIcon(
             icon: MdiIcons.githubCircle,
             onTap: () => url.launchURL("https://github.com/Matt-Gleich"),
             toolTipMessage: "GitHub",
             index: 1,
           ),
-          _NavBarIcon(
+          _ActionBarIcon(
             icon: MdiIcons.twitter,
             onTap: () => url.launchURL("https://twitter.com/GleichMatthew"),
             toolTipMessage: "Twitter",
             index: 2,
           ),
-          _NavBarIcon(
+          _ActionBarIcon(
             icon: MdiIcons.linkedin,
             onTap: () => url.launchURL(
                 "https://www.linkedin.com/in/matthew-gleich-636618178/"),
             toolTipMessage: "Linkedin",
             index: 3,
           ),
-          _NavBarIcon(
+          _ActionBarIcon(
             icon: MdiIcons.instagram,
             onTap: () =>
                 url.launchURL("https://www.instagram.com/gleichphotography/"),
@@ -61,13 +61,13 @@ class NavBar extends StatelessWidget {
   }
 }
 
-class _NavBarIcon extends StatefulWidget {
+class _ActionBarIcon extends StatefulWidget {
   final IconData icon;
   final void Function() onTap;
   final String toolTipMessage;
   final int index;
 
-  _NavBarIcon({
+  _ActionBarIcon({
     @required this.icon,
     @required this.onTap,
     @required this.toolTipMessage,
@@ -75,14 +75,15 @@ class _NavBarIcon extends StatefulWidget {
   });
 
   @override
-  __NavBarIconState createState() => __NavBarIconState();
+  _ActionBarIconState createState() => _ActionBarIconState();
 }
 
-class __NavBarIconState extends State<_NavBarIcon> {
+class _ActionBarIconState extends State<_ActionBarIcon> {
   bool hovering = false;
   @override
   Widget build(BuildContext context) {
-    const verticalOffset = 70.0;
+    double horizontalOffset = 40;
+    double verticalOffset = MediaQuery.of(context).size.height * 0.035;
     Color backgroundColor = hovering
         ? Theme.of(context).primaryColor
         : Theme.of(context).accentColor;
@@ -92,11 +93,11 @@ class __NavBarIconState extends State<_NavBarIcon> {
     return Padding(
       padding: widget.index != 0
           ? (widget.index % 2) == 0
-              ? const EdgeInsets.only(top: 30)
-              : const EdgeInsets.only(top: 30, right: verticalOffset)
+              ? EdgeInsets.only(top: verticalOffset)
+              : EdgeInsets.only(top: verticalOffset, right: horizontalOffset)
           : (widget.index % 2) == 0
               ? const EdgeInsets.only()
-              : const EdgeInsets.only(right: verticalOffset),
+              : EdgeInsets.only(right: horizontalOffset),
       child: Tooltip(
         waitDuration: const Duration(seconds: 1),
         height: double.minPositive + 5,

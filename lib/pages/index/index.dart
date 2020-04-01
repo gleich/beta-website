@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:matt_gleich_github_io/widgets/nav.dart';
+import 'package:matt_gleich_github_io/widgets/actionBar.dart';
 
 class IndexPage extends StatelessWidget {
   static const pageName = "/";
@@ -12,7 +12,7 @@ class IndexPage extends StatelessWidget {
       body: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
-          NavBar(),
+          ActionBar(),
           SizedBox(width: 40),
         ],
       ),
