@@ -11,65 +11,68 @@ class IndexPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).backgroundColor,
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Center(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                AnimationConfiguration.synchronized(
-                  child: SlideAnimation(
-                    verticalOffset: -50,
-                    duration: const Duration(seconds: 1),
-                    child: FadeInAnimation(
+      body: Center(
+        child: ListView(
+          shrinkWrap: true,
+          scrollDirection: Axis.horizontal,
+          children: <Widget>[
+            Center(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  AnimationConfiguration.synchronized(
+                    child: SlideAnimation(
+                      verticalOffset: -50,
                       duration: const Duration(seconds: 1),
-                      child: Text(
-                        "👋🏼 Hey I'm",
-                        style: TextStyle(
-                          fontSize: 50,
+                      child: FadeInAnimation(
+                        duration: const Duration(seconds: 1),
+                        child: Text(
+                          "👋🏼 Hey I'm",
+                          style: TextStyle(
+                            fontSize: 50,
+                          ),
                         ),
                       ),
                     ),
                   ),
-                ),
-                const Text(
-                  "Matthew Gleich",
-                  style: TextStyle(
-                    fontSize: 150,
-                    decoration: TextDecoration.underline,
+                  const Text(
+                    "Matthew Gleich",
+                    style: TextStyle(
+                      fontSize: 150,
+                      decoration: TextDecoration.underline,
+                    ),
                   ),
-                ),
-                SubTitle(),
-                ActionBar(),
-              ],
+                  SubTitle(),
+                  ActionBar(),
+                ],
+              ),
             ),
-          ),
-          SizedBox(width: MediaQuery.of(context).size.width * 0.03),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              PageButton(
-                pageName: "🖊️ Blog",
-                pageRoutePath: "/blog",
-              ),
-              PageButton(
-                pageName: "🛠️ Projects",
-                pageRoutePath: "/projects",
-              ),
-              PageButton(
-                pageName: "👨🏻‍💻 About Me",
-                pageRoutePath: "/aboutMe",
-              ),
-              PageButton(
-                pageName: "📷 Photography",
-                pageRoutePath: "/photography",
-              )
-            ],
-          )
-        ],
+            SizedBox(width: MediaQuery.of(context).size.width * 0.03),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                PageButton(
+                  pageName: "🖊️ Blog",
+                  pageRoutePath: "/blog",
+                ),
+                PageButton(
+                  pageName: "🛠️ Projects",
+                  pageRoutePath: "/projects",
+                ),
+                PageButton(
+                  pageName: "👨🏻‍💻 About Me",
+                  pageRoutePath: "/aboutMe",
+                ),
+                PageButton(
+                  pageName: "📷 Photography",
+                  pageRoutePath: "/photography",
+                )
+              ],
+            )
+          ],
+        ),
       ),
       bottomSheet: Copyright(),
     );
