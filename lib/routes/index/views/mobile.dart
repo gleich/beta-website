@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:matt_gleich_github_io/widgets/actionBar.dart';
-import 'package:matt_gleich_github_io/pages/index/widgets/buttons.dart';
-import 'package:matt_gleich_github_io/pages/index/widgets/text.dart';
+import 'package:matt_gleich_github_io/routes/index/widgets/buttons.dart';
+import 'package:matt_gleich_github_io/routes/index/widgets/text.dart';
 
 class IndexPageMobileView extends StatelessWidget {
   @override

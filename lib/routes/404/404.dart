@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:matt_gleich_github_io/pages/index/index.dart';
+import 'package:matt_gleich_github_io/routes/index/index.dart';
 import 'package:matt_gleich_github_io/widgets/buttons.dart';
 
 class Page404 extends StatelessWidget {

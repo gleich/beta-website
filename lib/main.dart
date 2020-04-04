@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:matt_gleich_github_io/pages/photography/photography.dart';
 import 'package:provider/provider.dart';
 
-import 'package:matt_gleich_github_io/pages/index/index.dart';
-import 'package:matt_gleich_github_io/pages/404/404.dart';
-import 'package:matt_gleich_github_io/pages/blog/blog.dart';
-import 'package:matt_gleich_github_io/pages/aboutMe/aboutMe.dart';
-import 'package:matt_gleich_github_io/pages/projects/projects.dart';
 import 'package:matt_gleich_github_io/themes.dart';
 import 'package:matt_gleich_github_io/provider/theme.dart';
+// Routes
+import 'package:matt_gleich_github_io/routes/index/index.dart';
+import 'package:matt_gleich_github_io/routes/404/404.dart';
+import 'package:matt_gleich_github_io/routes/blog/blog.dart';
+import 'package:matt_gleich_github_io/routes/aboutMe/aboutMe.dart';
+import 'package:matt_gleich_github_io/routes/projects/projects.dart';
+import 'package:matt_gleich_github_io/routes/photography/photography.dart';
 
 void main() => runApp(_MySite());
 
