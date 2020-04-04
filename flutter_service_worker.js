@@ -13,7 +13,7 @@ const RESOURCES = {
 "/assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
 "/assets/FontManifest.json": "96f995fe096b85a5215f63789d954670",
 "/main.dart.js": "92ac3774ae4b20daf37925ac7f043199",
-"/index.html": "fa372332eb88b132c5b8cca64e7444e9"
+"/index.html": "19ca746b58f1672d377510d82f8d6973"
 };
 
 self.addEventListener('activate', function (event) {
