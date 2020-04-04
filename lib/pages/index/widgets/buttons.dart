@@ -36,8 +36,8 @@ class _PageButtonState extends State<PageButton> {
       },
       child: RaisedButton(
         color: backgroundColor,
-        elevation: 3,
-        hoverElevation: 10,
+        elevation: 2,
+        hoverElevation: 5,
         onPressed: () => Navigator.pushNamed(context, widget.pageRoutePath),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),

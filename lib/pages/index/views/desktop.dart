@@ -3,7 +3,7 @@ import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 import 'package:matt_gleich_github_io/widgets/actionBar.dart';
 import 'package:matt_gleich_github_io/pages/index/widgets/buttons.dart';
-import 'package:matt_gleich_github_io/pages/index/widgets/subtitle.dart';
+import 'package:matt_gleich_github_io/pages/index/widgets/text.dart';
 
 class IndexPageDesktopView extends StatelessWidget {
   @override
@@ -18,21 +18,7 @@ class IndexPageDesktopView extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                AnimationConfiguration.synchronized(
-                  child: SlideAnimation(
-                    verticalOffset: -50,
-                    duration: const Duration(seconds: 1),
-                    child: FadeInAnimation(
-                      duration: const Duration(seconds: 1),
-                      child: Text(
-                        "👋🏼 Hey I'm",
-                        style: TextStyle(
-                          fontSize: 50,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
+                Header(),
                 const Text(
                   "Matthew Gleich",
                   style: TextStyle(

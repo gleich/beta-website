@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 class SubTitle extends StatefulWidget {
+  final double fontSize;
+
+  SubTitle({this.fontSize = 50});
+
   @override
   _SubTitleState createState() => _SubTitleState();
 }
@@ -43,8 +48,33 @@ class _SubTitleState extends State<SubTitle> {
       child: Text(
         text,
         style: TextStyle(
-          fontSize: 50,
+          fontSize: widget.fontSize,
           fontStyle: FontStyle.italic,
+        ),
+      ),
+    );
+  }
+}
+
+class Header extends StatelessWidget {
+  final double fontSize;
+
+  Header({this.fontSize = 50});
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimationConfiguration.synchronized(
+      child: SlideAnimation(
+        verticalOffset: -50,
+        duration: Duration(seconds: 1),
+        child: FadeInAnimation(
+          duration: Duration(seconds: 1),
+          child: Text(
+            "👋🏼 Hey I'm",
+            style: TextStyle(
+              fontSize: fontSize,
+            ),
+          ),
         ),
       ),
     );

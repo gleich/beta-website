@@ -84,12 +84,16 @@ class _ActionBarIcon extends StatefulWidget {
   final void Function() onTap;
   final String toolTipMessage;
   final int index;
+  final double horizontalOffset;
+  final double verticalOffset;
 
   _ActionBarIcon({
     @required this.icon,
     @required this.onTap,
     @required this.toolTipMessage,
     @required this.index,
+    this.horizontalOffset = 40,
+    this.verticalOffset = 30,
   });
 
   @override
@@ -100,8 +104,6 @@ class _ActionBarIconState extends State<_ActionBarIcon> {
   bool _hovering = false;
   @override
   Widget build(BuildContext context) {
-    double horizontalOffset = 40;
-    double verticalOffset = MediaQuery.of(context).size.height * 0.035;
     Color backgroundColor = _hovering
         ? Theme.of(context).primaryColor
         : Theme.of(context).accentColor;
@@ -111,11 +113,14 @@ class _ActionBarIconState extends State<_ActionBarIcon> {
     return Padding(
       padding: widget.index != 0
           ? (widget.index % 2) == 0
-              ? EdgeInsets.only(left: verticalOffset)
-              : EdgeInsets.only(left: verticalOffset, top: horizontalOffset)
+              ? EdgeInsets.only(left: widget.verticalOffset)
+              : EdgeInsets.only(
+                  left: widget.verticalOffset,
+                  top: widget.horizontalOffset,
+                )
           : (widget.index % 2) == 0
               ? const EdgeInsets.only()
-              : EdgeInsets.only(top: horizontalOffset),
+              : EdgeInsets.only(top: widget.horizontalOffset),
       child: Tooltip(
         message: widget.toolTipMessage,
         child: GestureDetector(
