@@ -8,14 +8,16 @@ class IndexPageMobileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
+      child: ListView(
+        shrinkWrap: true,
         children: <Widget>[
           const SizedBox(
             height: 30,
           ),
-          Header(fontSize: 35),
+          Header(
+            fontSize: 35,
+            center: true,
+          ),
           Text(
             "Matthew\nGleich",
             textAlign: TextAlign.center,
@@ -26,6 +28,7 @@ class IndexPageMobileView extends StatelessWidget {
           ),
           SubTitle(
             fontSize: 24,
+            center: true,
           ),
           ActionBar(
             mainAxisAlignment: MainAxisAlignment.center,

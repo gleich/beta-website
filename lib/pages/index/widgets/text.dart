@@ -3,8 +3,12 @@ import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 class SubTitle extends StatefulWidget {
   final double fontSize;
+  final bool center;
 
-  SubTitle({this.fontSize = 50});
+  SubTitle({
+    this.fontSize = 50,
+    this.center = false,
+  });
 
   @override
   _SubTitleState createState() => _SubTitleState();
@@ -34,7 +38,7 @@ class _SubTitleState extends State<SubTitle> {
     }
 
     String text = _hovering ? hoverMessage : normalMessage;
-    return MouseRegion(
+    final _coreWidget = MouseRegion(
       onEnter: (_) {
         setState(() {
           _hovering = true;
@@ -53,17 +57,23 @@ class _SubTitleState extends State<SubTitle> {
         ),
       ),
     );
+
+    return widget.center ? Center(child: _coreWidget) : _coreWidget;
   }
 }
 
 class Header extends StatelessWidget {
   final double fontSize;
+  final bool center;
 
-  Header({this.fontSize = 50});
+  Header({
+    this.fontSize = 50,
+    this.center = false,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return AnimationConfiguration.synchronized(
+    final _coreWidget = AnimationConfiguration.synchronized(
       child: SlideAnimation(
         verticalOffset: -50,
         duration: Duration(seconds: 1),
@@ -78,5 +88,7 @@ class Header extends StatelessWidget {
         ),
       ),
     );
+
+    return center ? Center(child: _coreWidget) : _coreWidget;
   }
 }
