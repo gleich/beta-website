@@ -30,7 +30,6 @@ class _SubTitleState extends State<SubTitle> {
             1;
     String hoverMessage;
     final String normalMessage = "$age year old maker of things";
-
     if (daysTillBDay == 0) {
       hoverMessage = "🎉🎉 Today is my birthday! 🎉🎉";
     } else if (daysTillBDay <= 30 && daysTillBDay > 0) {
@@ -38,9 +37,8 @@ class _SubTitleState extends State<SubTitle> {
     } else {
       hoverMessage = normalMessage;
     }
-
     String text = _hovering ? hoverMessage : normalMessage;
-    final _coreWidget = MouseRegion(
+    final coreWidget = MouseRegion(
       onEnter: (_) {
         setState(() {
           _hovering = true;
@@ -60,7 +58,7 @@ class _SubTitleState extends State<SubTitle> {
       ),
     );
 
-    return widget.center ? Center(child: _coreWidget) : _coreWidget;
+    return widget.center ? Center(child: coreWidget) : coreWidget;
   }
 }
 
@@ -75,7 +73,7 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _coreWidget = AnimationConfiguration.synchronized(
+    final coreWidget = AnimationConfiguration.synchronized(
       child: SlideAnimation(
         verticalOffset: -50,
         duration: Duration(seconds: 1),
@@ -90,7 +88,6 @@ class Header extends StatelessWidget {
         ),
       ),
     );
-
-    return center ? Center(child: _coreWidget) : _coreWidget;
+    return center ? Center(child: coreWidget) : coreWidget;
   }
 }

@@ -29,7 +29,7 @@ class _MySiteWithTheme extends StatelessWidget {
     final themes = Themes();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "👨🏻‍💻 Matthew Gleich",
+      title: "// Matthew Gleich",
       theme: themes.lightTheme,
       darkTheme: themes.darkTheme,
       themeMode: themeMode.activeTheme,
