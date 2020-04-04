@@ -5,16 +5,15 @@ const RESOURCES = {
 "/manifest.json": "0869184627e2c20e35064ef8deb13bc8",
 "/icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "/icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"/assets/AssetManifest.json": "5e63fdfed0d14c11c5fff28a2e851a46",
-"/assets/LICENSE": "39617b510f7572bf4b6938af00e271b5",
+"/assets/AssetManifest.json": "46a428d0f74a7734eb2947904cf060bc",
+"/assets/LICENSE": "117ee349efba71122c090dee9373014c",
 "/assets/assets/images/logo.png": "e94e2a82fde16d2ac04c1ac95f42ce9c",
 "/assets/assets/fonts/Abel-Regular.ttf": "afc1550a0b170efd8f270a8316c85da7",
-"/assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "/assets/packages/material_design_icons_flutter/lib/fonts/materialdesignicons-webfont.ttf": "2abd86f90b3fd9d18d950195282cd8d5",
 "/assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
-"/assets/FontManifest.json": "bb04d3506b9394c37925c466a3696250",
-"/main.dart.js": "1758d4b3f21006b95f74b53515c837c0",
-"/index.html": "3908125d49c1dbe247e9954db5491ed0"
+"/assets/FontManifest.json": "96f995fe096b85a5215f63789d954670",
+"/main.dart.js": "92ac3774ae4b20daf37925ac7f043199",
+"/index.html": "fa372332eb88b132c5b8cca64e7444e9"
 };
 
 self.addEventListener('activate', function (event) {

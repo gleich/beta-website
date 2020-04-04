@@ -37846,7 +37846,7 @@ F.Og.prototype={
 $1:function(a){return new K.j5(C.pF,new R.al(H.b([],u.u),u.A))}}
 F.Al.prototype={
 F:function(a){var t=Y.UQ(a,u.nY),s=new Y.Ll(),r=X.S9(C.l,C.j,C.a1,"Abel",C.j,s.vD(C.j)),q=X.S9(C.j,C.l,C.R,"Abel",C.l,s.vD(C.l)),p=t.a
-return new S.oc(P.b6(["/",new F.Oa(),"/blog",new F.Ob(),"/projects",new F.Oc(),"/aboutMe",new F.Od(),"/photography",new F.Oe()],u.N,u.hw),new F.Of(),"\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb Matthew Gleich",r,q,p,!1,null)}}
+return new S.oc(P.b6(["/",new F.Oa(),"/blog",new F.Ob(),"/projects",new F.Oc(),"/aboutMe",new F.Od(),"/photography",new F.Oe()],u.N,u.hw),new F.Of(),"// Matthew Gleich",r,q,p,!1,null)}}
 F.Oa.prototype={
 $1:function(a){return new E.kc(null)},
 $S:165}
