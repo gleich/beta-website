@@ -17,15 +17,33 @@ class Themes {
           fontSize: 25,
           color: accentColor,
         ),
+        // Desktop headline
         headline2: TextStyle(
           fontSize: 100,
           fontFamily: "Tomorrow",
           decoration: TextDecoration.underline,
           color: accentColor,
         ),
+        // Mobile headline
+        headline3: TextStyle(
+          fontSize: 60,
+          fontFamily: "Tomorrow",
+          decoration: TextDecoration.underline,
+          color: accentColor,
+        ),
+        // Desktop bodyText
         bodyText1: TextStyle(
           color: accentColor,
           fontSize: 25,
+        ),
+        bodyText2: TextStyle(
+          color: accentColor,
+          fontSize: 20,
+        ),
+        // Mobile subtitle
+        subtitle1: TextStyle(
+          color: accentColor,
+          fontSize: 16,
         ),
       );
 
