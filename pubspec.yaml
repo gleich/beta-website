@@ -26,4 +26,11 @@ flutter:
   fonts:
     - family: Abel
       fonts:
-        - asset: assets/fonts/Abel-Regular.ttf
+        - asset: assets/fonts/Abel/Abel-Regular.ttf
+    - family: Tomorrow
+      fonts:
+        - asset: assets/fonts/Tomorrow/Tomorrow-Regular.ttf
+        - asset: assets/fonts/Tomorrow/Tomorrow-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Tomorrow/Tomorrow-Bold.ttf
+          weight: 700

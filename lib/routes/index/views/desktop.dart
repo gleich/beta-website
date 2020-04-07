@@ -4,7 +4,7 @@ import 'package:matt_gleich_github_io/widgets/actionBar.dart';
 import 'package:matt_gleich_github_io/routes/index/widgets/buttons.dart';
 import 'package:matt_gleich_github_io/routes/index/widgets/text.dart';
 
-class IndexPageDesktopView extends StatelessWidget {
+class IndexDesktopView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(

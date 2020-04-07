@@ -11,6 +11,23 @@ class Themes {
           color: primaryColor,
         ),
       );
+  TextTheme _textTheme(Color accentColor) => TextTheme(
+        headline1: TextStyle(
+          fontFamily: "Tomorrow",
+          fontSize: 25,
+          color: accentColor,
+        ),
+        headline2: TextStyle(
+          fontSize: 100,
+          fontFamily: "Tomorrow",
+          decoration: TextDecoration.underline,
+          color: accentColor,
+        ),
+        bodyText1: TextStyle(
+          color: accentColor,
+          fontSize: 25,
+        ),
+      );
 
   ThemeData get darkTheme => ThemeData(
         brightness: Brightness.dark,
@@ -19,6 +36,7 @@ class Themes {
         primaryColor: Colors.black,
         accentColor: Colors.white,
         tooltipTheme: _toolTipThemeData(Colors.black),
+        textTheme: _textTheme(Colors.white),
       );
 
   ThemeData get lightTheme => ThemeData(
@@ -28,5 +46,6 @@ class Themes {
         primaryColor: Colors.white,
         accentColor: Colors.black,
         tooltipTheme: _toolTipThemeData(Colors.white),
+        textTheme: _textTheme(Colors.black),
       );
 }
