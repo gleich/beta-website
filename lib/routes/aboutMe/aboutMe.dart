@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
-import 'package:matt_gleich_github_io/widgets/copyright.dart';
 import 'package:matt_gleich_github_io/routes/aboutMe/views/desktop.dart';
 import 'package:matt_gleich_github_io/routes/aboutMe/views/mobile.dart';
 
@@ -27,7 +26,6 @@ class AboutMeRoute extends StatelessWidget {
         tablet: AboutMeDesktopView(_bio),
         mobile: AboutMeMobileView(_bio),
       ),
-      bottomSheet: Copyright(),
     );
   }
 }
