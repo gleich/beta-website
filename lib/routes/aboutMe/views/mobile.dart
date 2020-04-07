@@ -37,7 +37,8 @@ class AboutMeMobileView extends StatelessWidget {
                   bio,
                   style: Theme.of(context).textTheme.bodyText2,
                 ),
-              )
+              ),
+              const SizedBox(height: 30),
             ],
           ),
         ),
