@@ -13,9 +13,9 @@ class IndexPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Theme.of(context).backgroundColor,
       body: ScreenTypeLayout(
-        desktop: IndexPageDesktopView(),
-        tablet: IndexPageDesktopView(),
-        mobile: IndexPageMobileView(),
+        desktop: IndexDesktopView(),
+        tablet: IndexDesktopView(),
+        mobile: IndexMobileView(),
       ),
       bottomSheet: Copyright(),
     );

@@ -4,7 +4,7 @@ import 'package:matt_gleich_github_io/widgets/actionBar.dart';
 import 'package:matt_gleich_github_io/routes/index/widgets/buttons.dart';
 import 'package:matt_gleich_github_io/routes/index/widgets/text.dart';
 
-class IndexPageMobileView extends StatelessWidget {
+class IndexMobileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -35,22 +35,7 @@ class IndexPageMobileView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
           ),
           const SizedBox(height: 30),
-          PageButton(
-            pageName: "🖊️ Blog",
-            pageRoutePath: "/blog",
-          ),
-          PageButton(
-            pageName: "🛠️ Projects",
-            pageRoutePath: "/projects",
-          ),
-          PageButton(
-            pageName: "👨🏻‍💻 About Me",
-            pageRoutePath: "/aboutMe",
-          ),
-          PageButton(
-            pageName: "📷 Photography",
-            pageRoutePath: "/photography",
-          ),
+          ...PageButtons.buttons,
           const SizedBox(height: 60),
         ],
       ),

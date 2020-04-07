@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 import 'package:matt_gleich_github_io/widgets/actionBar.dart';
 import 'package:matt_gleich_github_io/routes/index/widgets/buttons.dart';
 import 'package:matt_gleich_github_io/routes/index/widgets/text.dart';
 
-class IndexPageDesktopView extends StatelessWidget {
+class IndexDesktopView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -35,24 +34,7 @@ class IndexPageDesktopView extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              PageButton(
-                pageName: "🖊️ Blog",
-                pageRoutePath: "/blog",
-              ),
-              PageButton(
-                pageName: "🛠️ Projects",
-                pageRoutePath: "/projects",
-              ),
-              PageButton(
-                pageName: "👨🏻‍💻 About Me",
-                pageRoutePath: "/aboutMe",
-              ),
-              PageButton(
-                pageName: "📷 Photography",
-                pageRoutePath: "/photography",
-              )
-            ],
+            children: PageButtons.buttons,
           )
         ],
       ),

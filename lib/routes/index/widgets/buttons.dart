@@ -1,10 +1,31 @@
 import 'package:flutter/material.dart';
 
+class PageButtons {
+  static const buttons = <Widget>[
+    PageButton(
+      pageName: "🖊️ Blog",
+      pageRoutePath: "/blog",
+    ),
+    PageButton(
+      pageName: "🛠️ Projects",
+      pageRoutePath: "/projects",
+    ),
+    PageButton(
+      pageName: "👨🏻‍💻 About Me",
+      pageRoutePath: "/aboutMe",
+    ),
+    PageButton(
+      pageName: "📷 Photography",
+      pageRoutePath: "/photography",
+    ),
+  ];
+}
+
 class PageButton extends StatefulWidget {
   final String pageName;
   final String pageRoutePath;
 
-  PageButton({
+  const PageButton({
     @required this.pageName,
     @required this.pageRoutePath,
   });
@@ -38,7 +59,7 @@ class _PageButtonState extends State<PageButton> {
         color: backgroundColor,
         elevation: 2,
         hoverElevation: 5,
-        onPressed: () => Navigator.popAndPushNamed(
+        onPressed: () => Navigator.pushNamed(
           context,
           widget.pageRoutePath,
         ),
