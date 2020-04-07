@@ -7,6 +7,7 @@ class Themes {
         waitDuration: const Duration(milliseconds: 300),
         height: double.minPositive + 5,
         textStyle: TextStyle(
+          fontSize: 15,
           fontStyle: FontStyle.italic,
           color: primaryColor,
         ),

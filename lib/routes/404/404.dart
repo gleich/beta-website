@@ -11,17 +11,16 @@ class Route404 extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Text(
-              "404 Error",
-              style: TextStyle(fontSize: 70),
+            const Text(
+              "404 Error\nPage not found 😔",
+              style: TextStyle(
+                fontSize: 70,
+                decoration: TextDecoration.underline,
+              ),
+              textAlign: TextAlign.center,
             ),
-            Text(
-              "Page not found 😔",
-              style: TextStyle(fontSize: 70),
-            ),
-            SizedBox(height: 100),
+            const SizedBox(height: 100),
             ReflectingRaisedButton(
               onPressed: () => Navigator.popAndPushNamed(
                 context,

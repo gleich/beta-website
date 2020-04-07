@@ -15,6 +15,7 @@ class AboutMeRoute extends StatelessWidget {
     return Scaffold(
       backgroundColor: Theme.of(context).backgroundColor,
       appBar: AppBar(
+        elevation: 0,
         title: Text(
           "Matthew Gleich",
           style: Theme.of(context).textTheme.headline1,
