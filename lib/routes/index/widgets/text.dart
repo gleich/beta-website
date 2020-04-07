@@ -32,6 +32,8 @@ class _SubTitleState extends State<SubTitle> {
     final String normalMessage = "$age year old maker of things";
     if (daysTillBDay == 0) {
       hoverMessage = "🎉🎉 Today is my birthday! 🎉🎉";
+    } else if (daysTillBDay == 1) {
+      hoverMessage = "🎉🎉 $daysTillBDay day till my bday! 🎉🎉";
     } else if (daysTillBDay <= 30 && daysTillBDay > 0) {
       hoverMessage = "🎉🎉 $daysTillBDay days till my bday! 🎉🎉";
     } else {
