@@ -8,7 +8,7 @@ const RESOURCES = {
 "/assets/AssetManifest.json": "e400d47a0e889c7b713403143d9ab853",
 "/assets/LICENSE": "117ee349efba71122c090dee9373014c",
 "/assets/assets/images/logo.png": "e94e2a82fde16d2ac04c1ac95f42ce9c",
-"/assets/assets/images/me.jpg": "932c4d73cfac8b41fe4950fc5dc27652",
+"/assets/assets/images/me.jpg": "1d92d43fc30048c1497186d726218013",
 "/assets/assets/fonts/Abel/Abel-Regular.ttf": "afc1550a0b170efd8f270a8316c85da7",
 "/assets/assets/fonts/Tomorrow/Tomorrow-Italic.ttf": "ecaae64e3921c8eda06fdc51f95546ed",
 "/assets/assets/fonts/Tomorrow/Tomorrow-Regular.ttf": "a03efb768048e9f34bf971cc4fd0856a",
