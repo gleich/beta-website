@@ -35,22 +35,7 @@ class IndexPageMobileView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
           ),
           const SizedBox(height: 30),
-          PageButton(
-            pageName: "🖊️ Blog",
-            pageRoutePath: "/blog",
-          ),
-          PageButton(
-            pageName: "🛠️ Projects",
-            pageRoutePath: "/projects",
-          ),
-          PageButton(
-            pageName: "👨🏻‍💻 About Me",
-            pageRoutePath: "/aboutMe",
-          ),
-          PageButton(
-            pageName: "📷 Photography",
-            pageRoutePath: "/photography",
-          ),
+          ...PageButtons.buttons,
           const SizedBox(height: 60),
         ],
       ),
