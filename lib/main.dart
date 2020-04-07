@@ -10,6 +10,7 @@ import 'package:matt_gleich_github_io/routes/blog/blog.dart';
 import 'package:matt_gleich_github_io/routes/aboutMe/aboutMe.dart';
 import 'package:matt_gleich_github_io/routes/projects/projects.dart';
 import 'package:matt_gleich_github_io/routes/photography/photography.dart';
+import 'package:matt_gleich_github_io/routes/stats/stats.dart';
 
 void main() => runApp(_MySite());
 
@@ -35,13 +36,16 @@ class _MySiteWithTheme extends StatelessWidget {
       darkTheme: themes.darkTheme,
       themeMode: themeMode.activeTheme,
       routes: {
-        IndexPage.pageName: (ctx) => IndexPage(),
-        BlogPage.pageName: (ctx) => BlogPage(),
-        ProjectsPage.pageName: (ctx) => ProjectsPage(),
-        AboutMePage.pageName: (ctx) => AboutMePage(),
-        PhotographyPage.pageName: (ctx) => PhotographyPage(),
+        IndexRoute.routeName: (ctx) => IndexRoute(),
+        BlogRoute.routeName: (ctx) => BlogRoute(),
+        ProjectsRoute.routeName: (ctx) => ProjectsRoute(),
+        AboutMeRoute.routeName: (ctx) => AboutMeRoute(),
+        PhotographyRoute.routeName: (ctx) => PhotographyRoute(),
+        StatsRoute.routeName: (ctx) => StatsRoute(),
       },
-      onUnknownRoute: (_) => MaterialPageRoute(builder: (ctx) => Page404()),
+      onUnknownRoute: (_) => MaterialPageRoute(
+        builder: (ctx) => Route404(),
+      ),
     );
   }
 }

@@ -27,8 +27,10 @@ class WorkingOn extends StatelessWidget {
           ),
           const SizedBox(height: 40),
           ReflectingRaisedButton(
-            onPressed: () =>
-                Navigator.popAndPushNamed(context, IndexPage.pageName),
+            onPressed: () => Navigator.popAndPushNamed(
+              context,
+              IndexRoute.routeName,
+            ),
             fontSize: 50,
             text: "Return Home 🏠",
           )

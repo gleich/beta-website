@@ -18,6 +18,10 @@ class PageButtons {
       pageName: "📷 Photography",
       pageRoutePath: "/photography",
     ),
+    PageButton(
+      pageName: "📊 Stats",
+      pageRoutePath: "/stats",
+    )
   ];
 }
 

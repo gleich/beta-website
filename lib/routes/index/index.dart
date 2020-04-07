@@ -5,8 +5,8 @@ import 'package:matt_gleich_github_io/widgets/copyright.dart';
 import 'package:matt_gleich_github_io/routes/index/views/desktop.dart';
 import 'package:matt_gleich_github_io/routes/index/views/mobile.dart';
 
-class IndexPage extends StatelessWidget {
-  static const pageName = "/";
+class IndexRoute extends StatelessWidget {
+  static const routeName = "/";
 
   @override
   Widget build(BuildContext context) {

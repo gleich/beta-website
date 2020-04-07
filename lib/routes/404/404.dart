@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:matt_gleich_github_io/routes/index/index.dart';
 import 'package:matt_gleich_github_io/widgets/buttons.dart';
 
-class Page404 extends StatelessWidget {
+class Route404 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,8 +23,10 @@ class Page404 extends StatelessWidget {
             ),
             SizedBox(height: 100),
             ReflectingRaisedButton(
-              onPressed: () =>
-                  Navigator.popAndPushNamed(context, IndexPage.pageName),
+              onPressed: () => Navigator.popAndPushNamed(
+                context,
+                IndexRoute.routeName,
+              ),
               fontSize: 50,
               text: "Return Home 🏠",
             ),
