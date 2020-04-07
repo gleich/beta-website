@@ -16,7 +16,7 @@ const RESOURCES = {
 "/assets/packages/material_design_icons_flutter/lib/fonts/materialdesignicons-webfont.ttf": "2abd86f90b3fd9d18d950195282cd8d5",
 "/assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
 "/assets/FontManifest.json": "7d34da05541961a446e1971d6dbc3a32",
-"/main.dart.js": "92dfd8ad2e43c537ca690f0e96cfeeeb",
+"/main.dart.js": "34ae682272f07f695e2800f10f82f0b2",
 "/index.html": "e1aea9699d2584f2af1e590f3e7c95cb"
 };
 

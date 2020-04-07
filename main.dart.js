@@ -40275,6 +40275,7 @@ aA:function(){return new L.CM(C.o)}}
 L.CM.prototype={
 F:function(a){var t,s,r,q=this,p=null,o=864e8,n=C.V.ax(C.f.bZ(P.ch(0,Date.now()-P.VV(2004,4,8).a,0).a,o)/365),m=C.f.bZ(P.ch(0,P.VV(H.TZ(new P.cg(Date.now(),!1)),4,8).a-Date.now(),0).a,o)+1,l=""+n+" year old maker of things"
 if(m===0)t="\ud83c\udf89\ud83c\udf89 Today is my birthday! \ud83c\udf89\ud83c\udf89"
+else if(m===1)t="\ud83c\udf89\ud83c\udf89 "+m+" day till my bday! \ud83c\udf89\ud83c\udf89"
 else t=m<=30&&m>0?"\ud83c\udf89\ud83c\udf89 "+m+" days till my bday! \ud83c\udf89\ud83c\udf89":l
 s=q.d?t:l
 r=T.kT(L.cY(s,p,A.bX(p,p,p,p,p,p,p,p,p,p,p,q.a.c,C.nF,p,p,p,!0,p,p,p,p,p,p),p),new L.Rr(q),new L.Rs(q),p,!0)
