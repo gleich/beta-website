@@ -22,12 +22,12 @@ class IndexMobileView extends StatelessWidget {
             "Matthew\nGleich",
             textAlign: TextAlign.center,
             style: TextStyle(
-              fontSize: 50,
+              fontSize: 70,
               decoration: TextDecoration.underline,
             ),
           ),
           SubTitle(
-            fontSize: 24,
+            fontSize: 30,
             center: true,
           ),
           ActionBar(

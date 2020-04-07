@@ -45,7 +45,8 @@ class AboutMeDesktopView extends StatelessWidget {
               Text(
                 "Me taking a picture in Portsmouth, NH",
                 style: TextStyle(
-                    fontSize: MediaQuery.of(context).size.width * 0.015),
+                  fontSize: MediaQuery.of(context).size.width * 0.015,
+                ),
               )
             ],
           )
