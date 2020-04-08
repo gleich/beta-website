@@ -25,9 +25,8 @@ class _SubTitleState extends State<SubTitle> {
         .round();
     final daysTillBDay =
         (DateTime.utc(DateTime.now().year, DateTime.april, 8).difference(
-              DateTime.now(),
-            )).inDays +
-            1;
+      DateTime.now(),
+    )).inDays;
     String hoverMessage;
     final String normalMessage = "$age year old maker of things";
     if (daysTillBDay == 0) {
