@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
-class SubTitle extends StatefulWidget {
+class SubTitle extends StatelessWidget {
   final double fontSize;
   final bool center;
 
@@ -11,55 +11,20 @@ class SubTitle extends StatefulWidget {
   });
 
   @override
-  _SubTitleState createState() => _SubTitleState();
-}
-
-class _SubTitleState extends State<SubTitle> {
-  bool _hovering = false;
-  @override
   Widget build(BuildContext context) {
     final age = (DateTime.now()
                 .difference(DateTime.utc(2004, DateTime.april, 8))
                 .inDays /
             365)
-        .round();
-    final daysTillBDay =
-        (DateTime.utc(DateTime.now().year, DateTime.april, 8).difference(
-      DateTime.now(),
-    )).inDays;
-    String hoverMessage;
-    final String normalMessage = "$age year old maker of things";
-    if (daysTillBDay == 0) {
-      hoverMessage = "🎉🎉 Today is my birthday! 🎉🎉";
-    } else if (daysTillBDay == 1) {
-      hoverMessage = "🎉🎉 $daysTillBDay day till my bday! 🎉🎉";
-    } else if (daysTillBDay <= 30 && daysTillBDay > 0) {
-      hoverMessage = "🎉🎉 $daysTillBDay days till my bday! 🎉🎉";
-    } else {
-      hoverMessage = normalMessage;
-    }
-    String text = _hovering ? hoverMessage : normalMessage;
-    final coreWidget = MouseRegion(
-      onEnter: (_) {
-        setState(() {
-          _hovering = true;
-        });
-      },
-      onExit: (_) {
-        setState(() {
-          _hovering = false;
-        });
-      },
-      child: Text(
-        text,
-        style: TextStyle(
-          fontSize: widget.fontSize,
-          fontStyle: FontStyle.italic,
-        ),
+        .toStringAsFixed(0);
+    final coreWidget = Text(
+      '$age year old maker of things',
+      style: TextStyle(
+        fontSize: fontSize,
+        fontStyle: FontStyle.italic,
       ),
     );
-
-    return widget.center ? Center(child: coreWidget) : coreWidget;
+    return center ? Center(child: coreWidget) : coreWidget;
   }
 }
 
