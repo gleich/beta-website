@@ -3,12 +3,8 @@ import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 class SubTitle extends StatelessWidget {
   final double fontSize;
-  final bool center;
 
-  SubTitle({
-    this.fontSize = 50,
-    this.center = false,
-  });
+  SubTitle({this.fontSize = 50});
 
   @override
   Widget build(BuildContext context) {
@@ -17,29 +13,24 @@ class SubTitle extends StatelessWidget {
                 .inDays /
             365)
         .toStringAsFixed(0);
-    final coreWidget = Text(
+    return Text(
       '$age year old maker of things',
       style: TextStyle(
         fontSize: fontSize,
         fontStyle: FontStyle.italic,
       ),
     );
-    return center ? Center(child: coreWidget) : coreWidget;
   }
 }
 
 class Header extends StatelessWidget {
   final double fontSize;
-  final bool center;
 
-  Header({
-    this.fontSize = 50,
-    this.center = false,
-  });
+  Header({this.fontSize = 50});
 
   @override
   Widget build(BuildContext context) {
-    final coreWidget = AnimationConfiguration.synchronized(
+    return AnimationConfiguration.synchronized(
       child: SlideAnimation(
         verticalOffset: -50,
         duration: Duration(seconds: 1),
@@ -54,6 +45,5 @@ class Header extends StatelessWidget {
         ),
       ),
     );
-    return center ? Center(child: coreWidget) : coreWidget;
   }
 }
