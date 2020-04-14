@@ -9,11 +9,11 @@ dependencies:
   simple_animations: "^1.3.6"
   url_launcher: "^5.4.1"
   flutter:
-    sdk: "flutter"
+    sdk: flutter
 dev_dependencies:
-  local_google_fonts: "^1.0.3"
+  local_google_fonts: "^1.0.8"
   flutter_test:
-    sdk: "flutter"
+    sdk: flutter
 environment:
   sdk: ">=2.7.0 <3.0.0"
 flutter:

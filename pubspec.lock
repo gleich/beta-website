@@ -7,7 +7,7 @@ packages:
       name: args
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.6.0"
+    version: "1.5.2"
   async:
     dependency: transitive
     description:
@@ -92,7 +92,7 @@ packages:
       name: local_google_fonts
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.3"
+    version: "1.0.8"
   matcher:
     dependency: transitive
     description:
@@ -134,7 +134,7 @@ packages:
       name: pedantic
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.9.0"
+    version: "1.8.0+1"
   plugin_platform_interface:
     dependency: transitive
     description:
