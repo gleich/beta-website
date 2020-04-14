@@ -51,7 +51,7 @@ class Themes {
   ThemeData get darkTheme => ThemeData(
         brightness: Brightness.dark,
         fontFamily: _fontFamily,
-        backgroundColor: Colors.black,
+        scaffoldBackgroundColor: Colors.black,
         primaryColor: Colors.black,
         accentColor: Colors.white,
         tooltipTheme: _toolTipThemeData(Colors.black),
@@ -61,7 +61,7 @@ class Themes {
   ThemeData get lightTheme => ThemeData(
         brightness: Brightness.light,
         fontFamily: _fontFamily,
-        backgroundColor: Colors.white,
+        scaffoldBackgroundColor: Colors.white,
         primaryColor: Colors.white,
         accentColor: Colors.black,
         tooltipTheme: _toolTipThemeData(Colors.white),
