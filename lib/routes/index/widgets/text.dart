@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
@@ -13,12 +14,32 @@ class SubTitle extends StatelessWidget {
                 .inDays /
             365)
         .toStringAsFixed(0);
-    return Text(
-      '$age year old maker of things',
-      style: TextStyle(
-        fontSize: fontSize,
-        fontStyle: FontStyle.italic,
-      ),
+    return Row(
+      children: <Widget>[
+        Text(
+          '$age year old ',
+          style: TextStyle(
+            fontSize: fontSize,
+            fontStyle: FontStyle.italic,
+          ),
+        ),
+        Container(
+          child: FadeAnimatedTextKit(
+            text: <String>[
+              'maker of things',
+              'programmer',
+              'photographer',
+              'cyclist',
+            ],
+            textStyle: TextStyle(
+              fontSize: fontSize,
+              fontStyle: FontStyle.italic,
+            ),
+            textAlign: TextAlign.start,
+            alignment: AlignmentDirectional.topStart,
+          ),
+        )
+      ],
     );
   }
 }
