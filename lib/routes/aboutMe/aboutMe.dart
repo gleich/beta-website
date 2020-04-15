@@ -1,6 +1,10 @@
+// Flutter imports
 import 'package:flutter/material.dart';
+
+// Package imports
 import 'package:responsive_builder/responsive_builder.dart';
 
+// Project imports
 import 'package:matt_gleich_github_io/routes/aboutMe/views/desktop.dart';
 import 'package:matt_gleich_github_io/routes/aboutMe/views/mobile.dart';
 
