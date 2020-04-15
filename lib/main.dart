@@ -32,14 +32,12 @@ class _MySite extends StatelessWidget {
 class _MySiteWithTheme extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final themeMode = Provider.of<ThemeChanger>(context);
-    final themes = Themes();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "// Matthew Gleich",
-      theme: themes.lightTheme,
-      darkTheme: themes.darkTheme,
-      themeMode: themeMode.activeTheme,
+      theme: Themes().lightTheme,
+      darkTheme: Themes().darkTheme,
+      themeMode: Provider.of<ThemeChanger>(context).activeTheme,
       routes: {
         IndexRoute.routeName: (ctx) => IndexRoute(),
         BlogRoute.routeName: (ctx) => BlogRoute(),
