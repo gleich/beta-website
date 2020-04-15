@@ -2,9 +2,9 @@
 import 'package:flutter/material.dart';
 
 class ThemeChanger with ChangeNotifier {
-  ThemeMode activeTheme;
+  ThemeMode activeTheme = ThemeMode.system;
 
-  ThemeChanger(this.activeTheme);
+  ThemeChanger();
 
   changeActiveTheme(ThemeMode requestedTheme) {
     activeTheme = requestedTheme;

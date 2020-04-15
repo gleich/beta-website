@@ -22,32 +22,29 @@ void main() => runApp(_MySite());
 class _MySite extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider<ThemeChanger>(
-      create: (_) => ThemeChanger(ThemeMode.system),
-      child: _MySiteWithTheme(),
-    );
-  }
-}
-
-class _MySiteWithTheme extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "// Matthew Gleich",
-      theme: Themes().lightTheme,
-      darkTheme: Themes().darkTheme,
-      themeMode: Provider.of<ThemeChanger>(context).activeTheme,
-      routes: {
-        IndexRoute.routeName: (ctx) => IndexRoute(),
-        BlogRoute.routeName: (ctx) => BlogRoute(),
-        ProjectsRoute.routeName: (ctx) => ProjectsRoute(),
-        AboutMeRoute.routeName: (ctx) => AboutMeRoute(),
-        PhotographyRoute.routeName: (ctx) => PhotographyRoute(),
-        StatsRoute.routeName: (ctx) => StatsRoute(),
-      },
-      onUnknownRoute: (_) => MaterialPageRoute(
-        builder: (ctx) => Route404(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => ThemeChanger()),
+      ],
+      child: Consumer<ThemeChanger>(
+        builder: (context, themeChanger, _) => MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: "// Matthew Gleich",
+          theme: Themes().lightTheme,
+          darkTheme: Themes().darkTheme,
+          themeMode: Provider.of<ThemeChanger>(context).activeTheme,
+          routes: {
+            IndexRoute.routeName: (ctx) => IndexRoute(),
+            BlogRoute.routeName: (ctx) => BlogRoute(),
+            ProjectsRoute.routeName: (ctx) => ProjectsRoute(),
+            AboutMeRoute.routeName: (ctx) => AboutMeRoute(),
+            PhotographyRoute.routeName: (ctx) => PhotographyRoute(),
+            StatsRoute.routeName: (ctx) => StatsRoute(),
+          },
+          onUnknownRoute: (_) => MaterialPageRoute(
+            builder: (ctx) => Route404(),
+          ),
+        ),
       ),
     );
   }
