@@ -23997,7 +23997,7 @@ r=n.y
 while(!0){q=t
 p=n.a
 p.toString
-if(!(q<4))break
+if(!(q<3))break
 try{if(!C.c.a3(p.c[t],"text")){q=P.a0J()
 throw H.c(q)}q=n.a.c
 p=q[t].text
@@ -24020,7 +24020,7 @@ vo:function(){var t,s,r=this,q=null,p=r.z
 r.a.toString
 r.Q=!1
 p>-1
-if(p===3){p=r.cx
+if(p===2){p=r.cx
 if(p!==2){r.z=0
 r.cx=p+1}else return}else r.z=p+1
 p=r.f
@@ -39254,7 +39254,7 @@ L.pZ.prototype={
 C:function(a){var t,s=null,r=Date.now(),q=H.a1R(2004,4,8,0,0,0,0,!0)
 if(!H.bV(q))H.T(H.bb(q))
 t=this.c
-return T.y3(H.b([L.cr(C.J.am(C.e.bZ(P.c5(0,r-q,0).a,864e8)/365,0)+" year old ",s,A.bH(s,s,s,s,s,s,s,s,s,s,s,t,C.jW,s,s,s,!0,s,s,s,s,s,s),s),M.k8(s,new Q.nH(H.b(["maker of things","programmer","photographer","cyclist"],u.s),A.bH(s,s,s,s,s,s,s,s,s,s,s,t,C.jW,s,s,s,!0,s,s,s,s,s,s),C.aC,s),s,s,s,s,s,s,s)],u.p),C.ah,C.l4,C.bE)}}
+return T.y3(H.b([L.cr(C.J.am(C.e.bZ(P.c5(0,r-q,0).a,864e8)/365,0)+" year old ",s,A.bH(s,s,s,s,s,s,s,s,s,s,s,t,C.jW,s,s,s,!0,s,s,s,s,s,s),s),M.k8(s,new Q.nH(H.b(["maker of things","programmer","photographer"],u.s),A.bH(s,s,s,s,s,s,s,s,s,s,s,t,C.jW,s,s,s,!0,s,s,s,s,s,s),C.aC,s),s,s,s,s,s,s,s)],u.p),C.ah,C.l4,C.bE)}}
 L.nW.prototype={
 C:function(a){var t=null,s=P.c5(0,0,1),r=P.c5(0,0,1)
 return new M.fR(0,C.tt,C.E,V.Xf(V.W1(L.cr("\ud83d\udc4b\ud83c\udffc Hey I'm",t,A.bH(t,t,t,t,t,t,t,t,t,t,t,this.c,t,t,t,t,!0,t,t,t,t,t,t),t),r),s,-50),t)}}
