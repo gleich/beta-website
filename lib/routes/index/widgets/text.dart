@@ -15,6 +15,7 @@ class SubTitle extends StatelessWidget {
             365)
         .toStringAsFixed(0);
     return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Text(
           '$age year old ',
