@@ -1,12 +1,12 @@
-// Flutter imports
+// Flutter imports:
 import 'package:flutter/material.dart';
 
-// Package imports
+// Package imports:
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:provider/provider.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
-// Project imports
+// Project imports:
 import 'package:matt_gleich_github_io/provider/theme.dart';
 import 'package:matt_gleich_github_io/services/url.dart' as url;
 

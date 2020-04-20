@@ -1,14 +1,12 @@
-// Flutter imports
+// Flutter imports:
 import 'package:flutter/material.dart';
 
-// Package imports
+// Package imports:
 import 'package:provider/provider.dart';
 
-// Project imports
+// Project imports:
 import 'package:matt_gleich_github_io/themes.dart';
 import 'package:matt_gleich_github_io/provider/theme.dart';
-
-// Routes:
 import 'package:matt_gleich_github_io/routes/index/index.dart';
 import 'package:matt_gleich_github_io/routes/404/404.dart';
 import 'package:matt_gleich_github_io/routes/blog/blog.dart';

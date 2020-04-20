@@ -1,7 +1,7 @@
-// Flutter imports
+// Flutter imports:
 import 'package:flutter/material.dart';
 
-// Project imports
+// Project imports:
 import 'package:matt_gleich_github_io/routes/index/index.dart';
 import 'package:matt_gleich_github_io/widgets/buttons.dart';
 
