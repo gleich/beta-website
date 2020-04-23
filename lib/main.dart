@@ -1,10 +1,10 @@
-// Flutter imports:
+// 📱 Flutter imports:
 import 'package:flutter/material.dart';
 
-// Package imports:
+// 📦 Package imports:
 import 'package:provider/provider.dart';
 
-// Project imports:
+// 🌎 Project imports:
 import 'package:matt_gleich_github_io/themes.dart';
 import 'package:matt_gleich_github_io/provider/theme.dart';
 import 'package:matt_gleich_github_io/routes/index/index.dart';

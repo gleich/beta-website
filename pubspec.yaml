@@ -1,46 +1,46 @@
 description: "Matthew Gleich's Personal website"
-name: "matt_gleich_github_io"
-version: "1.0.0+1"
+name: 'matt_gleich_github_io'
+version: '1.0.0+1'
 dependencies:
-  animated_text_kit: "^2.0.0"
-  flutter_staggered_animations: "^0.1.2"
-  material_design_icons_flutter: "^3.4.4895"
-  provider: ">=4.0.0 <5.0.0"
-  responsive_builder: "^0.1.2"
-  simple_animations: "^1.3.6"
-  url_launcher: "^5.4.1"
+  animated_text_kit: '^2.0.0'
+  flutter_staggered_animations: '^0.1.2'
+  material_design_icons_flutter: '^3.4.4895'
+  provider: '>=4.0.0 <5.0.0'
+  responsive_builder: '^0.1.2'
+  simple_animations: '^1.3.6'
+  url_launcher: '^5.4.1'
   flutter:
     sdk: flutter
 dev_dependencies:
-  import_sorter: "^1.0.3"
-  local_google_fonts: "^1.0.8"
+  import_sorter: '^1.0.7'
+  local_google_fonts: '^1.0.8'
   flutter_test:
     sdk: flutter
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.7.0 <3.0.0'
 flutter:
   assets:
-    - "assets/images/"
+    - 'assets/images/'
   fonts:
-    - family: "Abel"
+    - family: 'Abel'
       fonts:
-        - asset: "assets/fonts/googleFonts/Abel/Abel-400.ttf"
+        - asset: 'assets/fonts/googleFonts/Abel/Abel-400.ttf'
           weight: 400
-    - family: "Tomorrow"
+    - family: 'Tomorrow'
       fonts:
-        - asset: "assets/fonts/googleFonts/Tomorrow/Tomorrow-400.ttf"
+        - asset: 'assets/fonts/googleFonts/Tomorrow/Tomorrow-400.ttf'
           weight: 400
-        - asset: "assets/fonts/googleFonts/Tomorrow/Tomorrow-400i.ttf"
-          style: "italic"
+        - asset: 'assets/fonts/googleFonts/Tomorrow/Tomorrow-400i.ttf'
+          style: 'italic'
           weight: 400
-        - asset: "assets/fonts/googleFonts/Tomorrow/Tomorrow-700.ttf"
+        - asset: 'assets/fonts/googleFonts/Tomorrow/Tomorrow-700.ttf'
           weight: 700
   uses-material-design: true
 google_fonts:
   docs: false
   fonts:
-    - "Abel"
+    - 'Abel'
     - Tomorrow:
         - 400
-        - "400i"
+        - '400i'
         - 700

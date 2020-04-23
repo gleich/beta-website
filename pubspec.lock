@@ -106,7 +106,7 @@ packages:
       name: import_sorter
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.3"
+    version: "1.0.7"
   io:
     dependency: transitive
     description:
