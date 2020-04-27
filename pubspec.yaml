@@ -12,7 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
 dev_dependencies:
-  import_sorter: '^1.0.7'
+  import_sorter: '^1.0.10'
   local_google_fonts: '^1.0.8'
   flutter_test:
     sdk: flutter
@@ -35,6 +35,10 @@ flutter:
           weight: 400
         - asset: 'assets/fonts/googleFonts/Tomorrow/Tomorrow-700.ttf'
           weight: 700
+    - family: 'Computer Modern'
+      fonts:
+        - asset: 'assets/fonts/computer-modern/cmunti.ttf'
+          style: 'italic'
   uses-material-design: true
 google_fonts:
   docs: false

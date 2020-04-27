@@ -60,11 +60,21 @@ class Header extends StatelessWidget {
         duration: Duration(seconds: 1),
         child: FadeInAnimation(
           duration: Duration(seconds: 1),
-          child: Text(
-            "👋🏼 Hey I'm",
-            style: TextStyle(
-              fontSize: fontSize,
-            ),
+          child: Row(
+            children: <Widget>[
+              Text(
+                '👋🏼 ',
+                style: TextStyle(fontSize: fontSize),
+              ),
+              Text(
+                "Hey! I'm",
+                style: TextStyle(
+                  fontSize: fontSize,
+                  fontFamily: 'Computer Modern',
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
+            ],
           ),
         ),
       ),
