@@ -61,6 +61,7 @@ class Header extends StatelessWidget {
         child: FadeInAnimation(
           duration: Duration(seconds: 1),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(
                 '👋🏼 ',
