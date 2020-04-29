@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 // 🌎 Project imports:
+import 'package:matt_gleich_github_io/routes/skills/skills.dart';
 import 'package:matt_gleich_github_io/themes.dart';
 import 'package:matt_gleich_github_io/provider/theme.dart';
 import 'package:matt_gleich_github_io/routes/index/index.dart';
@@ -38,6 +39,7 @@ class _MySite extends StatelessWidget {
             AboutMeRoute.routeName: (ctx) => AboutMeRoute(),
             PhotographyRoute.routeName: (ctx) => PhotographyRoute(),
             StatsRoute.routeName: (ctx) => StatsRoute(),
+            SkillsRoute.routeName: (ctx) => SkillsRoute(),
           },
           onUnknownRoute: (_) => MaterialPageRoute(
             builder: (ctx) => Route404(),

@@ -12,6 +12,10 @@ class PageButtons {
       pageRoutePath: "/projects",
     ),
     PageButton(
+      pageName: '🚀 Skills',
+      pageRoutePath: '/skills',
+    ),
+    PageButton(
       pageName: "👨🏻‍💻 About Me",
       pageRoutePath: "/aboutMe",
     ),
