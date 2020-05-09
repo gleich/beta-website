@@ -14,7 +14,7 @@ packages:
       name: args
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.5.2"
+    version: "1.6.0"
   async:
     dependency: transitive
     description:
@@ -50,6 +50,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.14.12"
+  colorize:
+    dependency: transitive
+    description:
+      name: colorize
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
   console:
     dependency: transitive
     description:
@@ -106,7 +113,7 @@ packages:
       name: import_sorter
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.2"
+    version: "3.0.2"
   io:
     dependency: transitive
     description:
