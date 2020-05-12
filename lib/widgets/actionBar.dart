@@ -7,8 +7,8 @@ import 'package:provider/provider.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 // 🌎 Project imports:
-import 'package:matt_gleich_github_io/provider/theme.dart';
-import 'package:matt_gleich_github_io/services/url.dart' as url;
+import 'package:personal_site/provider/theme.dart';
+import 'package:personal_site/services/url.dart' as url;
 
 class ActionBar extends StatelessWidget {
   final MainAxisAlignment mainAxisAlignment;

@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 // 🌎 Project imports:
-import 'package:matt_gleich_github_io/widgets/copyright.dart';
-import 'package:matt_gleich_github_io/routes/index/views/desktop.dart';
-import 'package:matt_gleich_github_io/routes/index/views/mobile.dart';
+import 'package:personal_site/widgets/copyright.dart';
+import 'package:personal_site/routes/index/views/desktop.dart';
+import 'package:personal_site/routes/index/views/mobile.dart';
 
 class IndexRoute extends StatelessWidget {
   static const routeName = "/";

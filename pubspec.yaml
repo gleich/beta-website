@@ -1,5 +1,5 @@
 description: "Matthew Gleich's Personal website"
-name: 'matt_gleich_github_io'
+name: 'personal_site'
 version: '1.0.0+1'
 dependencies:
   animated_text_kit: '^2.0.0'
