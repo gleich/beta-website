@@ -1,25 +1,25 @@
 'use strict';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "index.html": "630af57855a72466baac883cb2155d42",
-"/": "630af57855a72466baac883cb2155d42",
-"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
+  "main.dart.js": "2f652b1721832c3a8257b10b49c33118",
+"assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
+"assets/FontManifest.json": "83d8cc8cbc762691f1f015c88de12edf",
+"assets/LICENSE": "e176128e3a4fd9638db766fc6163a1d8",
 "assets/packages/material_design_icons_flutter/lib/fonts/materialdesignicons-webfont.ttf": "2abd86f90b3fd9d18d950195282cd8d5",
-"assets/assets/fonts/computer-modern/cmunti.ttf": "86153f0958ae90bf30249dcb98d04a7d",
+"assets/assets/fonts/googleFonts/Abel/Abel-400.ttf": "f48ede027d639586e5d96d8583708f7a",
 "assets/assets/fonts/googleFonts/Tomorrow/Tomorrow-400.ttf": "8f9c1e8901890cbb0b792dc99f5db932",
 "assets/assets/fonts/googleFonts/Tomorrow/Tomorrow-400i.ttf": "779116688dc64d9109caf2e92629cf2b",
 "assets/assets/fonts/googleFonts/Tomorrow/Tomorrow-700.ttf": "5556384851cee02430156ff8349c0393",
-"assets/assets/fonts/googleFonts/Abel/Abel-400.ttf": "f48ede027d639586e5d96d8583708f7a",
-"assets/assets/images/logo.png": "e94e2a82fde16d2ac04c1ac95f42ce9c",
+"assets/assets/fonts/computer-modern/cmunti.ttf": "86153f0958ae90bf30249dcb98d04a7d",
 "assets/assets/images/me.jpg": "f835a9990dea615cc1ca057c34766012",
-"assets/FontManifest.json": "83d8cc8cbc762691f1f015c88de12edf",
-"assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
+"assets/assets/images/logo.png": "e94e2a82fde16d2ac04c1ac95f42ce9c",
 "assets/AssetManifest.json": "74d0fa0cc26f3f931d31399ae4152cbf",
-"assets/LICENSE": "e176128e3a4fd9638db766fc6163a1d8",
 "favicon.png": "e94e2a82fde16d2ac04c1ac95f42ce9c",
-"main.dart.js": "a97396ebdfad10143032de2d8fd0a0e2",
-"manifest.json": "988841e96e5a0f55389c04278a6d0312"
+"manifest.json": "988841e96e5a0f55389c04278a6d0312",
+"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
+"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
+"index.html": "630af57855a72466baac883cb2155d42",
+"/": "630af57855a72466baac883cb2155d42"
 };
 
 self.addEventListener('activate', function (event) {
