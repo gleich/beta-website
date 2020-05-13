@@ -72,6 +72,9 @@ class _PageButtonState extends State<PageButton> {
       },
       child: RaisedButton(
         color: backgroundColor,
+        splashColor: Colors.transparent,
+        hoverColor: Colors.transparent,
+        highlightColor: Colors.transparent,
         elevation: 2,
         hoverElevation: 5,
         onPressed: () => Navigator.pushNamed(
