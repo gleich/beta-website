@@ -1,6 +1,8 @@
 // 📱 Flutter imports:
 import 'package:flutter/material.dart';
 
+import 'package:personal_site/widgets/cursorChange.dart';
+
 class ReflectingRaisedButton extends StatefulWidget {
   final void Function() onPressed;
   final String text;
@@ -40,6 +42,9 @@ class _ReflectingRaisedButtonState extends State<ReflectingRaisedButton> {
       child: RaisedButton(
         color: backgroundColor,
         onPressed: widget.onPressed,
+        splashColor: Colors.transparent,
+        hoverColor: Colors.transparent,
+        highlightColor: Colors.transparent,
         child: Text(
           widget.text,
           style: TextStyle(
@@ -48,6 +53,6 @@ class _ReflectingRaisedButtonState extends State<ReflectingRaisedButton> {
           ),
         ),
       ),
-    );
+    ).changeCursorOnHover;
   }
 }
