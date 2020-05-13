@@ -47,13 +47,13 @@ class PageButton extends StatefulWidget {
 }
 
 class _PageButtonState extends State<PageButton> {
-  bool _hovering = false;
+  var _hovering = false;
   @override
   Widget build(BuildContext context) {
-    Color backgroundColor = _hovering
+    final backgroundColor = _hovering
         ? Theme.of(context).primaryColor
         : Theme.of(context).accentColor;
-    Color textColor = _hovering
+    final textColor = _hovering
         ? Theme.of(context).accentColor
         : Theme.of(context).primaryColor;
     return MouseRegion(

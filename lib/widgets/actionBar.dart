@@ -106,13 +106,13 @@ class _ActionBarIcon extends StatefulWidget {
 }
 
 class _ActionBarIconState extends State<_ActionBarIcon> {
-  bool _hovering = false;
+  var _hovering = false;
   @override
   Widget build(BuildContext context) {
-    Color backgroundColor = _hovering
+    final backgroundColor = _hovering
         ? Theme.of(context).primaryColor
         : Theme.of(context).accentColor;
-    Color iconColor = _hovering
+    final iconColor = _hovering
         ? Theme.of(context).accentColor
         : Theme.of(context).primaryColor;
     return Padding(
