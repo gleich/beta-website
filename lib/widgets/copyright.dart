@@ -6,6 +6,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 
 // 🌎 Project imports:
 import 'package:personal_site/services/url.dart' as url;
+import 'package:personal_site/widgets/cursorChange.dart';
 
 class Copyright extends StatelessWidget {
   @override
@@ -23,7 +24,7 @@ class Copyright extends StatelessWidget {
                   url.launchURL("https://github.com/Matt-Gleich/Personal-Site"),
               child: const Icon(MdiIcons.githubCircle),
             ),
-          ),
+          ).changeCursorOnHover,
           const SizedBox(width: 20),
           Text(
             "© Matthew Gleich ${DateTime.now().year}",
