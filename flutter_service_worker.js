@@ -15,11 +15,11 @@ const RESOURCES = {
 "assets/assets/images/logo.png": "e94e2a82fde16d2ac04c1ac95f42ce9c",
 "assets/AssetManifest.json": "74d0fa0cc26f3f931d31399ae4152cbf",
 "favicon.png": "e94e2a82fde16d2ac04c1ac95f42ce9c",
-"manifest.json": "988841e96e5a0f55389c04278a6d0312",
+"manifest.json": "23681046856927b4f2dd54e654d6df9c",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"index.html": "82a26413b80a61bae4e953d0bcc8a259",
-"/": "82a26413b80a61bae4e953d0bcc8a259"
+"index.html": "fa1f390597250c121b26ad38ebb9a8f7",
+"/": "fa1f390597250c121b26ad38ebb9a8f7"
 };
 
 self.addEventListener('activate', function (event) {
