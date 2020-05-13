@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 // 🌎 Project imports:
+import 'package:personal_site/widgets/pageTemplate.dart';
 import 'package:personal_site/routes/aboutMe/views/desktop.dart';
 import 'package:personal_site/routes/aboutMe/views/mobile.dart';
 
@@ -16,15 +17,7 @@ class AboutMeRoute extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        title: Text(
-          "Matthew Gleich",
-          style: Theme.of(context).textTheme.headline1,
-        ),
-        centerTitle: false,
-      ),
+    return PageTemplate(
       body: ScreenTypeLayout(
         desktop: AboutMeDesktopView(_bio),
         tablet: AboutMeDesktopView(_bio),

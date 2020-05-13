@@ -9,6 +9,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 // 🌎 Project imports:
 import 'package:personal_site/provider/theme.dart';
 import 'package:personal_site/services/url.dart' as url;
+import 'package:personal_site/widgets/cursorChange.dart';
 
 class ActionBar extends StatelessWidget {
   final MainAxisAlignment mainAxisAlignment;
@@ -154,7 +155,7 @@ class _ActionBarIconState extends State<_ActionBarIcon> {
             ),
           ),
         ),
-      ),
+      ).changeCursorOnHover,
     );
   }
 }
