@@ -155,7 +155,7 @@ class _ActionBarIconState extends State<_ActionBarIcon> {
             ),
           ),
         ),
-      ).showCursorOnHover,
+      ).changeCursorOnHover,
     );
   }
 }
