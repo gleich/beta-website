@@ -26,10 +26,6 @@ class AboutMeMobileView extends StatelessWidget {
                 filterQuality: FilterQuality.medium,
               ),
             ),
-            Text(
-              "Me taking a picture in Portsmouth, NH",
-              style: Theme.of(context).textTheme.subtitle1,
-            ),
             const SizedBox(height: 30),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 50),
