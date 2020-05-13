@@ -22,12 +22,9 @@ class PageButtons {
       pageName: "👨🏻‍💻 About Me",
       pageRoutePath: "/aboutMe",
     ),
-    Padding(
-      padding: const EdgeInsets.only(right: 23),
-      child: PageButton(
-        pageName: "📷 Photography",
-        pageRoutePath: "/photography",
-      ),
+    PageButton(
+      pageName: "📷 Photography",
+      pageRoutePath: "/photography",
     ),
     PageButton(
       pageName: "📊 Stats",
