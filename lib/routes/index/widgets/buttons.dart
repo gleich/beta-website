@@ -1,6 +1,9 @@
 // 📱 Flutter imports:
 import 'package:flutter/material.dart';
 
+// 🌎 Project imports:
+import 'package:personal_site/widgets/cursorChange.dart';
+
 class PageButtons {
   static const buttons = <Widget>[
     PageButton(
@@ -86,6 +89,6 @@ class _PageButtonState extends State<PageButton> {
           ),
         ),
       ),
-    );
+    ).changeCursorOnHover;
   }
 }
