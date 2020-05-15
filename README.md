@@ -1,4 +1,4 @@
-# Personal-Site ![Published Badge](https://byob-wrjbe6bcjbvi.runkit.sh/Matt-Gleich/Personal-Site/build)
+# Personal-Site
 
 🌎 My personal website written in Flutter. Visit it at [mattglei.ch](https://mattglei.ch)
 
