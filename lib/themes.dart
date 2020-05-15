@@ -38,6 +38,7 @@ class Themes {
           color: accentColor,
           fontSize: 25,
         ),
+        // Mobile bodyText
         bodyText2: TextStyle(
           color: accentColor,
           fontSize: 20,
