@@ -1,6 +1,9 @@
 // 🐦 Flutter imports:
 import 'package:flutter/material.dart';
 
+// 🌎 Project imports:
+import 'package:personal_site/widgets/text.dart';
+
 class AboutMeDesktopView extends StatelessWidget {
   final String bio;
 
@@ -18,10 +21,7 @@ class AboutMeDesktopView extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Text(
-                  'About Me',
-                  style: Theme.of(context).textTheme.headline2,
-                ),
+                PageTitleDesktop('👨🏻‍💻', 'About Me'),
                 const SizedBox(height: 30),
                 Container(
                   width: MediaQuery.of(context).size.width * 0.5,

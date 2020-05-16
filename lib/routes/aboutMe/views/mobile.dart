@@ -1,5 +1,6 @@
 // 🐦 Flutter imports:
 import 'package:flutter/material.dart';
+import 'package:personal_site/widgets/text.dart';
 
 class AboutMeMobileView extends StatelessWidget {
   final String bio;
@@ -13,10 +14,7 @@ class AboutMeMobileView extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'About Me',
-              style: Theme.of(context).textTheme.headline3,
-            ),
+            PageTitleMobile('👨🏻‍💻', 'About Me'),
             const SizedBox(height: 30),
             ClipRRect(
               borderRadius: BorderRadius.circular(10),
