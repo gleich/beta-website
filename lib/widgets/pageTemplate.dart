@@ -6,9 +6,11 @@ import 'package:personal_site/widgets/cursorChange.dart';
 
 class PageTemplate extends StatelessWidget {
   final Widget body;
+  final String pageName;
 
   PageTemplate({
     @required this.body,
+    @required this.pageName,
   });
 
   @override
@@ -17,7 +19,7 @@ class PageTemplate extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         title: Text(
-          'Matthew Gleich',
+          'Matthew Gleich  ➞ $pageName',
           style: Theme.of(context).textTheme.headline1,
         ),
         centerTitle: false,

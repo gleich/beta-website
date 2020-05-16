@@ -18,6 +18,7 @@ class AboutMeRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageTemplate(
+      pageName: '👨🏻‍💻 About Me',
       body: ScreenTypeLayout(
         desktop: AboutMeDesktopView(_bio),
         tablet: AboutMeDesktopView(_bio),

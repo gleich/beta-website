@@ -15,6 +15,7 @@ class SkillsRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageTemplate(
+      pageName: '🚀 Skills',
       body: SingleChildScrollView(
         child: Center(
           child: SingleChildScrollView(
