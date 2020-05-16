@@ -16,6 +16,6 @@ cp build/web/flutter_service_worker.js .
 cp build/web/index.html .
 cp build/web/main.dart.js .
 cp build/web/main.dart.js.map .
-cp build/web/manifest.json
+cp build/web/manifest.json .
 
 echo "Done"
