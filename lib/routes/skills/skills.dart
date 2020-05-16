@@ -137,6 +137,7 @@ class SkillsRoute extends StatelessWidget {
                   uses: <String>[
                     '⚖️  Software at Scale',
                     '🥧  k3s on rpis',
+                    '🦾  Bare Metal Clusters'
                   ],
                 ),
               ],
