@@ -11,7 +11,7 @@ const RESOURCES = {
 "assets/assets/fonts/googleFonts/Tomorrow/Tomorrow-400i.ttf": "779116688dc64d9109caf2e92629cf2b",
 "assets/assets/fonts/googleFonts/Tomorrow/Tomorrow-700.ttf": "5556384851cee02430156ff8349c0393",
 "assets/assets/fonts/computer-modern/cmunti.ttf": "86153f0958ae90bf30249dcb98d04a7d",
-"assets/assets/images/me.jpg": "7ce42ed77e1ce52872dd8cfc18b63dd9",
+"assets/assets/images/me.jpg": "7d827c43e16693a220b905690456c72c",
 "assets/assets/images/logo.png": "e94e2a82fde16d2ac04c1ac95f42ce9c",
 "assets/AssetManifest.json": "74d0fa0cc26f3f931d31399ae4152cbf",
 "favicon.png": "e94e2a82fde16d2ac04c1ac95f42ce9c",
