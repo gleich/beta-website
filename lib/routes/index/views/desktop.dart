@@ -22,7 +22,7 @@ class IndexDesktopView extends StatelessWidget {
                 children: <Widget>[
                   Header(),
                   const Text(
-                    "Matthew Gleich",
+                    'Matthew Gleich',
                     style: TextStyle(
                       fontSize: 150,
                       decoration: TextDecoration.underline,

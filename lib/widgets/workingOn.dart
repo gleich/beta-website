@@ -33,7 +33,7 @@ class WorkingOn extends StatelessWidget {
               IndexRoute.routeName,
             ),
             fontSize: 50,
-            text: "Return Home 🏠",
+            text: 'Return Home 🏠',
           )
         ],
       ),

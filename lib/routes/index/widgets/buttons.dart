@@ -7,28 +7,28 @@ import 'package:personal_site/widgets/cursorChange.dart';
 class PageButtons {
   static const buttons = <Widget>[
     PageButton(
-      pageName: "🖊️ Blog",
-      pageRoutePath: "/blog",
+      pageName: '🖊️ Blog',
+      pageRoutePath: '/blog',
     ),
     PageButton(
       pageName: "🛠️ Projects",
-      pageRoutePath: "/projects",
+      pageRoutePath: '/projects',
     ),
     PageButton(
       pageName: '🚀 Skills',
       pageRoutePath: '/skills',
     ),
     PageButton(
-      pageName: "👨🏻‍💻 About Me",
-      pageRoutePath: "/aboutMe",
+      pageName: '👨🏻‍💻 About Me',
+      pageRoutePath: '/aboutMe',
     ),
     PageButton(
-      pageName: "📷 Photography",
-      pageRoutePath: "/photography",
+      pageName: '📷 Photography',
+      pageRoutePath: '/photography',
     ),
     PageButton(
-      pageName: "📊 Stats",
-      pageRoutePath: "/stats",
+      pageName: '📊 Stats',
+      pageRoutePath: '/stats',
     )
   ];
 }

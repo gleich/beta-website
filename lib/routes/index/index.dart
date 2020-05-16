@@ -10,7 +10,7 @@ import 'package:personal_site/routes/index/views/desktop.dart';
 import 'package:personal_site/routes/index/views/mobile.dart';
 
 class IndexRoute extends StatelessWidget {
-  static const routeName = "/";
+  static const routeName = '/';
 
   @override
   Widget build(BuildContext context) {

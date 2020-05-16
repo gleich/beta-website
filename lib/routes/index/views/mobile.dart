@@ -22,7 +22,7 @@ class IndexMobileView extends StatelessWidget {
               fontSize: 35,
             ),
             Text(
-              "Matthew\nGleich",
+              'Matthew\nGleich',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 70,

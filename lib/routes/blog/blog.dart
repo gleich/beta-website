@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:personal_site/widgets/workingOn.dart';
 
 class BlogRoute extends StatelessWidget {
-  static const routeName = "/blog";
+  static const routeName = '/blog';
 
   @override
   Widget build(BuildContext context) {

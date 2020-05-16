@@ -18,16 +18,16 @@ class Copyright extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Tooltip(
-            message: "View Source Code",
+            message: 'View Source Code',
             child: GestureDetector(
               onTap: () =>
-                  url.launchURL("https://github.com/Matt-Gleich/Personal-Site"),
+                  url.launchURL('https://github.com/Matt-Gleich/Personal-Site'),
               child: const Icon(MdiIcons.githubCircle),
             ),
           ).changeCursorOnHover,
           const SizedBox(width: 20),
           Text(
-            "© Matthew Gleich ${DateTime.now().year}",
+            '© Matthew Gleich ${DateTime.now().year}',
             style: TextStyle(
               fontSize: 20,
             ),

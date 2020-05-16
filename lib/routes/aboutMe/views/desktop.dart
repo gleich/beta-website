@@ -19,7 +19,7 @@ class AboutMeDesktopView extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  "About Me",
+                  'About Me',
                   style: Theme.of(context).textTheme.headline2,
                 ),
                 const SizedBox(height: 30),
@@ -40,7 +40,7 @@ class AboutMeDesktopView extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(10),
                   child: Image.asset(
-                    "assets/images/me.jpg",
+                    'assets/images/me.jpg',
                     height: 500,
                     filterQuality: FilterQuality.medium,
                   ),

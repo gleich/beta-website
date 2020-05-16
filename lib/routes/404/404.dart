@@ -14,7 +14,7 @@ class Route404 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              "404 Error\nPage not found 😔",
+              '404 Error\nPage not found 😔',
               style: TextStyle(
                 fontSize: 70,
                 decoration: TextDecoration.underline,
@@ -28,7 +28,7 @@ class Route404 extends StatelessWidget {
                 IndexRoute.routeName,
               ),
               fontSize: 50,
-              text: "Return Home 🏠",
+              text: 'Return Home 🏠',
             ),
           ],
         ),

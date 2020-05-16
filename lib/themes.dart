@@ -15,21 +15,21 @@ class Themes {
       );
   TextTheme _textTheme(Color accentColor) => TextTheme(
         headline1: TextStyle(
-          fontFamily: "Tomorrow",
+          fontFamily: 'Tomorrow',
           fontSize: 25,
           color: accentColor,
         ),
         // Desktop headline
         headline2: TextStyle(
           fontSize: 100,
-          fontFamily: "Tomorrow",
+          fontFamily: 'Tomorrow',
           decoration: TextDecoration.underline,
           color: accentColor,
         ),
         // Mobile headline
         headline3: TextStyle(
           fontSize: 60,
-          fontFamily: "Tomorrow",
+          fontFamily: 'Tomorrow',
           decoration: TextDecoration.underline,
           color: accentColor,
         ),

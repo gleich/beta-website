@@ -14,14 +14,14 @@ class AboutMeMobileView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "About Me",
+              'About Me',
               style: Theme.of(context).textTheme.headline3,
             ),
             const SizedBox(height: 30),
             ClipRRect(
               borderRadius: BorderRadius.circular(10),
               child: Image.asset(
-                "assets/images/me.jpg",
+                'assets/images/me.jpg',
                 height: 300,
                 filterQuality: FilterQuality.medium,
               ),
