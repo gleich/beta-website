@@ -126,9 +126,9 @@ class SkillsRoute extends StatelessWidget {
                   name: '🐳 Docker',
                   uses: <String>[
                     '📦  Containerized Applications',
-                    '🐳  Docker in Docker'
-                        '🥧  Scalable Software Deployments',
-                    '💪  ARM Based Image Builds (Multi-Arch)'
+                    '🐳  Docker in Docker',
+                    '🥧  Scalable Software Deployments',
+                    '💪  ARM Based Image Builds (Multi-Arch)',
                   ],
                 ),
                 Skill(

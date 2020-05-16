@@ -1,5 +1,7 @@
 // 🐦 Flutter imports:
 import 'package:flutter/material.dart';
+
+// 🌎 Project imports:
 import 'package:personal_site/widgets/text.dart';
 
 class AboutMeMobileView extends StatelessWidget {
