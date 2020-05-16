@@ -41,6 +41,9 @@ class _ReflectingRaisedButtonState extends State<ReflectingRaisedButton> {
         });
       },
       child: RaisedButton(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(30),
+        ),
         color: backgroundColor,
         onPressed: widget.onPressed,
         splashColor: Colors.transparent,
