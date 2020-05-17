@@ -40095,7 +40095,7 @@ s=new Y.zs()
 t=s.wN(C.k)
 t=X.V4(C.j,C.G,"Abel",C.k,C.k,s.wK(C.j),t)
 s=Y.UQ(a,u.nY).a
-return new S.oU(P.b0(["/",new F.QN(),"/blog",new F.QO(),"/projects",new F.QP(),"/aboutMe",new F.QQ(),"/photography",new F.QR(),"/stats",new F.QS(),"/skills",new F.QT()],u.N,u.hw),new F.QU(),"// Matthew Gleich",r,t,s,!1,null)},
+return new S.oU(P.b0(["/",new F.QN(),"/blog",new F.QO(),"/projects",new F.QP(),"/aboutMe",new F.QQ(),"/photography",new F.QR(),"/stats",new F.QS(),"/skills",new F.QT()],u.N,u.hw),new F.QU(),"\ud83d\udc68\u200d\ud83d\udcbb Matthew Gleich",r,t,s,!1,null)},
 $C:"$3",
 $R:3}
 F.QN.prototype={

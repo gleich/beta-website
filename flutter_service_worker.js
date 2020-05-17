@@ -1,7 +1,7 @@
 'use strict';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "main.dart.js": "c6f3ee969541d8aa7d6d2540753ec7e3",
+  "main.dart.js": "d116429c01526699cc65c82a31d831b0",
 "assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
 "assets/FontManifest.json": "83d8cc8cbc762691f1f015c88de12edf",
 "assets/LICENSE": "19179c261e4b362b4d90807476f61252",
@@ -18,8 +18,8 @@ const RESOURCES = {
 "manifest.json": "23681046856927b4f2dd54e654d6df9c",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"index.html": "fa1f390597250c121b26ad38ebb9a8f7",
-"/": "fa1f390597250c121b26ad38ebb9a8f7"
+"index.html": "a25a75b49c8a9eacd12cc1ab02fa08d2",
+"/": "a25a75b49c8a9eacd12cc1ab02fa08d2"
 };
 
 self.addEventListener('activate', function (event) {
