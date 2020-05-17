@@ -24,7 +24,7 @@ class PageTemplate extends StatelessWidget {
         ),
         centerTitle: false,
         leading: Tooltip(
-          message: 'Go Back',
+          message: '⬅️ Go Back',
           child: IconButton(
             icon: Icon(Icons.arrow_back_ios),
             hoverColor: Colors.transparent,

@@ -9,7 +9,6 @@ class Themes {
         height: double.minPositive + 5,
         textStyle: TextStyle(
           fontSize: 15,
-          fontStyle: FontStyle.italic,
           color: primaryColor,
         ),
       );

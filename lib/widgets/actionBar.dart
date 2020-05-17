@@ -40,34 +40,34 @@ class ActionBar extends StatelessWidget {
                     : _themeChanger.changeActiveTheme(ThemeMode.light);
               },
               toolTipMessage: _themeChanger.activeTheme == ThemeMode.light
-                  ? 'Dark Mode'
-                  : 'Light Mode',
+                  ? '🌑 Dark Mode'
+                  : '☀️ Light Mode',
               index: 0,
             ),
             _ActionBarIcon(
               icon: MdiIcons.githubCircle,
               onTap: () => url.launchURL('https://github.com/Matt-Gleich'),
-              toolTipMessage: 'GitHub',
+              toolTipMessage: '🐙 GitHub',
               index: 1,
             ),
             _ActionBarIcon(
               icon: MdiIcons.twitter,
               onTap: () => url.launchURL('https://twitter.com/GleichMatthew'),
-              toolTipMessage: 'Twitter',
+              toolTipMessage: '🐦 Twitter',
               index: 2,
             ),
             _ActionBarIcon(
               icon: MdiIcons.linkedin,
               onTap: () => url.launchURL(
                   'https://www.linkedin.com/in/matthew-gleich-636618178/'),
-              toolTipMessage: 'Linkedin',
+              toolTipMessage: '🔗 Linkedin',
               index: 3,
             ),
             _ActionBarIcon(
               icon: MdiIcons.instagram,
               onTap: () =>
                   url.launchURL('https://www.instagram.com/gleichphotography/'),
-              toolTipMessage: 'Instagram',
+              toolTipMessage: '📷 Instagram',
               index: 4,
             ),
           ],
