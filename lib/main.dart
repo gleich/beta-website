@@ -28,7 +28,7 @@ class _MySite extends StatelessWidget {
       child: Consumer<ThemeChanger>(
         builder: (context, themeChanger, _) => MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: '👨‍💻 Matthew Gleich',
+          title: 'Matthew Gleich',
           theme: Themes().lightTheme,
           darkTheme: Themes().darkTheme,
           themeMode: Provider.of<ThemeChanger>(context).activeTheme,
