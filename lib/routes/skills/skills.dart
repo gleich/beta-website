@@ -74,13 +74,6 @@ class SkillsRoute extends StatelessWidget {
                   ],
                 ),
                 Skill(
-                  icon: MdiIcons.languageHtml5,
-                  name: '🕸 HTML, CSS',
-                  uses: <String>[
-                    '🌎  Web Applications',
-                  ],
-                ),
-                Skill(
                   icon: FlutterLogo(
                     size: 300,
                   ),
