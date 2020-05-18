@@ -36,7 +36,7 @@ class SkillsRoute extends StatelessWidget {
                   style: TextStyle(fontSize: 50),
                 ),
                 Text(
-                  '${(DateTime.now().difference(DateTime(2018, 11, 7)).inDays / 31) / 12} years',
+                  '${(DateTime.now().difference(DateTime(2018, 11, 7, 21, 30, 0)).inDays / 31) / 12} years',
                   style: TextStyle(fontSize: 50),
                 ),
                 const SizedBox(
