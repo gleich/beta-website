@@ -96,6 +96,13 @@ class SkillsRoute extends StatelessWidget {
                   ],
                 ),
                 Skill(
+                  icon: MdiIcons.cameraControl,
+                  name: '📷  OpenCV',
+                  uses: <String>[
+                    '📷  Computer vision applications',
+                  ],
+                ),
+                Skill(
                   icon: MdiIcons.githubCircle,
                   name: '🐙 GitHub',
                   uses: <String>[
@@ -109,13 +116,6 @@ class SkillsRoute extends StatelessWidget {
                   name: '🔥 Firebase',
                   uses: <String>[
                     '⏰  Real time chat/data transformation',
-                  ],
-                ),
-                Skill(
-                  icon: MdiIcons.cameraControl,
-                  name: '📷  OpenCV',
-                  uses: <String>[
-                    '📷  Computer vision applications',
                   ],
                 ),
                 Skill(
