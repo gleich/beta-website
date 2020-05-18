@@ -18,7 +18,7 @@ class Copyright extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Tooltip(
-            message: 'View Source Code',
+            message: '🐙 View Source Code',
             child: GestureDetector(
               onTap: () =>
                   url.launchURL('https://github.com/Matt-Gleich/Personal-Site'),
