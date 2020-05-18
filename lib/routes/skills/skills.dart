@@ -27,7 +27,10 @@ class SkillsRoute extends StatelessWidget {
                 const SizedBox(
                   height: 100,
                 ),
-                PageTitleDesktop('🚀', 'Coding Skills'),
+                PageTitleDesktop(
+                  '🚀',
+                  'Coding Skills',
+                ),
                 Text(
                   "I've been coding for:",
                   style: TextStyle(fontSize: 50),
@@ -49,12 +52,14 @@ class SkillsRoute extends StatelessWidget {
                   ],
                 ),
                 Skill(
-                  icon: Container(
+                  icon: Image.network(
+                    'https://fluttericon.com/logo_dart_192px.svg',
                     width: 300,
+                    scale: 0.1,
                   ),
                   name: '🎯 Dart',
                   uses: <String>[
-                    '🐦  Flutter based applications',
+                    '🐦  Flutter based Applications',
                     '📠  Command Line Programs',
                     '📦  Community Packages'
                   ],
@@ -87,6 +92,7 @@ class SkillsRoute extends StatelessWidget {
                     '🐧  Linux Applications',
                     '🖼️  Windows Applications',
                     '🌎  Web Applications',
+                    '📦  Community Packages'
                   ],
                 ),
                 Skill(
