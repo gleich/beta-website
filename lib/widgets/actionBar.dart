@@ -42,33 +42,29 @@ class ActionBar extends StatelessWidget {
               toolTipMessage: _themeChanger.activeTheme == ThemeMode.light
                   ? '🌑 Dark Mode'
                   : '☀️ Light Mode',
-              index: 0,
+              sidePadding: false,
             ),
             _ActionBarIcon(
               icon: MdiIcons.githubCircle,
               onTap: () => url.launchURL('https://github.com/Matt-Gleich'),
               toolTipMessage: '🐙 GitHub',
-              index: 1,
             ),
             _ActionBarIcon(
               icon: MdiIcons.twitter,
               onTap: () => url.launchURL('https://twitter.com/GleichMatthew'),
               toolTipMessage: '🐦 Twitter',
-              index: 2,
             ),
             _ActionBarIcon(
               icon: MdiIcons.linkedin,
               onTap: () => url.launchURL(
                   'https://www.linkedin.com/in/matthew-gleich-636618178/'),
               toolTipMessage: '🔗 Linkedin',
-              index: 3,
             ),
             _ActionBarIcon(
               icon: MdiIcons.instagram,
               onTap: () =>
                   url.launchURL('https://www.instagram.com/gleichphotography/'),
               toolTipMessage: '📷 Instagram',
-              index: 4,
             ),
           ],
           duration: const Duration(seconds: 1),
@@ -88,17 +84,13 @@ class _ActionBarIcon extends StatefulWidget {
   final IconData icon;
   final void Function() onTap;
   final String toolTipMessage;
-  final int index;
-  final double horizontalOffset;
-  final double verticalOffset;
+  final bool sidePadding;
 
   _ActionBarIcon({
     @required this.icon,
     @required this.onTap,
     @required this.toolTipMessage,
-    @required this.index,
-    this.horizontalOffset = 40,
-    this.verticalOffset = 30,
+    this.sidePadding = true,
   });
 
   @override
@@ -116,16 +108,11 @@ class _ActionBarIconState extends State<_ActionBarIcon> {
         ? Theme.of(context).accentColor
         : Theme.of(context).primaryColor;
     return Padding(
-      padding: widget.index != 0
-          ? (widget.index % 2) == 0
-              ? EdgeInsets.only(left: widget.verticalOffset)
-              : EdgeInsets.only(
-                  left: widget.verticalOffset,
-                  top: widget.horizontalOffset,
-                )
-          : (widget.index % 2) == 0
-              ? const EdgeInsets.only()
-              : EdgeInsets.only(top: widget.horizontalOffset),
+      padding: widget.sidePadding
+          ? EdgeInsets.only(
+              left: 30,
+            )
+          : const EdgeInsets.all(0),
       child: Tooltip(
         message: widget.toolTipMessage,
         child: GestureDetector(
