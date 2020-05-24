@@ -29,7 +29,10 @@ class IndexDesktopView extends StatelessWidget {
                     ),
                   ),
                   SubTitle(),
-                  ActionBar(),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10),
+                    child: ActionBar(),
+                  ),
                 ],
               ),
             ),

@@ -19,7 +19,7 @@ class IndexMobileView extends StatelessWidget {
               height: 30,
             ),
             Header(
-              fontSize: 35,
+              fontSize: 40,
             ),
             Text(
               'Matthew\nGleich',
@@ -30,13 +30,16 @@ class IndexMobileView extends StatelessWidget {
               ),
             ),
             SubTitle(
-              fontSize: 30,
+              fontSize: 35,
             ),
-            ActionBar(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 20),
+              child: ActionBar(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+              ),
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 20),
             ...PageButtons.buttons,
             const SizedBox(height: 60),
           ],
