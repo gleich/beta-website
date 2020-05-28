@@ -28,7 +28,7 @@ jobs:
           TZ=America/New_York date
           date >> README.md
           git add .
-          git commit -m "🚀 Publish Latest Changes"
+          git commit -m "🚀 Publish to GitHub Pages"
       - name: Push Changes
         uses: ad-m/github-push-action@master
         with:
