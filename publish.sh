@@ -8,7 +8,7 @@ sh replace.sh
 
 git add .
 
-git commit -m "⬆️ Publish Latest Changes"
+git commit -m "🚀 Publish to GitHub Pages"
 
 git push
 
