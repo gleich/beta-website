@@ -40,6 +40,7 @@ class SubTitle extends StatelessWidget {
             ),
             textAlign: TextAlign.start,
             alignment: AlignmentDirectional.topStart,
+            totalRepeatCount: 1000000000000000000,
           ),
         )
       ],
