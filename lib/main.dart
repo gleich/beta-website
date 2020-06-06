@@ -23,7 +23,7 @@ class _MySite extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => ThemeChanger()),
+        ChangeNotifierProvider(create: (_) => ThemeChanger(context)),
       ],
       child: Consumer<ThemeChanger>(
         builder: (context, themeChanger, _) => MaterialApp(
