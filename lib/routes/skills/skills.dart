@@ -140,14 +140,6 @@ class SkillsRoute extends StatelessWidget {
                     '🦾  Bare Metal Clusters'
                   ],
                 ),
-                Skill(
-                  icon: MdiIcons.aws,
-                  name: '🍃 AWS',
-                  uses: <String>[
-                    '☸️  k8s from scratch with kops',
-                    '☸️  k8s management',
-                  ],
-                ),
               ],
             ),
           ),
