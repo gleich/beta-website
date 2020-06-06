@@ -1,5 +1,6 @@
 // 🐦 Flutter imports:
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 
 class ThemeChanger with ChangeNotifier {
   ThemeMode activeTheme;
@@ -7,10 +8,10 @@ class ThemeChanger with ChangeNotifier {
   final context;
 
   ThemeChanger(this.context) {
-    // Thanks @Cal-Hagner! Line taken from https://github.com/Cal-Hagner/personal-site/blob/master/lib/provider/themeChanger.dart#L13
-    activeTheme = MediaQuery.platformBrightnessOf(context) == Brightness.dark
-        ? ThemeMode.dark
-        : ThemeMode.light;
+    activeTheme =
+        SchedulerBinding.instance.window.platformBrightness == Brightness.dark
+            ? ThemeMode.dark
+            : ThemeMode.light;
   }
 
   changeActiveTheme(ThemeMode requestedTheme) {
