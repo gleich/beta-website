@@ -1,12 +1,12 @@
 {
-  "name": "personal_site",
-  "short_name": "personal_site",
+  "name": "Matthew Gleich",
+  "short_name": "Matthew Gleich",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#0175C2",
-  "theme_color": "#0175C2",
-  "description": "Matthew Gleich's Personal website",
-  "orientation": "portrait-primary",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "description": "Matthew Gleich's Personal Website",
+  "orientation": "landscape",
   "prefer_related_applications": false,
   "icons": [
     {
