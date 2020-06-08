@@ -1,10 +1,8 @@
-import 'dart:math';
-
 // 🐦 Flutter imports:
-import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 
 // 📦 Package imports:
+import 'package:animate_do/animate_do.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
