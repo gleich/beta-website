@@ -1,4 +1,7 @@
+import 'dart:math';
+
 // 🐦 Flutter imports:
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 
 // 📦 Package imports:
@@ -64,12 +67,16 @@ class Header extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text(
-                '👋🏼 ',
-                style: TextStyle(fontSize: fontSize),
+              Swing(
+                child: Text(
+                  '👋🏼',
+                  style: TextStyle(fontSize: fontSize),
+                ),
+                duration: const Duration(seconds: 1, milliseconds: 500),
+                // infinite: true,
               ),
               Text(
-                "Hey! I'm",
+                " Hey! I'm",
                 style: TextStyle(
                   fontSize: fontSize,
                   fontFamily: 'Computer Modern',
