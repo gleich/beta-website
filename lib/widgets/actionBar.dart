@@ -51,7 +51,7 @@ class ActionBar extends StatelessWidget {
             ),
             _ActionBarIcon(
               icon: MdiIcons.twitter,
-              onTap: () => url.launchURL('https://twitter.com/GleichMatthew'),
+              onTap: () => url.launchURL('https://twitter.com/MattGleich'),
               toolTipMessage: '🐦 Twitter',
             ),
             _ActionBarIcon(
