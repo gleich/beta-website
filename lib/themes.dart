@@ -5,7 +5,7 @@ class Themes {
   // Shared Values
   final _fontFamily = "Abel";
   TooltipThemeData _toolTipThemeData(Color primaryColor) => TooltipThemeData(
-        waitDuration: const Duration(milliseconds: 300),
+        waitDuration: const Duration(milliseconds: 100),
         height: double.minPositive + 5,
         textStyle: TextStyle(
           fontSize: 15,
