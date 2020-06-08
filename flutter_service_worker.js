@@ -15,9 +15,7 @@ const RESOURCES = {
 "assets/assets/images/logo.png": "e94e2a82fde16d2ac04c1ac95f42ce9c",
 "assets/AssetManifest.json": "74d0fa0cc26f3f931d31399ae4152cbf",
 "favicon.png": "e94e2a82fde16d2ac04c1ac95f42ce9c",
-"manifest.json": "28edecd27e3b72fdf0e772b4e622f60c",
-"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
+"manifest.json": "e5adfab4b6fe8ac7519e957e50f12e20",
 "index.html": "8ab69b5170188497c7ba57613edb041e",
 "/": "8ab69b5170188497c7ba57613edb041e"
 };
