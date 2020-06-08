@@ -40480,7 +40480,7 @@ E.EO.prototype={
 $0:function(){return F.im("https://github.com/Matt-Gleich")},
 $S:1}
 E.EP.prototype={
-$0:function(){return F.im("https://twitter.com/GleichMatthew")},
+$0:function(){return F.im("https://twitter.com/MattGleich")},
 $S:1}
 E.EQ.prototype={
 $0:function(){return F.im("https://www.linkedin.com/in/matthew-gleich-636618178/")},
