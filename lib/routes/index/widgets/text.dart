@@ -70,8 +70,8 @@ class Header extends StatelessWidget {
                   '👋🏼',
                   style: TextStyle(fontSize: fontSize),
                 ),
-                duration: const Duration(seconds: 1, milliseconds: 500),
-                // infinite: true,
+                duration: const Duration(seconds: 1, milliseconds: 700),
+                infinite: true,
               ),
               Text(
                 " Hey! I'm",
