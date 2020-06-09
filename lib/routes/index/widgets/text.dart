@@ -34,6 +34,7 @@ class SubTitle extends StatelessWidget {
               'maker of things',
               'programmer',
               'photographer',
+              'cyclist',
             ],
             textStyle: TextStyle(
               fontSize: fontSize,
