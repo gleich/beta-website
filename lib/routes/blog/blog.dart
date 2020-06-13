@@ -28,9 +28,9 @@ class BlogRoute extends StatelessWidget {
                   height: 50,
                 ),
                 ArticlePreview(
-                  name: "👋🏼 Hello World",
+                  name: "🌱 Hello World",
                   notionURL:
-                      "https://www.notion.so/Hello-World-92437267107946b68197d01217c152fc",
+                      "https://www.notion.so/Hello-World-df6b8b07cfc448b1b1c42bf30cc19682",
                   description: "My first blog post",
                 )
               ],
