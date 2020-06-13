@@ -21,7 +21,6 @@ environment:
 flutter:
   assets:
     - 'assets/images/'
-    - 'assets/markdown/'
   fonts:
     - family: 'Abel'
       fonts:
