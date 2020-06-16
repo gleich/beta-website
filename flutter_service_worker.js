@@ -16,7 +16,7 @@ const RESOURCES = {
 "assets/packages/flutter_markdown/assets/logo.png": "67642a0b80f3d50277c44cde8f450e50",
 "assets/packages/material_design_icons_flutter/lib/fonts/materialdesignicons-webfont.ttf": "2abd86f90b3fd9d18d950195282cd8d5",
 "assets/AssetManifest.json": "3b118bb77b7db453af7675f7b01c7b1a",
-"main.dart.js": "a7018457ab1c4174890a4e870b7b24a1",
+"main.dart.js": "21cea110cb0d621c83ee96f6dc92f51a",
 "manifest.json": "e5adfab4b6fe8ac7519e957e50f12e20",
 "index.html": "97d120a431eed7d43f6195f431158f01",
 "/": "97d120a431eed7d43f6195f431158f01",
