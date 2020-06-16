@@ -33,6 +33,7 @@ class SubTitle extends StatelessWidget {
             text: <String>[
               'maker of things',
               'programmer',
+              'cloud automation intern',
               'photographer',
               'cyclist',
             ],
