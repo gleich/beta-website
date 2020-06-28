@@ -18,38 +18,40 @@ class ArticlePreview extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        border: Border.all(
-          color: Theme.of(context).accentColor,
-          width: 5,
+    return Padding(
+      padding: const EdgeInsets.only(top: 10.0),
+      child: Container(
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: Theme.of(context).accentColor,
+            width: 5,
+          ),
+          borderRadius: BorderRadius.circular(20),
         ),
-        borderRadius: BorderRadius.circular(20),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: Center(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text(
-                name,
-                style: Theme.of(context).textTheme.headline3,
-              ),
-              Container(
-                width: 200,
-                child: Text(
-                  description,
-                  style: Theme.of(context).textTheme.bodyText1,
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Center(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  name,
+                  style: Theme.of(context).textTheme.headline3,
                 ),
-              ),
-              ReflectingRaisedButton(
-                onPressed: () => url.launchURL(notionURL),
-                text: "🔗 View Article",
-                fontSize: 20,
-              )
-            ],
+                Container(
+                  child: Text(
+                    description,
+                    style: Theme.of(context).textTheme.bodyText1,
+                  ),
+                ),
+                ReflectingRaisedButton(
+                  onPressed: () => url.launchURL(notionURL),
+                  text: "🔗 View Article",
+                  fontSize: 20,
+                )
+              ],
+            ),
           ),
         ),
       ),
