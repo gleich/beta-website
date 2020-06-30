@@ -60,12 +60,6 @@ class ActionBar extends StatelessWidget {
                   'https://www.linkedin.com/in/matthew-gleich-636618178/'),
               toolTipMessage: '🔗 Linkedin',
             ),
-            _ActionBarIcon(
-              icon: MdiIcons.instagram,
-              onTap: () =>
-                  url.launchURL('https://www.instagram.com/gleichphotography/'),
-              toolTipMessage: '📷 Instagram',
-            ),
           ],
           duration: const Duration(seconds: 1),
           childAnimationBuilder: (widget) => SlideAnimation(
