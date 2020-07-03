@@ -28,6 +28,4 @@ jobs:
       - name: Run import_sorter
         run: |
           flutter pub get
-          flutter pub run import_sorter:main
-          git checkout pubspec.lock
-          git diff --exit-code
+          flutter pub run import_sorter:main --exit-if-changed
