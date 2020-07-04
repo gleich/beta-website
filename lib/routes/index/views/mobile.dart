@@ -2,9 +2,9 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import 'package:personal_site/widgets/actionBar.dart';
 import 'package:personal_site/routes/index/widgets/buttons.dart';
 import 'package:personal_site/routes/index/widgets/text.dart';
+import 'package:personal_site/widgets/actionBar.dart';
 
 class IndexMobileView extends StatelessWidget {
   @override

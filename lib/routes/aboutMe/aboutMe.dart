@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 // 🌎 Project imports:
-import 'package:personal_site/widgets/pageTemplate.dart';
 import 'package:personal_site/routes/aboutMe/views/desktop.dart';
 import 'package:personal_site/routes/aboutMe/views/mobile.dart';
+import 'package:personal_site/widgets/pageTemplate.dart';
 
 class AboutMeRoute extends StatelessWidget {
   static const routeName = '/aboutMe';

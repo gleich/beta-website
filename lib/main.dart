@@ -5,16 +5,16 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 // 🌎 Project imports:
-import 'package:personal_site/routes/skills/skills.dart';
-import 'package:personal_site/themes.dart';
 import 'package:personal_site/provider/theme.dart';
-import 'package:personal_site/routes/index/index.dart';
 import 'package:personal_site/routes/404/404.dart';
-import 'package:personal_site/routes/blog/blog.dart';
 import 'package:personal_site/routes/aboutMe/aboutMe.dart';
-import 'package:personal_site/routes/projects/projects.dart';
+import 'package:personal_site/routes/blog/blog.dart';
+import 'package:personal_site/routes/index/index.dart';
 import 'package:personal_site/routes/photography/photography.dart';
+import 'package:personal_site/routes/projects/projects.dart';
+import 'package:personal_site/routes/skills/skills.dart';
 import 'package:personal_site/routes/stats/stats.dart';
+import 'package:personal_site/themes.dart';
 
 void main() => runApp(_MySite());
 

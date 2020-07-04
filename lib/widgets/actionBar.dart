@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 // 📦 Package imports:
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
-import 'package:provider/provider.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:provider/provider.dart';
 
 // 🌎 Project imports:
 import 'package:personal_site/provider/theme.dart';
