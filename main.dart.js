@@ -41318,7 +41318,7 @@ E.Fu.prototype={
 $0:function(){return F.iE("https://twitter.com/MattGleich")},
 $S:1}
 E.Fv.prototype={
-$0:function(){return F.iE("https://www.linkedin.com/in/matthew-gleich-636618178/")},
+$0:function(){return F.iE("https://www.linkedin.com/in/matthew-gleich")},
 $S:1}
 E.Fr.prototype={
 $1:function(a){return V.ZM(V.Ym(a,null),null,80)}}
