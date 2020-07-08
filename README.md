@@ -1,6 +1,6 @@
 # Personal-Site
 
-🌎 My personal website built in Flutter. Visit it at [mattglei.ch](https://mattglei.ch)
+🌎 My personal website built in Flutter. Visit it at [mattglei.ch](https://mattglei.ch). This site will soon be replaced by a website built in react.
 
 ## Github Actions
 
