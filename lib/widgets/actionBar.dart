@@ -56,8 +56,8 @@ class ActionBar extends StatelessWidget {
             ),
             _ActionBarIcon(
               icon: MdiIcons.linkedin,
-              onTap: () => url.launchURL(
-                  'https://www.linkedin.com/in/matthew-gleich-636618178/'),
+              onTap: () =>
+                  url.launchURL('https://www.linkedin.com/in/matthew-gleich'),
               toolTipMessage: '🔗 Linkedin',
             ),
           ],
