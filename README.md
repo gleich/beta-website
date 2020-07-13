@@ -4,8 +4,8 @@
 
 ## Github Actions
 
-| **Action**                                                                                                                                                  | **Description**                        |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
-| [![Actions Status](https://github.com/Matt-Gleich/Personal-Site/workflows/Flutter%20Build/badge.svg)](https://github.com/Matt-Gleich/Personal-Site/actions) | Transpile application to JS            |
-| [![Actions Status](https://github.com/Matt-Gleich/Personal-Site/workflows/Publish/badge.svg)](https://github.com/Matt-Gleich/Personal-Site/actions)         | Publish latest changes to github pages |
-| [![Format](https://github.com/Matt-Gleich/Personal-Site/workflows/Format/badge.svg)](<(https://github.com/Matt-Gleich/Personal-Site/actions)>)              | Make sure everything is formatted      |
+| **Action**                                                                                                                                   | **Description**                        |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| [![build](https://github.com/Matt-Gleich/Personal-Site/workflows/build/badge.svg)](https://github.com/Matt-Gleich/Personal-Site/actions)     | Transpile application to JS            |
+| [![publish](https://github.com/Matt-Gleich/Personal-Site/workflows/Publish/badge.svg)](https://github.com/Matt-Gleich/Personal-Site/actions) | Publish latest changes to github pages |
+| [![format](https://github.com/Matt-Gleich/Personal-Site/workflows/format/badge.svg)](https://github.com/Matt-Gleich/Personal-Site/actions)   | Make sure everything is formatted      |

@@ -1,5 +1,8 @@
-name: Flutter Build
-on: [push, pull_request, release]
+name: build
+
+on:
+  - push
+  - pull_request
 
 jobs:
   build:
