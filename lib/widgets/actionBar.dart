@@ -1,5 +1,6 @@
 // 🐦 Flutter imports:
 import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/framework.dart' as framework;
 
 // 📦 Package imports:
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
@@ -21,7 +22,7 @@ class ActionBar extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(framework.BuildContext context) {
     ThemeChanger _themeChanger = Provider.of<ThemeChanger>(context);
 
     return AnimationLimiter(
@@ -94,7 +95,7 @@ class _ActionBarIcon extends StatefulWidget {
 class _ActionBarIconState extends State<_ActionBarIcon> {
   var _hovering = false;
   @override
-  Widget build(BuildContext context) {
+  Widget build(framework.BuildContext context) {
     final backgroundColor = _hovering
         ? Theme.of(context).primaryColor
         : Theme.of(context).accentColor;

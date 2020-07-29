@@ -1,5 +1,6 @@
 // 🐦 Flutter imports:
 import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/framework.dart' as framework;
 
 // 📦 Package imports:
 import 'package:provider/provider.dart';
@@ -20,7 +21,7 @@ void main() => runApp(_MySite());
 
 class _MySite extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
+  Widget build(framework.BuildContext context) {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => ThemeChanger(context)),
