@@ -46,7 +46,7 @@ class ActionBar extends StatelessWidget {
               sidePadding: false,
             ),
             _ActionBarIcon(
-              icon: MdiIcons.githubCircle,
+              icon: MdiIcons.github,
               onTap: () => url.launchURL('https://github.com/Matt-Gleich'),
               toolTipMessage: '🐙 GitHub',
             ),

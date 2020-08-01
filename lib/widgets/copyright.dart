@@ -22,7 +22,7 @@ class Copyright extends StatelessWidget {
             child: GestureDetector(
               onTap: () =>
                   url.launchURL('https://github.com/Matt-Gleich/Personal-Site'),
-              child: const Icon(MdiIcons.githubCircle),
+              child: const Icon(MdiIcons.github),
             ),
           ).changeCursorOnHover,
           const SizedBox(width: 20),
