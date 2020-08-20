@@ -1,11 +1,8 @@
-// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart' as framework;
 
-// 📦 Package imports:
 import 'package:provider/provider.dart';
 
-// 🌎 Project imports:
 import 'package:personal_site/provider/theme.dart';
 import 'package:personal_site/routes/404/404.dart';
 import 'package:personal_site/routes/aboutMe/aboutMe.dart';

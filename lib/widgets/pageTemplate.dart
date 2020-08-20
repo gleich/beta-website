@@ -1,7 +1,5 @@
-// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
 
-// 🌎 Project imports:
 import 'package:personal_site/widgets/cursorChange.dart';
 
 class PageTemplate extends StatelessWidget {

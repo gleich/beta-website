@@ -50,4 +50,4 @@ google_fonts:
         - '400i'
         - 700
 import_sorter:
-  emojis: true
+  comments: false

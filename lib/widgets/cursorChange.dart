@@ -1,7 +1,5 @@
-// 🎯 Dart imports:
 import 'dart:html' as html;
 
-// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
 
 extension HoverExtension on Widget {
