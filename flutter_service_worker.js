@@ -18,8 +18,8 @@ const RESOURCES = {
 "assets/assets/images/logo.png": "e94e2a82fde16d2ac04c1ac95f42ce9c",
 "assets/AssetManifest.json": "3b118bb77b7db453af7675f7b01c7b1a",
 "favicon.png": "e94e2a82fde16d2ac04c1ac95f42ce9c",
-"index.html": "1a38cf28b8ff260d165bd06ad860e171",
-"/": "1a38cf28b8ff260d165bd06ad860e171",
+"index.html": "ae7fbe89d1c715b604422141fbc949c7",
+"/": "ae7fbe89d1c715b604422141fbc949c7",
 "manifest.json": "e5adfab4b6fe8ac7519e957e50f12e20"
 };
 
