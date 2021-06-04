@@ -1,4 +1,4 @@
-<!-- DO NOT REMOVE - contributor_list:data:start:["Matt-Gleich", "ImgBotApp", "whitesource-bolt-for-github[bot]"]:end -->
+<!-- DO NOT REMOVE - contributor_list:data:start:["gleich", "ImgBotApp", "whitesource-bolt-for-github[bot]"]:end -->
 # Personal-Site-v1
 
 🌎 My website built in Flutter. Visit it at [old.mattglei.ch](https://old.mattglei.ch). This site will soon be replaced by a website built in react.
@@ -15,7 +15,7 @@
 ## 👥 Contributors
 
 
-- **[@Matt-Gleich](https://github.com/Matt-Gleich)**
+- **[@gleich](https://github.com/gleich)**
 
 - **[@ImgBotApp](https://github.com/ImgBotApp)**
 
